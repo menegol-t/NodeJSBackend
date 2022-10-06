@@ -12,15 +12,20 @@ class Contenedor {
     }
     save(objeto){
         const ruta = `./${this.nombreArchivo}.JSON`
-        fs.readFile(ruta, "utf-8", (err, output) =>{
-            if(err){
-                console.log("Fallo la lectura del archivo: " + err)
-            }else{
-                const contenido = JSON.parse(output)
-                ultimoId = contenido[contenido.lenght -1].id
-                ultimoId ? objeto.id = ultimoId + 1 : objeto.id = 1
-                nuevoContenido = contenido.push(objeto)
-                contenidoGuardado = JSON.stringify(nuevoContenido)
+        fs.promises
+            .readFile(ruta, "utf-8")
+            .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
+            .then((output) => JSON.parse(output))
+            .then((contenido) => {
+                console.log(typeof(contenido))
+                if(contenido.length === 0){
+                    objeto.id = 1
+                }else{
+                    objeto.id = contenido[contenido.lentgh - 1].id + 1
+                }
+                const nuevoContenido = contenido.push(objeto)
+                console.log(objeto)
+                const contenidoGuardado = JSON.stringify(nuevoContenido)
                 fs.writeFile(ruta, contenidoGuardado, (err, output) => {
                     if(err){
                         console.log("Error al guardar el objeto: " + err)
@@ -28,9 +33,7 @@ class Contenedor {
                         console.log(`Se guardo tu objeto con id ${objeto.id}`);
                     }
                 })
-
-            }
-        })
+            })    
     }
     getById(number){
         

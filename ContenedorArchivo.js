@@ -14,26 +14,27 @@ class Contenedor {
         const ruta = `./${this.nombreArchivo}.JSON`
         fs.promises
             .readFile(ruta, "utf-8")
-            .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
-            .then((output) => JSON.parse(output))
-            .then((contenido) => {
-                console.log(typeof(contenido))
-                if(contenido.length === 0){
-                    objeto.id = 1
-                }else{
-                    objeto.id = contenido[contenido.lentgh - 1].id + 1
-                }
-                const nuevoContenido = contenido.push(objeto)
-                console.log(objeto)
-                const contenidoGuardado = JSON.stringify(nuevoContenido)
-                fs.writeFile(ruta, contenidoGuardado, (err, output) => {
-                    if(err){
-                        console.log("Error al guardar el objeto: " + err)
+                .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
+                .then((output) => JSON.parse(output))
+                .then((contenido) => {
+
+                    console.log(typeof(contenido))
+
+                    if(contenido.length === 0){
+                        objeto.id = 1
                     }else{
-                        console.log(`Se guardo tu objeto con id ${objeto.id}`);
+                        objeto.id = contenido[contenido.lentgh - 1].id + 1
                     }
-                })
-            })    
+
+                    contenido.push(objeto)
+                    console.log(contenido)
+                    const contenidoGuardado = JSON.stringify(contenido)
+
+                    fs.promises
+                    .writeFile(ruta, contenidoGuardado) 
+                        .catch((err) => {console.log("Error al guardar el objeto: " + err)})
+                        .then(() => {console.log(`Se guardo tu objeto con id ${objeto.id}`)})
+                })    
     }
     getById(number){
         
@@ -52,3 +53,4 @@ class Contenedor {
 prueba = new Contenedor("productos")
 
 prueba.save({titulo: "producto1", price: 123})
+

@@ -20,7 +20,7 @@ class Contenedor {
             .readFile(ruta, "utf-8")
                 .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
                 .then((output) => JSON.parse(output))
-                .then((contenido) => {
+                .then(async (contenido) => {
 
                     if(contenido.length === 0){
                         objeto.id = 1
@@ -32,7 +32,7 @@ class Contenedor {
 
                     const contenidoGuardado = JSON.stringify(contenido)
 
-                    fs.promises
+                    await fs.promises
                     .writeFile(ruta, contenidoGuardado) 
                         .catch((err) => {console.log("Error al guardar el objeto: " + err)})
                         .then(() => {console.log(`Se guardo tu objeto con id ${objeto.id}`)})

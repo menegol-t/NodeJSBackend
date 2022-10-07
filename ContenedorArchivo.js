@@ -6,7 +6,6 @@ class Contenedor {
     constructor(nombreArchivo){
         this.nombreArchivo = nombreArchivo
     }
-    
     async innit(){
         const ruta = `./${this.nombreArchivo}.JSON`
         const data = '[]'
@@ -31,7 +30,7 @@ class Contenedor {
 
                     contenido.push(objeto)
 
-                    const contenidoGuardado = (`${JSON.stringify(contenido)}\n`)
+                    const contenidoGuardado = JSON.stringify(contenido)
 
                     fs.promises
                     .writeFile(ruta, contenidoGuardado) 

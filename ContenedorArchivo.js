@@ -8,11 +8,18 @@ class Contenedor {
     }
     innit(){
         const ruta = `./${this.nombreArchivo}.JSON`
-        const data = '[]'
         fs.promises
-            .writeFile(ruta, data)
-            .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se creo correctamente`)})
-            .catch((err)=> {console.log("Fallo la creacion del archivo: " + err)}) 
+        .readFile(ruta, "utf-8")
+            .then((output) => JSON.parse(output))
+            .then(async (contenido) => console.log(`Ya tenias creado un archivo llamado: ${this.nombreArchivo}`))
+            .catch((err)=>{
+                    const data = '[]'
+                    fs.promises
+                        .writeFile(ruta, data)
+                            .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se creo correctamente`)})
+                            .catch((err)=> {console.log("Fallo la creacion del archivo: " + err)}) 
+                })
+                
     }
     async save(objeto){
         const ruta = `./${this.nombreArchivo}.JSON`
@@ -98,9 +105,9 @@ const deleteById = async (id) => await prueba.deleteById(id)
 const deleteAll = async () => await prueba.deleteAll()
 
 
-// crearYBorrarArchivo()
+crearArchivo()
 
-// save("ejemplo", 111)
+// save("segundoejemplo", 222)
 
 // getById(2)
 

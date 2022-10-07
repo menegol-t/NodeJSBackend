@@ -6,13 +6,13 @@ class Contenedor {
     constructor(nombreArchivo){
         this.nombreArchivo = nombreArchivo
     }
-    async innit(){
+    innit(){
         const ruta = `./${this.nombreArchivo}.JSON`
         const data = '[]'
-        await fs.promises
-        .writeFile(ruta, data)
-        .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se creo correctamente`)})
-        .catch((err)=> {console.log("Fallo la creacion del archivo: " + err)}) 
+        fs.promises
+            .writeFile(ruta, data)
+            .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se creo correctamente`)})
+            .catch((err)=> {console.log("Fallo la creacion del archivo: " + err)}) 
     }
     async save(objeto){
         const ruta = `./${this.nombreArchivo}.JSON`
@@ -33,14 +33,14 @@ class Contenedor {
                     const contenidoGuardado = JSON.stringify(contenido)
 
                     await fs.promises
-                    .writeFile(ruta, contenidoGuardado) 
-                        .catch((err) => {console.log("Error al guardar el objeto: " + err)})
-                        .then(() => {console.log(`Se guardo tu objeto con id ${objeto.id}`)})
+                        .writeFile(ruta, contenidoGuardado) 
+                            .catch((err) => console.log("Error al guardar el objeto: " + err))
+                            .then(() => console.log(`Se guardo tu objeto con id ${objeto.id}`))
                 })    
     }
-    getById(numero){
+    async getById(numero){
         const ruta = `./${this.nombreArchivo}.JSON`
-        fs.promises
+        await fs.promises
             .readFile(ruta, "utf-8")
                 .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
                 .then((output) => JSON.parse(output))
@@ -49,32 +49,31 @@ class Contenedor {
                     console.log(objetoFiltrado);
                 })
     }
-    getAll(){
+    async getAll(){
         const ruta = `./${this.nombreArchivo}.JSON`
-        fs.promises
+        await fs.promises
             .readFile(ruta, "utf-8")
-                .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
+                .catch((err)=> console.log("Fallo la lectura del archivo: " + err))
                 .then((output) => JSON.parse(output))
-                .then((contenido) => {
-                    console.log(contenido);
-                })
+                .then((contenido) => console.log(contenido))
     }
-    deleteById(idAEliminar){
+    async deleteById(idAEliminar){
         const ruta = `./${this.nombreArchivo}.JSON`
-        fs.promises
+        await fs.promises
             .readFile(ruta, "utf-8")
                 .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
                 .then((output) => JSON.parse(output))
-                .then((contenido) => {
-                    const contenidoFiltrado = contenido.filter((objetos) => objetos.id != contenido)
+                .then(async (contenido) => {
+                    const contenidoFiltrado = contenido.filter((objetos) => objetos.id != idAEliminar)
+                    console.log(contenidoFiltrado);
                     const contenidoGuardado = JSON.stringify(contenidoFiltrado)
-                    fs.promises
-                    .writeFile(ruta, contenidoGuardado) 
-                        .catch((err) => {console.log("Error al guardar el objeto: " + err)})
-                        .then(() => {console.log(`Se elimino tu objeto con id ${idAEliminar}`)})
+                    await fs.promises
+                        .writeFile(ruta, contenidoGuardado) 
+                            .catch((err) => {console.log("Error al guardar el objeto: " + err)})
+                            .then(() => {console.log(`Se elimino tu objeto con id ${idAEliminar}`)})
                 })    
     }
-    deleteSAll(){
+    deleteAll(){
         const ruta = `./${this.nombreArchivo}.JSON`
         const data = "[]"
         fs.promises.
@@ -86,16 +85,30 @@ class Contenedor {
 
 const prueba = new Contenedor("productos")
 
-const test = async () => {
-    await prueba.innit()
+const crearArchivo = () => prueba.innit()
 
-    await prueba.save({titulo: "producto1", price: 123})
+const save = async (titulo, precio) => await prueba.save({titulo: `${titulo}`, price: precio})
 
-    await prueba.save({titulo: "sasarasa", price: 222})
-}
+const getById = async (numero) => await prueba.getById(numero)
 
-test()
-// prueba.getById(1)
+const getAll = async () => await prueba.getAll()
 
-// prueba.getAll()
+const deleteById = async (id) => await prueba.deleteById(id)
+
+const deleteAll = async () => await prueba.deleteAll()
+
+
+// crearYBorrarArchivo()
+
+// save("ejemplo", 111)
+
+// getById(2)
+
+// getAll()
+
+// deleteById(2)
+
+// deleteAll()
+
+
 

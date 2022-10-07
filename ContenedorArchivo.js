@@ -1,18 +1,23 @@
+"use strict"
+
 const fs = require('fs')
 
 class Contenedor {
     constructor(nombreArchivo){
         this.nombreArchivo = nombreArchivo
-        const ruta = `./${this.nombreArchivo}.JSON`
-        const data = "[]"
-        fs.promises.
-            writeFile(ruta, data)
-            .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se creo correctamente`)})
-            .catch((err)=> {console.log("Fallo la creacion del archivo: " + err)}) 
     }
-    save(objeto){
+    
+    async innit(){
         const ruta = `./${this.nombreArchivo}.JSON`
-        fs.promises
+        const data = '[]'
+        await fs.promises
+        .writeFile(ruta, data)
+        .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se creo correctamente`)})
+        .catch((err)=> {console.log("Fallo la creacion del archivo: " + err)}) 
+    }
+    async save(objeto){
+        const ruta = `./${this.nombreArchivo}.JSON`
+        await fs.promises
             .readFile(ruta, "utf-8")
                 .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
                 .then((output) => JSON.parse(output))
@@ -21,12 +26,12 @@ class Contenedor {
                     if(contenido.length === 0){
                         objeto.id = 1
                     }else{
-                        objeto.id = contenido[contenido.lentgh - 1].id + 1
+                        objeto.id = contenido[contenido.length - 1].id + 1
                     }
 
                     contenido.push(objeto)
 
-                    const contenidoGuardado = JSON.stringify(contenido)
+                    const contenidoGuardado = (`${JSON.stringify(contenido)}\n`)
 
                     fs.promises
                     .writeFile(ruta, contenidoGuardado) 
@@ -41,7 +46,7 @@ class Contenedor {
                 .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
                 .then((output) => JSON.parse(output))
                 .then((contenido) => {
-                    objetoFiltrado = contenido.filter(objetos => objetos.id = numero)
+                    const objetoFiltrado = contenido.find(objetos => objetos.id = numero)
                     console.log(objetoFiltrado);
                 })
     }
@@ -80,7 +85,18 @@ class Contenedor {
     }
 }
 
-prueba = new Contenedor("productos")
+const prueba = new Contenedor("productos")
 
-prueba.save({titulo: "producto1", price: 123})
+const test = async () => {
+    await prueba.innit()
+
+    await prueba.save({titulo: "producto1", price: 123})
+
+    await prueba.save({titulo: "sasarasa", price: 222})
+}
+
+test()
+// prueba.getById(1)
+
+// prueba.getAll()
 

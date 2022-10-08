@@ -107,15 +107,12 @@ const deleteAll = async () => await prueba.deleteAll()
 
 crearArchivo()
 
-// save("segundoejemplo", 222)
+// save("Escribi tu ejemplo", 111)
 
-// getById(2)
+// getById(1)
 
 // getAll()
 
 // deleteById(2)
 
 // deleteAll()
-
-
-

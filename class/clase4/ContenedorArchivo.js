@@ -9,17 +9,16 @@ class Contenedor {
     innit(){
         const ruta = `./${this.nombreArchivo}.JSON`
         fs.promises
-        .readFile(ruta, "utf-8")
-            .then((output) => JSON.parse(output))
-            .then(async (contenido) => console.log(`Ya tenias creado un archivo llamado: ${this.nombreArchivo}`))
-            .catch((err)=>{
+            .readFile(ruta, "utf-8")
+                .then((output) => JSON.parse(output))
+                .then(async () => console.log(`Ya tenias creado un archivo llamado: ${this.nombreArchivo}`))
+                .catch(()=>{
                     const data = '[]'
                     fs.promises
                         .writeFile(ruta, data)
                             .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se creo correctamente`)})
                             .catch((err)=> {console.log("Fallo la creacion del archivo: " + err)}) 
-                })
-                
+                })             
     }
     async save(objeto){
         const ruta = `./${this.nombreArchivo}.JSON`
@@ -36,7 +35,6 @@ class Contenedor {
                     }
 
                     contenido.push(objeto)
-
                     const contenidoGuardado = JSON.stringify(contenido)
 
                     await fs.promises
@@ -52,7 +50,7 @@ class Contenedor {
                 .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
                 .then((output) => JSON.parse(output))
                 .then((contenido) => {
-                    const objetoFiltrado = contenido.find(objetos => objetos.id = numero)
+                    const objetoFiltrado = contenido.find(objetos => objetos.id == numero)
                     console.log(objetoFiltrado);
                 })
     }
@@ -85,8 +83,8 @@ class Contenedor {
         const data = "[]"
         fs.promises.
             writeFile(ruta, data)
-            .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se limpio correctamente`)})
-            .catch((err)=> {console.log("Fallo la limpieza  del archivo: " + err)}) 
+                .then(()=> {console.log(`Tu archivo ${this.nombreArchivo} se limpio correctamente`)})
+                .catch((err)=> {console.log("Fallo la limpieza  del archivo: " + err)}) 
     }
 }
 
@@ -116,3 +114,4 @@ crearArchivo()
 // deleteById(2)
 
 // deleteAll()
+

@@ -1,17 +1,17 @@
 [
- {
-   "title": "Lentes de madera",
-   "price": 333,
-   "id": 1
- },
- {
-   "title": "Libro",
-   "price": 444,
-   "id": 2
- },
- {
-   "title": "Tijeras",
-   "price": 555,
-   "id": 3
- }
+    {
+      "title": "Lentes de madera",
+      "price": 333,
+      "id": 1
+    },
+    {
+      "title": "Libro",
+      "price": 444,
+      "id": 2
+    },
+    {
+      "title": "Tijeras",
+      "price": 555,
+      "id": 3
+    }
 ]

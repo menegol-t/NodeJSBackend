@@ -6,8 +6,6 @@ const app = express()
 
 const PORT = process.env.port || 8080
 
-let respuesta
-
 const between = (min, max) => {
 	return Math.floor(Math.random() * (max - min +1 ) + min )
 }
@@ -22,42 +20,44 @@ class Contenedor {
         this.nombreArchivo = nombreArchivo
     }
     async getById(numero){
-        await fs.promises
-            .readFile("./productos.json", "utf-8")
-                .catch((err)=>{console.log("Fallo la lectura del archivo: " + err)})
-                .then((output) => JSON.parse(output))
+        try{
+            return await fs.promises.readFile("./productos.json", "utf-8").then((output) => JSON.parse(output))
                 .then((contenido) => {
                     const objetoFiltrado = contenido.find(objetos => objetos.id == numero)
                     console.log(objetoFiltrado)
-                    respuesta = objetoFiltrado;
+                    return objetoFiltrado
                 })
+        }catch(err){
+            console.log("Fallo la lectura del archivo: " + err)
+        }
+        
     }
     async getAll(){
-        await fs.promises
-            .readFile("./productos.json", "utf-8")
-                .catch((err)=> console.log("Fallo la lectura del archivo: " + err))
-                .then((output) => JSON.parse(output))
-                .then((contenido) => {respuesta = contenido})
+        try{
+            return await fs.promises.readFile("./productos.json", "utf-8").then((output) => JSON.parse(output))
+        }catch(err){
+            if(err.code == 'ENOENT'){
+                console.log("SE CREA ARCHIVO")
+                await fs.promises.writeFile("./productos.json", "[]") 
+                return []
+            }
+            console.log("Fallo la lectura del archivo: ", err)
+        }
     }
 }
 
 const prueba = new Contenedor("productos")
 
-const getById = async (numero) => await prueba.getById(numero)
-
-const getAll = async () => await prueba.getAll()
-
 app.get("/", (request, response) => {
 	response.send("Estas en root /")
 })
 
-app.get("/productos", (request, response) => {
-    getAll().then(response.send(respuesta))
-    
+app.get("/productos", async (request, response) => {
+    const respuesta = await prueba.getAll()
+    response.send(respuesta)
 })
 
-app.get("/productosRandom", (request, response) => {
+app.get("/productosRandom", async (request, response) => {
     let randomId = between(1, 3)
-    getById(randomId).then(response.send(respuesta))
-	
+    await prueba.getById(randomId).then((objetoFiltrado) => response.send(objetoFiltrado))
 })

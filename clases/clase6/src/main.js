@@ -28,7 +28,7 @@ class Contenedor {
                     return objetoFiltrado
                 })
         }catch(err){
-            console.log("Fallo la lectura del archivo: " + err)
+            console.log("Fallo la lectura del archivo: ", err)
         }
         
     }

@@ -12,7 +12,11 @@ usersRoute.get("/", async (request, response) => {
 })
 
 usersRoute.get("/:id", async (request, response) => {
-    requestParamCheck(request, response)
+    if(isNaN(request.params.id)){
+        return response.status(400).json({
+	        Err: "Se requiere un ID numerico del producto a modificar."
+        })
+    }
     
     const dataById = await getById(response, request.params.id)
     if(dataById == undefined){
@@ -24,10 +28,19 @@ usersRoute.get("/:id", async (request, response) => {
 })
 
 usersRoute.post("/", async (request, response) => {
+    console.log(request.body);
 
     const newProd = JSON.stringify(request.body)
     
-    requestInputCheck(request, response)
+    if(!request.body.title || !request.body.price || !request.body.thumbnail){
+    	return response.status(400).json({
+	        Err: "Por favor completa los campos 'title', 'price' y 'thumbnail'."
+        })
+    }else if(isNaN(request.body.price)){
+        return response.status(400).json({
+	        Err: "El campo 'price' debe ser un numero."
+        })
+    }
 	
     newProductId = await save(response, request.body)
     response.send(`Se guardo tu producto: ${newProd} con id ${newProductId}`)
@@ -35,9 +48,21 @@ usersRoute.post("/", async (request, response) => {
 
 usersRoute.put("/:id", async (request, response) => {
 
-    requestInputCheck(request, response)
+    if(!request.body.title || !request.body.price || !request.body.thumbnail){
+    	return response.status(400).json({
+	        Err: "Por favor completa los campos 'title', 'price' y 'thumbnail'."
+        })
+    }else if(isNaN(request.body.price)){
+        return response.status(400).json({
+	        Err: "El campo 'price' debe ser un numero."
+        })
+    }
 	
-    requestParamCheck(request, response)
+    if(isNaN(request.params.id)){
+        return response.status(400).json({
+	        Err: "Se requiere un ID numerico del producto a modificar."
+        })
+    }
 
     const dataById = await getById(response, request.params.id)
 
@@ -53,7 +78,11 @@ usersRoute.put("/:id", async (request, response) => {
 })
 
 usersRoute.delete("/:id", async (request, response) => {
-    requestParamCheck(request, response)
+    if(isNaN(request.params.id)){
+        return response.status(400).json({
+	        Err: "Se requiere un ID numerico del producto a modificar."
+        })
+    }
     const idDelete = await deleteById(response, request.params.id)
     response.send(`Se elimino exitosamente tu producto con ID ${idDelete} `)
 })
@@ -158,22 +187,22 @@ const deleteById = async (res, idToDelete) => {
     }
 }
 
-const requestInputCheck = (req, res) => {
-    if(!req.body.title || !req.body.price || !req.body.thumbnail){
-    	return res.status(400).json({
-	        Err: "Por favor completa los campos 'title', 'price' y 'thumbnail'."
-        })
-    }else if(isNaN(req.body.price)){
-        return res.status(400).json({
-	        Err: "El campo 'price' debe ser un numero."
-        })
-    }
-}
+// const requestInputCheck = (req, res) => {
+//     if(!req.body.title || !req.body.price || !req.body.thumbnail){
+//     	return res.status(400).json({
+// 	        Err: "Por favor completa los campos 'title', 'price' y 'thumbnail'."
+//         })
+//     }else if(isNaN(req.body.price)){
+//         return res.status(400).json({
+// 	        Err: "El campo 'price' debe ser un numero."
+//         })
+//     }
+// }
 
-const requestParamCheck = (req, res) => {
-    if(isNaN(req.params.id)){
-        return res.status(400).json({
-	        Err: "Se requiere un ID numerico del producto a modificar."
-        })
-    }
-}
+// const requestParamCheck = (req, res) => {
+//     if(isNaN(req.params.id)){
+//         return res.status(400).json({
+// 	        Err: "Se requiere un ID numerico del producto a modificar."
+//         })
+//     }
+// }

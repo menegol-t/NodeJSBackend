@@ -20,7 +20,7 @@ usersRoute.get("/:id", async (request, response) => {
     
     const dataById = await getById(response, request.params.id)
     if(dataById == undefined){
-        return response.status(400).json({
+        return response.status(404).json({
             Err: `Ninguno de los productos tiene id: ${request.params.id}`
         })
     }

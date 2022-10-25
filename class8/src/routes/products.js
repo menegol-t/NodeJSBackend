@@ -35,7 +35,7 @@ usersRoute.post("/", async (request, response) => {
 
     err ? response.status(400).json({err}) : 
 
-    dataToSave.status(500) ? response.send(dataToSave) : 
+    dataToSave["status(500)"] ? response.send(dataToSave) : 
     
     response.send(`Se guardo tu producto: ${JSON.stringify(request.body)} con id ${dataToSave}`)
 })
@@ -48,20 +48,27 @@ usersRoute.put("/:id", async (request, response) => {
 
     const dataById = await getById(response, request.params.id)
 
-    const dataToUpdate = await update(response, request.body, dataById)
+    // const dataToUpdate = await update(response, request.body, dataById)
 
     const dataToCreate = await save(response, request.body)
 
     ErrBody ? response.status(400).json({ErrBody}) : 
     
     ErrParam ? response.status(400).json({ErrParam}) : 
-    
-    dataById ? 
-    
-    dataToUpdate.status(500) ? response.send(dataToUpdate) : response.send(`Se guardaron los siguientes cambios: ${JSON.stringify(request.body)} \n En tu producto con ID ${dataToUpdate}`) :
 
-    dataToCreate.status(500) ? response.send(dataToCreate) : response.send(`Se creo tu producto: ${JSON.stringify(request.body)} con id ${dataToCreate}`)
-        
+    dataById ? 
+
+    (await update(response, request.body, dataById)["status(500)"] ? 
+    
+    response.send(await update(response, request.body, dataById)) : 
+    
+    response.send(`Se guardaron los siguientes cambios: ${JSON.stringify(request.body)} \n En tu producto con ID ${await update(response, request.body, dataById)}`)) :
+    
+    (dataToCreate["status(500)"] ? 
+    
+    response.send(dataToCreate) : 
+    
+    response.send(`Se creo tu producto: ${JSON.stringify(request.body)} con id ${dataToCreate}`))
     }
 )
 
@@ -73,7 +80,7 @@ usersRoute.delete("/:id", async (request, response) => {
 
     ErrParam ? response.status(400).json({ErrParam}) : 
 
-    dataToDelete.status(500) ? response.send(dataToDelete) :
+    dataToDelete["status(500)"] ? response.send(dataToDelete) :
     
     response.send(`Se elimino exitosamente tu producto con ID ${dataToDelete} `)
 })

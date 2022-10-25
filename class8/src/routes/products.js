@@ -31,13 +31,9 @@ usersRoute.post("/", async (request, response) => {
 
     const err = await requestInputCheck(request)
 
-    const dataToSave = await save(response, request.body)
-
     err ? response.status(400).json({err}) : 
-
-    dataToSave["status(500)"] ? response.send(dataToSave) : 
     
-    response.send(`Se guardo tu producto: ${JSON.stringify(request.body)} con id ${dataToSave}`)
+    response.send(`Se guardo tu producto: ${JSON.stringify(request.body)} con id ${await save(response, request.body)}`)
 })
 
 usersRoute.put("/:id", async (request, response) => {
@@ -48,27 +44,16 @@ usersRoute.put("/:id", async (request, response) => {
 
     const dataById = await getById(response, request.params.id)
 
-    // const dataToUpdate = await update(response, request.body, dataById)
-
-    const dataToCreate = await save(response, request.body)
-
     ErrBody ? response.status(400).json({ErrBody}) : 
     
     ErrParam ? response.status(400).json({ErrParam}) : 
-
+    
     dataById ? 
+    
+    response.send(`Se guardaron los siguientes cambios: ${JSON.stringify(request.body)} \n En tu producto con ID ${await update(response, request.body, dataById)}`) :
 
-    (await update(response, request.body, dataById)["status(500)"] ? 
-    
-    response.send(await update(response, request.body, dataById)) : 
-    
-    response.send(`Se guardaron los siguientes cambios: ${JSON.stringify(request.body)} \n En tu producto con ID ${await update(response, request.body, dataById)}`)) :
-    
-    (dataToCreate["status(500)"] ? 
-    
-    response.send(dataToCreate) : 
-    
-    response.send(`Se creo tu producto: ${JSON.stringify(request.body)} con id ${dataToCreate}`))
+    response.send(`Se creo tu producto: ${JSON.stringify(request.body)} con id ${await save(response, request.body)}`)
+        
     }
 )
 
@@ -79,8 +64,6 @@ usersRoute.delete("/:id", async (request, response) => {
     const dataToDelete = await deleteById(response, request.params.id)
 
     ErrParam ? response.status(400).json({ErrParam}) : 
-
-    dataToDelete["status(500)"] ? response.send(dataToDelete) :
     
     response.send(`Se elimino exitosamente tu producto con ID ${dataToDelete} `)
 })
@@ -90,19 +73,17 @@ module.exports = usersRoute
 //METODOS:
 
 const getAll = async (res) => {
-
     try{
-
         return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
-
     }catch(err){
-
         if(err == 'SyntaxError: Unexpected end of JSON input'){
-
             await fs.promises.writeFile(filePath, "[]") 
             return []
-
-        }else{ return res.status(500).json( {Err: `Error en la lectura del archivo error: ${err}`} )}
+        }else{
+            return res.status(500).json({
+                Err: `Error en la lectura del archivo error: ${err}`
+            })
+        }
     }
 }
 

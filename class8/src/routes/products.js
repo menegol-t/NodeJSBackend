@@ -7,84 +7,65 @@ const filePath = path.resolve(__dirname, "../../products.json")
 const usersRoute = Router()
 
 usersRoute.get("/", async (request, response) => {
+    
     const allData = await getAll(response)
+
     response.send(allData)
 })
 
 usersRoute.get("/:id", async (request, response) => {
-    if(isNaN(request.params.id)){
-        return response.status(400).json({
-	        Err: "Se requiere un ID numerico del producto a modificar."
-        })
-    }
-    
+
+    const Err =  await requestParamCheck(request)
+
     const dataById = await getById(response, request.params.id)
-    if(dataById == undefined){
-        return response.status(404).json({
-            Err: `Ninguno de los productos tiene id: ${request.params.id}`
-        })
-    }
-    response.send(dataById)
+
+    Err ? response.status(400).json({Err}) : 
+    
+    dataById ? response.send(dataById) : 
+    
+    response.status(404).json({ Err: `Ninguno de los productos tiene id: ${request.params.id}`}) 
+    
 })
 
 usersRoute.post("/", async (request, response) => {
-    console.log(request.body);
 
-    const newProd = JSON.stringify(request.body)
+    const err = await requestInputCheck(request)
+
+    err ? response.status(400).json({err}) : 
     
-    if(!request.body.title || !request.body.price || !request.body.thumbnail){
-    	return response.status(400).json({
-	        Err: "Por favor completa los campos 'title', 'price' y 'thumbnail'."
-        })
-    }else if(isNaN(request.body.price)){
-        return response.status(400).json({
-	        Err: "El campo 'price' debe ser un numero."
-        })
-    }
-	
-    newProductId = await save(response, request.body)
-    response.send(`Se guardo tu producto: ${newProd} con id ${newProductId}`)
+    response.send(`Se guardo tu producto: ${JSON.stringify(request.body)} con id ${await save(response, request.body)}`)
 })
 
 usersRoute.put("/:id", async (request, response) => {
 
-    if(!request.body.title || !request.body.price || !request.body.thumbnail){
-    	return response.status(400).json({
-	        Err: "Por favor completa los campos 'title', 'price' y 'thumbnail'."
-        })
-    }else if(isNaN(request.body.price)){
-        return response.status(400).json({
-	        Err: "El campo 'price' debe ser un numero."
-        })
-    }
-	
-    if(isNaN(request.params.id)){
-        return response.status(400).json({
-	        Err: "Se requiere un ID numerico del producto a modificar."
-        })
-    }
+    const ErrBody = await requestInputCheck(request)
+
+    const ErrParam = await requestParamCheck(request)
 
     const dataById = await getById(response, request.params.id)
 
-    const newProd = JSON.stringify(request.body)
+    ErrBody ? response.status(400).json({ErrBody}) : 
+    
+    ErrParam ? response.status(400).json({ErrParam}) : 
+    
+    dataById ? 
+    
+    response.send(`Se guardaron los siguientes cambios: ${JSON.stringify(request.body)} \n En tu producto con ID ${await update(response, request.body, dataById)}`) :
 
-    if(dataById == undefined){
-        newProductId = await save(response, request.body)
-        response.send(`Se creo tu producto: ${newProd} con id ${newProductId}`)
-    }else{
-        updatedProductId = await update(response, request.body, dataById)
-        response.send(`Se guardaron los siguientes cambios: ${newProd} \n En tu producto con ID ${updatedProductId}`)
+    response.send(`Se creo tu producto: ${JSON.stringify(request.body)} con id ${await save(response, request.body)}`)
+        
     }
-})
+)
 
 usersRoute.delete("/:id", async (request, response) => {
-    if(isNaN(request.params.id)){
-        return response.status(400).json({
-	        Err: "Se requiere un ID numerico del producto a modificar."
-        })
-    }
-    const idDelete = await deleteById(response, request.params.id)
-    response.send(`Se elimino exitosamente tu producto con ID ${idDelete} `)
+
+    const ErrParam = await requestParamCheck(request)
+
+    const dataToDelete = await deleteById(response, request.params.id)
+
+    ErrParam ? response.status(400).json({ErrParam}) : 
+    
+    response.send(`Se elimino exitosamente tu producto con ID ${dataToDelete} `)
 })
 
 module.exports = usersRoute
@@ -108,101 +89,93 @@ const getAll = async (res) => {
 
 const getById = async (res, id) => {
     try{
+
         return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
-            .then((contenido) => {
-                const objetoFiltrado = contenido.find(objetos => objetos.id == id)
-                return objetoFiltrado
-            })
-    }catch(err){
-        return res.status(500).json({
-            Err: `Algo salio mal al buscar por ID, error: ${err}`
-        })
-    }
+            .then((contenido) => { return contenido.find(objetos => objetos.id == id)})
+
+    }catch(err){ return res.status(500).json({Err: `Algo salio mal al buscar por ID, error: ${err}`}) }
 }
 
 const save = async (res, obj) => {
     try{
+
         return await fs.promises.readFile(filePath, "utf-8").then((availableProd) => JSON.parse(availableProd))
+        
             .then(async (availableProd) => {
 
-                if(availableProd.length === 0){
-                    obj.id = 1
-                }else{
-                    obj.id = availableProd[availableProd.length - 1].id + 1
-                }
+                availableProd.length === 0 ? 
+                
+                obj.id = 1 : 
+                
+                obj.id = availableProd[availableProd.length - 1].id + 1
 
                 availableProd.push(obj)
-                const addAvailableProd = JSON.stringify(availableProd)
 
                 try{
-                    return await fs.promises.writeFile(filePath, addAvailableProd).then(() => {return obj.id})
-                }catch(err){
-                    return res.status(500).json({
-                        Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`
-                    })
-                }           
+
+                    return await fs.promises.writeFile(filePath, JSON.stringify(availableProd)).then(() => {return obj.id})
+
+                }catch(err){ return res.status(500).json({Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`}) }           
             })
-    }catch(err){
-        return res.status(500).json({
-            Err: `Algo salio mal al guardar el archivo, error: ${err}`
-        })
-    }
+
+    }catch(err){ return res.status(500).json({Err: `Algo salio mal al guardar el archivo, error: ${err}`}) }
 }
 
 const update = async (res, newObj, oldObj) => {
+
     newObj.id = oldObj.id
 
     const completeProds = await getAll(res)
+
     const index = completeProds.findIndex(newObjToUpdate => newObjToUpdate.id == oldObj.id) 
+
     completeProds[index] = newObj
-    const updatedList = JSON.stringify(completeProds)
 
     try{
-        return await fs.promises.writeFile(filePath, updatedList).then(() => {return newObj.id})
-    }catch(err){
-        return res.status(500).json({
-            Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`
-        })
-    } 
+
+        return await fs.promises.writeFile(filePath, JSON.stringify(completeProds)).then(() => {return newObj.id})
+
+    }catch(err){ return res.status(500).json({Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`}) } 
 }
 
 const deleteById = async (res, idToDelete) => {
+
     try{
+
         return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
+
             .then(async (content) => {
-                const contentFiltered = content.filter((obj) => obj.id != idToDelete)
-                const contentSaved = JSON.stringify(contentFiltered)
+
+                const contentFiltered = content.filter((obj) => obj.id != idToDelete) 
+
                 try{
-                    return await fs.promises.writeFile(filePath, contentSaved).then(() => {return idToDelete})
-                }catch(err){
-                    return res.status(500).json({
-                        Err: `Algo salio mal al eliminar el producto, error: ${err}`
-                    })
-                }                 
+
+                    return await fs.promises.writeFile(filePath, JSON.stringify(contentFiltered)).then(() => {return idToDelete})
+
+                }catch(err){ return res.status(500).json({Err: `Algo salio mal al eliminar el producto, error: ${err}`}) }                 
             })
-    }catch(err){
-        return res.status(500).json({
-            Err: `Algo salio mal al buscar el producto a eliminar, error: ${err}`
-        })
-    }
+
+    }catch(err){ return res.status(500).json({Err: `Algo salio mal al buscar el producto a eliminar, error: ${err}`}) }
 }
 
-// const requestInputCheck = (req, res) => {
-//     if(!req.body.title || !req.body.price || !req.body.thumbnail){
-//     	return res.status(400).json({
-// 	        Err: "Por favor completa los campos 'title', 'price' y 'thumbnail'."
-//         })
-//     }else if(isNaN(req.body.price)){
-//         return res.status(400).json({
-// 	        Err: "El campo 'price' debe ser un numero."
-//         })
-//     }
-// }
+const requestInputCheck = async (req) => {
 
-// const requestParamCheck = (req, res) => {
-//     if(isNaN(req.params.id)){
-//         return res.status(400).json({
-// 	        Err: "Se requiere un ID numerico del producto a modificar."
-//         })
-//     }
-// }
+    if(!req.body.title || !req.body.price || !req.body.thumbnail){
+
+    	return "Por favor completa los campos 'title', 'price' y 'thumbnail'."
+
+    }else if(isNaN(req.body.price)){
+
+        return "El campo 'price' debe ser un numero."
+        
+    }else{return undefined}
+}
+
+const requestParamCheck = async (req) => {
+
+    if(isNaN(req.params.id)){
+
+        return "Se requiere un ID numerico del producto a modificar."
+
+    }else{return undefined}
+}

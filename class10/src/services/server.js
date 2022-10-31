@@ -1,28 +1,47 @@
 const express = require("express")
-const {engine} = require("express-handlebars")
-
 const path = require("path")
-const viewsPath = path.resolve(__dirname, "../../views")
-const layoutsPath = `${viewsPath}/layouts`
-
 const app = express()
+const endpoints = require("../routes/endpoints.js")
+const viewsFolderPath = path.resolve(__dirname, "../../views")
+// const fs = require("fs")
 
+// const filePath = path.resolve(__dirname, "../../products.json")
+
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 app.use(express.static("public"))
-app.set("view engine", "handlebars")
-app.set("views", viewsPath)
 
-app.engine("handlebars", engine({
-    layoutsDir: layoutsPath
-}))
+app.set("views", viewsFolderPath )
+app.set("view engine", "pug")
 
 app.get("/", (req, res) => {
-    res.render("main", {layout: "plantilla2"})
+	res.render("form")
 })
 
-app.get("/test", (req, res) => {
-    res.json({
-        msg: "ok"
-    })
-})
+app.use("/api", endpoints )
+
+// app.get("/api/products", async (req, res) => {
+
+// 		const allData = await getAll(res)
+	
+// 		console.log(allData);
+		
+// 	    res.render("table", allData)
+// 	})
+
+// const getAll = async (res) => {
+//     try{
+//         return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
+//     }catch(err){
+//         if(err == 'SyntaxError: Unexpected end of JSON input'){
+//             await fs.promises.writeFile(filePath, "[]") 
+//             return []
+//         }else{
+//             return res.status(500).json({
+//                 Err: `Error en la lectura del archivo error: ${err}`
+//             })
+//         }
+//     }
+// }
 
 module.exports = app

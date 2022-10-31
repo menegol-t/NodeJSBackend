@@ -18,16 +18,16 @@ app.get("/", (req, res) => {
 	res.render("form")
 })
 
-app.use("/api", endpoints )
+app.get("/api/products", async (req, res) => {
 
-// app.get("/api/products", async (req, res) => {
-
-// 		const allData = await getAll(res)
+	// const allData = await getAll(res)
 	
-// 		console.log(allData);
+	const allData = [{title: "asdknls", price: 333, thumbnail: "anfk"}]
 		
-// 	    res.render("table", allData)
-// 	})
+    res.render("table", allData)
+})
+
+app.use("/api", endpoints )
 
 // const getAll = async (res) => {
 //     try{

@@ -1,19 +1,19 @@
 const fs = require("fs")
-// const express = require("express")
 const path = require("path")
 const { Router } = require("express")
-// const app = express()
 
 const usersRoute = Router()
 
 const filePath = path.resolve(__dirname, "../../products.json")
 
-// usersRoute.get("/", async (request, response) => {
+usersRoute.get("/", async (request, response) => {
     
-//     const allData = await getAll(response)
+    const allData = [{title: "asdknls", price: 333, thumbnail: "anfk"}]
+
+    // const allData = await getAll(response)
     
-//     await response.render("table", allData)
-// })
+    await response.render("table", allData)
+})
 
 usersRoute.get("/:id", async (request, response) => {
 

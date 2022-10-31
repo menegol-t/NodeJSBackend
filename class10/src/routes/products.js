@@ -8,11 +8,8 @@ const filePath = path.resolve(__dirname, "../../products.json")
 
 usersRoute.get("/", async (request, response) => {
     
-    const allData = [{title: "asdknls", price: 333, thumbnail: "anfk"}]
-
-    // const allData = await getAll(response)
+    response.render("table", {allData: await getAll(response)})
     
-    await response.render("table", allData)
 })
 
 usersRoute.get("/:id", async (request, response) => {

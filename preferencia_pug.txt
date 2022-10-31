@@ -1,0 +1,4 @@
+Elegi utilizar PUGJS debido a que la sintaxis HTML es mas facil y consiza de escribir.
+Adicionalmente, no tiene la complejidad de configuraciones de Handlebars como por ejemplo,
+tener que lidiar con in layout y adentro renders, si no que a mi parecer es mas facil 
+tener varias views y directamente importarles componentes internamente segun vea conveniente.

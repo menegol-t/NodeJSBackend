@@ -1,0 +1,26 @@
+
+setion(class="h-100 h-custom mb-5 mt-auto")
+    div(class="container h-100 py-3")
+        div(class="row d-flex justify-content-center h-100")
+            div(class="col-10")
+                div(class="table-responsive")
+                    h1(class="txtCenter txtMed2 fontSpecial")="Table of products"
+                    table(class="table fieldset__--margin spBorder table-bordered")
+                        thead 
+                            tr 
+                                th(scope="col")="Id"
+                                th(scope="col")="Title"
+                                th(scope="col")="Price"
+                                th(scope="col")="Thumbnail"
+                        tbody
+                            if allData
+                                each product in allData
+                                    tr 
+                                        td(class="align-middle")= product.id
+                                        td(class="align-middle")= product.title 
+                                        td(class="align-middle")= product.price 
+                                        td(class="align-middle")
+                                            img(class="img-fluid rounded-3" src=product.thumbnail, alt=product.title, width="30%", height="30%")
+                            else 
+                                tr 
+                                    td="No hay productos cargados"

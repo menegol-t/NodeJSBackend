@@ -12,7 +12,7 @@ setion(class=" h-custom mb-5 mt-auto")
                                 th(scope="col")="Title"
                                 th(scope="col")="Price"
                                 th(scope="col")="Thumbnail"
-                        tbody
+                        tbody(id="tbody")
                             if allData
                                 each product in allData
                                     tr 

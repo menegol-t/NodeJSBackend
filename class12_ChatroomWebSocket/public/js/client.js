@@ -1,23 +1,68 @@
-const qsData = Qs.parse(location.search, {
-	ignoreQueryPrefix: true,
-});
+const prodForm = document.querySelector("#formProd")
+const title = document.querySelector("#title")
+const price = document.querySelector("#price")
+const thumbnail = document.querySelector("#thumbnail")
+const prodList = document.querySelector("#tbody")
 
-const msg = timestamp(qsData)
-
-console.log(msg);
+const chatForm = document.querySelector("#chatForm")
+const email = document.querySelector("#emailInput")
+const message = document.querySelector("#textInput")
+const msgList = document.querySelector("#msContainer")
 
 const socket = io()
 
-if(msg.email){
-	checkParam(msg.email, msg.message) ? socket.emit("postchat", msg) : console.log("Completa todos los datos")
-}else if(qsData.title){
-	checkParams(qsData.title, qsData.price, qsData.thumbnail) ? socket.emit("postprod", qsData) : console.log("Completa todos los datos");
-}
+prodForm.addEventListener("submit", (e) => {
+	e.preventDefault()
 
-function timestamp(data){
-	data.time = new Date().getHours() + ":" + new Date().getMinutes()
-	return data
-}
+	let newProd = {
+		title: title.value,
+		price: price.value,
+		thumbnail: thumbnail.value
+	}
+	
+	checkParams(title.value, price.value, thumbnail.value) ? 
+	socket.emit("postProd", newProd) : console.log("Completa todos los datos")
+	
+	title.value = ""
+	price.value = ""
+	thumbnail.value = ""
+
+	console.log(newProd);
+})
+
+chatForm.addEventListener("submit", (e) => {
+	e.preventDefault()
+
+	let newChat = {
+		email: email.value,
+		message: message.value,
+		time: new Date().getHours() + ":" + new Date().getMinutes()
+	}
+	
+	console.log(newChat);
+	
+	checkParam(email.value, message.value) ? 
+	socket.emit("postchat", newChat) : console.log("Completa todos los datos")
+	
+	email.value = ""
+	message.value = ""
+
+	console.log(newChat);
+})
+
+socket.on("addToProdList", (data) => {
+	console.log(data);
+	const div = document.createElement("div") 
+	div.innerHTML = `
+	<tr> 
+		<td class="align-middle"> ${data.id} </td>
+		<td class="align-middle"> ${data.title} </td>
+		<td class="align-middle"> ${data.price} </td>
+		<td class="align-middle"> <img src="${data.thumbnail}" alt="${data.title}" class="img-fluid rounded-3" width="30%", height="30%"> </td>
+	</tr>
+	`
+	prodList.appendChild(div)
+})
 
 function checkParam(x, y){
 	if(x == undefined || typeof(x) != "string" || x =="" || y == undefined || typeof(y) != "string" || y ==""  ){

@@ -6,6 +6,7 @@ const viewsFolderPath = path.resolve(__dirname, "../../views")
 const http = require("http")
 const {innitWebSocket} = require("./socket")
 const { getAll } = require("../controllers/prodMethods")
+const { getAllFile } = require("../controllers/wsMethods")
 
 app.use(express.static("public"))
 app.use(express.json())
@@ -15,7 +16,7 @@ app.set("views", viewsFolderPath )
 app.set("view engine", "pug")
 
 app.get("/", async (req, res) => {
-    res.render("index", {allData: await getAll(res)})
+    res.render("index", {allData: await getAll(res), msgs: await getAllFile("chat")})
 })
 
 app.use("/api", endpoints )

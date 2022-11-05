@@ -1,25 +1,27 @@
 const socketIo = require("socket.io")
 const {
-    getAll,
-    save,
-    requestInputCheck,
-    requestParamCheck
+    saveFile,
 } = require("../controllers/wsMethods")
 
 let io
 
 const innitWebSocket = (server) => {
     io = socketIo(server)
-    io.on("connection", (socket) => {
-        socket.on("postchat", (msg) => {
+    io.on("connection", async (socket) => {
+
+        socket.on("postProd", async (msg) => {
             console.log(msg);
-            save(msg, "chat")
+
+            io.emit("addToProdList", await saveFile(msg, "products") )
+
         })
-        socket.on("postprod", (msg) => {
-            save(msg, "products")
+
+        socket.on("postchat", async (msg) => {
+
+            io.emit("addToChatList", await saveFile(msg, "chat"))
+
         })
     })
-
 }
 
 const getWebSocket = () => {

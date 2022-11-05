@@ -1,7 +1,7 @@
 const fs = require("fs")
 const path = require("path")
 
-const getAll = async (file) => {
+const getAllFile = async (file) => {
     const filePath = path.resolve(__dirname, `../../${file}.json`)
     try{
         return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
@@ -15,7 +15,7 @@ const getAll = async (file) => {
     }
 }
 
-const save = async (obj, file) => {
+const saveFile = async (obj, file) => {
     const filePath = path.resolve(__dirname, `../../${file}.json`)
     try{
 
@@ -41,11 +41,7 @@ const save = async (obj, file) => {
                 try{
 
                     return await fs.promises.writeFile(filePath, JSON.stringify(jsonInfo)).then(() => {
-                        if(obj.id){
-                            return obj.id
-                        }else{
-                            return "success"
-                        }    
+                        return obj   
                     })
 
                 }catch(err){ `Algo salio mal al sobreescribir el archivo, error: ${err}`}        
@@ -77,8 +73,8 @@ const requestParamCheck = async (req) => {
 }
 
 module.exports = {
-    getAll,
-    save,
+    getAllFile,
+    saveFile,
     requestInputCheck,
     requestParamCheck
 }

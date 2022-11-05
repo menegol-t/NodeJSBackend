@@ -4,7 +4,8 @@ const app = express()
 const endpoints = require("../routes/endpoints.js")
 const viewsFolderPath = path.resolve(__dirname, "../../views")
 const http = require("http")
-const io = require("socket.io")
+const {innitWebSocket} = require("./socket")
+const { getAll } = require("../controllers/prodMethods")
 
 app.use(express.static("public"))
 app.use(express.json())
@@ -13,14 +14,14 @@ app.use(express.urlencoded({extended: true}))
 app.set("views", viewsFolderPath )
 app.set("view engine", "pug")
 
-app.get("/", (req, res) => {
-    res.render("index")
+app.get("/", async (req, res) => {
+    res.render("index", {allData: await getAll(res)})
 })
 
 app.use("/api", endpoints )
 
-const myHTTPServer = http.Server(app)
+const server = http.Server(app)
 
-myWSServer = io(myHTTPServer)
+innitWebSocket(server)
 
-module.exports = myHTTPServer 
+module.exports = server 

@@ -5,7 +5,8 @@ const usersRoute = Router()
 
 usersRoute.get("/", async (request, response) => {
     
-    response.render("index", {allData: await getAll(response)})
+    response.redirect("/")
+    // response.render("index", {allData: await getAll(response)})
     
 })
 

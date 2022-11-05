@@ -10,9 +10,8 @@ const innitWebSocket = (server) => {
     io.on("connection", async (socket) => {
 
         socket.on("postProd", async (msg) => {
-            console.log(msg);
 
-            io.emit("addToProdList", await saveFile(msg, "products") )
+            io.emit("addToProdList", await saveFile(msg, "products"))
 
         })
 
@@ -24,11 +23,6 @@ const innitWebSocket = (server) => {
     })
 }
 
-const getWebSocket = () => {
-    return io
-}
-
 module.exports = {
     innitWebSocket,
-    getWebSocket
 }

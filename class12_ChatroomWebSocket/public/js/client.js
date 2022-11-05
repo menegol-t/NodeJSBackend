@@ -46,22 +46,37 @@ chatForm.addEventListener("submit", (e) => {
 	
 	email.value = ""
 	message.value = ""
-
-	console.log(newChat);
 })
 
 socket.on("addToProdList", (data) => {
-	console.log(data);
-	const div = document.createElement("div") 
-	div.innerHTML = `
-	<tr> 
+	const tr = document.createElement("tr") 
+	tr.innerHTML = `
+	 
 		<td class="align-middle"> ${data.id} </td>
 		<td class="align-middle"> ${data.title} </td>
 		<td class="align-middle"> ${data.price} </td>
 		<td class="align-middle"> <img src="${data.thumbnail}" alt="${data.title}" class="img-fluid rounded-3" width="30%", height="30%"> </td>
-	</tr>
+	
 	`
-	prodList.appendChild(div)
+	prodList.appendChild(tr)
+})
+
+socket.on("addToChatList", (data) => {
+	const div = document.createElement("div") 
+	div.innerHTML = `
+	  
+	<div class="d-flex justify-content-between">
+		<p class="small mb-1"> ${data.email} </p>  
+		<p class="small mb-1 text-muted"> ${data.time} </p> 
+	</div>	 
+	<div class="d-flex flex-row justify-content-start"> 
+		<div>
+			<p class="small p-2 ms-3 mb-3 rounded-3" style="background-color: #f5f6f7;"> ${data.message} </p>
+		</div>
+	</div		
+	
+	`
+	msgList.appendChild(div)
 })
 
 function checkParam(x, y){

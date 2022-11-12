@@ -19,6 +19,14 @@ interface NewCart {
 //borra cart con cart_id
 //borra prodId from CartId
 
+const getAllCarts = async() => {
+    try{
+        return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
+            .then((content) => { return content})
+
+    }catch(err){ return {Err: `Algo salio mal al traer todos los cart ${err}`} }
+}
+
 const getCartById = async (id: string) => {
     try{
         return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
@@ -54,6 +62,8 @@ const createCart = async () => {
 
 const addProdToCart = async (cartId: string, prodId: string) => {
 
+    const allCarts = await getAllCarts()
+
     const cartToUpdate = await getCartById(cartId)
 
     const itemToAdd = await getById(prodId)
@@ -63,11 +73,20 @@ const addProdToCart = async (cartId: string, prodId: string) => {
     }else if(!itemToAdd){
         return "Ese ID no pertenece a ningun producto."
     }else{
-        cartToUpdate.products.push(itemToAdd)
+
+        const indexCartToReplace = allCarts.map(obj => obj.id).indexOf(cartId)
+
+        const prodToUpdate = cartToUpdate.products
+
+        prodToUpdate.push(itemToAdd)
+
+        cartToUpdate.products = prodToUpdate
+
+        allCarts[indexCartToReplace] = cartToUpdate
 
         try{
 
-            return await fs.promises.writeFile(filePath, JSON.stringify(cartToUpdate)).then(() => {return `Se añadio ${itemToAdd.title} a tu cart con ID: ${cartToUpdate.id}`})
+            return await fs.promises.writeFile(filePath, JSON.stringify(allCarts)).then(() => {return `Se añadio ${itemToAdd.title} a tu cart con ID: ${cartToUpdate.id}`})
 
         }catch(err){ return {Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`} }
     }        
@@ -93,6 +112,36 @@ const deleteCartById = async (idToDelete: string) => {
     }catch(err){ return {Err: `Algo salio mal al buscar el producto a eliminar, error: ${err}`} }
 }
 
+const deleteProdFromCart = async (cartId: string, prodId: string) => {
+
+    const allCarts = await getAllCarts()
+
+    const cartToUpdate = await getCartById(cartId)
+
+    const itemToDelete = await getById(prodId)
+    
+    if(cartToUpdate.products == undefined){
+        return "Ese ID no pertenece a ningun cart."
+    }else if(!itemToDelete){
+        return "Ese ID no pertenece a ningun producto."
+    }else{
+        
+        const updatedProd = cartToUpdate.products.filter((prod) => prod.id != itemToDelete.id)
+
+        cartToUpdate.products = updatedProd
+
+        const indexCartToReplace = allCarts.map(obj => obj.id).indexOf(cartId)
+
+        allCarts[indexCartToReplace] = cartToUpdate
+
+        try{
+
+            return await fs.promises.writeFile(filePath, JSON.stringify(allCarts)).then(() => {return `Se elimino ${itemToDelete.title} de tu cart con ID: ${cartToUpdate.id}`})
+
+        }catch(err){ return {Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`} }
+    }        
+}
+
 const reqBodyCheck = async (req : Request) => {
 
     if(!req.body.productId){
@@ -107,5 +156,6 @@ export default {
     createCart,
     deleteCartById,
     reqBodyCheck,
-    addProdToCart
+    addProdToCart,
+    deleteProdFromCart
 }

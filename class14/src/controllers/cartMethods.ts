@@ -5,25 +5,11 @@ import { Request } from "express"
 
 const filePath = path.resolve(__dirname, "../../carts.json")
 
-interface Product {
-    id ?: string,
-    timestamp : string
+interface NewCart {
+    id: string,
+    timestamp: string,
+    products: []
 }
-
-// const getAll = async () => {
-//     try{
-//         return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
-//     }catch(err){
-//         if(err == 'SyntaxError: Unexpected end of JSON input'){
-//             await fs.promises.writeFile(filePath, "[]") 
-//             return []
-//         }else{
-//             return {
-//                 Err: `Error en la lectura del archivo error: ${err}`
-//             }
-//         }
-//     }
-// }
 
 //crea cart, return cartid
 //añade productId to CartId (requiree body con prod_id)
@@ -39,28 +25,24 @@ const getAllByCartId = async (id: string) => {
     }catch(err){ return {Err: `Algo salio mal al buscar cart por ID, error: ${err}`} }
 }
 
-const save = async (obj : Product) => {
+const createCart = async () => {
     try{
 
-        return await fs.promises.readFile(filePath, "utf-8").then((availableProd) => JSON.parse(availableProd))
+        return await fs.promises.readFile(filePath, "utf-8").then((cartsJson) => JSON.parse(cartsJson))
         
-            .then(async (availableProd) => {
+            .then(async (cartsJson) => {
 
-                // availableProd.length === 0 ? 
-                
-                // obj.id = 1 : 
-                
-                // obj.id = availableProd[availableProd.length - 1].id + 1
+                const newCart: NewCart = {
+                    id:  uuidv4(),
+                    timestamp: new Date().getDay() + "/" +  new Date().getMonth() + ", " + new Date().getHours() + ":" + new Date().getMinutes() + "hs",
+                    products: []
+                } 
 
-                obj.id = uuidv4()
-
-                obj.timestamp = new Date().getDay() + "/" +  new Date().getMonth() + ", " + new Date().getHours() + ":" + new Date().getMinutes() + "hs" 
-
-                availableProd.push(obj)
+                cartsJson.push(newCart)
 
                 try{
 
-                    return await fs.promises.writeFile(filePath, JSON.stringify(availableProd)).then(() => {return obj.id})
+                    return await fs.promises.writeFile(filePath, JSON.stringify(cartsJson)).then(() => {return `Se creo tu cart con ID: ${newCart.id}`})
 
                 }catch(err){ return {Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`} }           
             })
@@ -115,8 +97,8 @@ const reqBodyCheck = async (req : Request) => {
 }
 
 export default {
-    save,
     getAllByCartId,
+    createCart,
     deleteById,
-    reqBodyCheck,
+    reqBodyCheck
 }

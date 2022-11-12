@@ -67,19 +67,19 @@ const createCart = async () => {
 //     }catch(err){ return {Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`} } 
 // }
 
-const deleteById = async (idToDelete: string) => {
+const deleteCartById = async (idToDelete: string) => {
 
     try{
 
-        return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
+        return await fs.promises.readFile(filePath, "utf-8").then((cartsJson) => JSON.parse(cartsJson))
 
-            .then(async (content) => {
+            .then(async (cartsJson) => {
 
-                const contentFiltered = content.filter((obj) => obj.id != idToDelete) 
+                const cartsJsonFiltered = cartsJson.filter((carts) => carts.id != idToDelete) 
 
                 try{
 
-                    return await fs.promises.writeFile(filePath, JSON.stringify(contentFiltered)).then(() => {return idToDelete})
+                    return await fs.promises.writeFile(filePath, JSON.stringify(cartsJsonFiltered)).then(() => {return `Se borro tu cart con ID ${idToDelete}`})
 
                 }catch(err){ return {Err: `Algo salio mal al eliminar el producto, error: ${err}`} }                 
             })
@@ -99,6 +99,5 @@ const reqBodyCheck = async (req : Request) => {
 export default {
     getAllByCartId,
     createCart,
-    deleteById,
-    reqBodyCheck
+    deleteCartById
 }

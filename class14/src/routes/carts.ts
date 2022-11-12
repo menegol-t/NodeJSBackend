@@ -1,6 +1,6 @@
 import { Router, Request, Response } from "express"; 
 import Mehtods from "../controllers/cartMethods";
-const { getAllByCartId, createCart } = Mehtods
+const { getAllByCartId, createCart, deleteCartById } = Mehtods
 
 const cartsRoute = Router()
 
@@ -26,8 +26,10 @@ cartsRoute.post("/:cartId/products", async (req:Request, res:Response)=>{
 })
 
 cartsRoute.delete("/:cartId", async (req:Request, res:Response)=>{
-    //delete cart_id
-    res.json({msg: "ok"})
+
+    const cartToDelete = await deleteCartById(req.params.cartId)
+    
+    res.send(cartToDelete)
 })
 
 cartsRoute.delete("/:cartId/products/prodId", async (req:Request, res:Response)=>{

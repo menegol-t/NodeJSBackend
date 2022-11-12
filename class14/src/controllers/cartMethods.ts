@@ -2,6 +2,8 @@ import fs from "fs"
 import path from "path"
 import { v4 as uuidv4 } from 'uuid'
 import { Request } from "express"
+import prodMethods from "./prodMethods"
+const {getById} = prodMethods
 
 const filePath = path.resolve(__dirname, "../../carts.json")
 
@@ -17,7 +19,7 @@ interface NewCart {
 //borra cart con cart_id
 //borra prodId from CartId
 
-const getAllByCartId = async (id: string) => {
+const getCartById = async (id: string) => {
     try{
         return await fs.promises.readFile(filePath, "utf-8").then((output) => JSON.parse(output))
             .then((content) => { return content.find(carts => carts.id == id)})
@@ -50,22 +52,26 @@ const createCart = async () => {
     }catch(err){ return {Err: `Algo salio mal al guardar el archivo, error: ${err}`} }
 }
 
-// const update = async (newObj : Product, oldObj : Product) => {
+const addProdToCart = async (cartId: string, prodId: string) => {
 
-//     newObj.id = oldObj.id
+    const cartToUpdate = await getCartById(cartId)
 
-//     const completeProds = await getAll()
+    const itemToAdd = await getById(prodId)
 
-//     const index = completeProds.findIndex(newObjToUpdate => newObjToUpdate.id == oldObj.id) 
+    if(cartToUpdate.products == undefined){
+        return "Ese ID no pertenece a ningun cart."
+    }else if(!itemToAdd){
+        return "Ese ID no pertenece a ningun producto."
+    }else{
+        cartToUpdate.products.push(itemToAdd)
 
-//     completeProds[index] = newObj
+        try{
 
-//     try{
+            return await fs.promises.writeFile(filePath, JSON.stringify(cartToUpdate)).then(() => {return `Se añadio ${itemToAdd.title} a tu cart con ID: ${cartToUpdate.id}`})
 
-//         return await fs.promises.writeFile(filePath, JSON.stringify(completeProds)).then(() => {return newObj.id})
-
-//     }catch(err){ return {Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`} } 
-// }
+        }catch(err){ return {Err: `Algo salio mal al sobreescribir el archivo, error: ${err}`} }
+    }        
+}
 
 const deleteCartById = async (idToDelete: string) => {
 
@@ -89,15 +95,17 @@ const deleteCartById = async (idToDelete: string) => {
 
 const reqBodyCheck = async (req : Request) => {
 
-    return !req.body.productId ? 
-    
-    "Por favor completa el campo 'productId' en el body para añadir ese producto al carrito." : 
-    
-    undefined
+    if(!req.body.productId){
+        return "Por favor completa el campo 'productId' en el body para añadir ese producto al carrito."
+    }else{
+        return undefined
+    }
 }
 
 export default {
-    getAllByCartId,
+    getCartById,
     createCart,
-    deleteCartById
+    deleteCartById,
+    reqBodyCheck,
+    addProdToCart
 }

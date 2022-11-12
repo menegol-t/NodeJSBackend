@@ -41,12 +41,6 @@ const save = async (obj : Product) => {
         
             .then(async (availableProd) => {
 
-                // availableProd.length === 0 ? 
-                
-                // obj.id = 1 : 
-                
-                // obj.id = availableProd[availableProd.length - 1].id + 1
-
                 obj.id = uuidv4()
 
                 obj.timestamp = new Date().getDay() + "/" +  new Date().getMonth() + ", " + new Date().getHours() + ":" + new Date().getMinutes() + "hs" 

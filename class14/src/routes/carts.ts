@@ -1,12 +1,12 @@
 import { Router, Request, Response } from "express"; 
 import Mehtods from "../controllers/cartMethods";
-const { getAllByCartId, createCart, deleteCartById } = Mehtods
+const { getCartById, createCart, deleteCartById, reqBodyCheck, addProdToCart } = Mehtods
 
 const cartsRoute = Router()
 
 cartsRoute.get("/:cartId/products", async (req:Request, res:Response)=>{
 
-    const cartById = await getAllByCartId(req.params.cartId)
+    const cartById = await getCartById(req.params.cartId)
 
     cartById ? res.send(cartById.products) :
 
@@ -21,8 +21,16 @@ cartsRoute.post("/", async (req:Request, res:Response)=>{
 })
 
 cartsRoute.post("/:cartId/products", async (req:Request, res:Response)=>{
-    //añade body.prod_id to cartId, requiere en el body un prod_id y amount
-    res.json({msg: "ok"})
+    //añade body.prod_id to cartId, requiere en el body un prod_id
+
+    const checkProdIdExists = await reqBodyCheck(req)
+    const addProdByIdToCart = await addProdToCart(req.params.cartId, req.body.productId)
+
+
+    checkProdIdExists ? 
+    res.send(checkProdIdExists) : 
+    res.send(addProdByIdToCart)
+
 })
 
 cartsRoute.delete("/:cartId", async (req:Request, res:Response)=>{

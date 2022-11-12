@@ -1,15 +1,11 @@
 import express from "express"
-import {Router, Request, Response} from "express"
+import endpoints from "../routes/endpoints"
 
 const Server = express()
 
 Server.use(express.json())
 Server.use(express.urlencoded({extended: true}))
-
 Server.use(express.static("public"))
-Server.get("/", (req:Request, res:Response) =>{
-    res.json({msg: "ok"})
-})
-
+Server.use("/api", endpoints)
 
 export default Server

@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "timestamp": "20:11",
+        "products": [
+            {
+                "title": "Dijon Rayados Rojo y Negro",
+                "stock": 2, 
+                "price": "7500", 
+                "thumbnail": "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/dijon%2Fdijon.jpg?alt=media&token=13b368e7-f60a-4d31-b8ea-f53cab3a5a35", 
+                "id": 1, 
+                "descr": "Anteojos de lente circular, color negro. Marco rayado en rojo y negro con patas color madera clara. Únicos. ",
+                "timestamp": "20:32"
+            }
+        ]
+    }
+]

@@ -26,8 +26,7 @@ cartsRoute.post("/:cartId/products", async (req:Request, res:Response)=>{
     const addProdByIdToCart = await addProdToCart(req.params.cartId, req.body.productId)
 
     checkProdIdExists ? 
-    res.send(checkProdIdExists) : 
-    res.send(addProdByIdToCart)
+    res.send(checkProdIdExists) : res.send(addProdByIdToCart)
 
 })
 

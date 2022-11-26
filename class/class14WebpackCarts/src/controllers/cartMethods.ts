@@ -5,19 +5,13 @@ import { Request } from "express"
 import prodMethods from "./prodMethods"
 const {getById} = prodMethods
 
-const filePath = path.resolve(__dirname, "../../carts.json")
+const filePath = path.resolve(__dirname, "../carts.json")
 
 interface NewCart {
     id: string,
     timestamp: string,
     products: []
 }
-
-//crea cart, return cartid
-//añade productId to CartId (requiree body con prod_id)
-//get all prod from cart id
-//borra cart con cart_id
-//borra prodId from CartId
 
 const getAllCarts = async() => {
     try{

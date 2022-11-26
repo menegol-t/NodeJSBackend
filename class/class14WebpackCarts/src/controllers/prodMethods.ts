@@ -3,7 +3,8 @@ import path from "path"
 import { v4 as uuidv4 } from 'uuid'
 import { Request } from "express"
 
-const filePath = path.resolve(__dirname, "../../products.json")
+const filePath = path.resolve(__dirname, "../products.json")
+
 
 interface Product {
     id ?: string,
@@ -18,6 +19,8 @@ const getAll = async () => {
             await fs.promises.writeFile(filePath, "[]") 
             return []
         }else{
+            console.log(filePath);
+            
             return {
                 Err: `Error en la lectura del archivo error: ${err}`
             }

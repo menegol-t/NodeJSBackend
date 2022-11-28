@@ -1,7 +1,7 @@
 export const dbConfig = {
     messages: {
         client: "sqlite3",
-	    connection: {filename : "./DB/ecommerse.sqlite"},
+	    connection: {filename : "ecommerse.sqlite"},
 	    useNullAsDefault: true
     },
     

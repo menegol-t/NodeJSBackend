@@ -1,79 +1,72 @@
 const knex = require("knex")
 const {dbConfig} = require("../options/knex")
 
-// const options = {
-// 	client: "mysql",
-// 	connection: {
-// 		host: "localhost",
-// 		user: "root",
-// 		password: "",
-// 		port: 3306,
-// 		database: "sqldb"
-// 	}
-// }
-
 class DBServices {
 	constructor(availableDb){
-		console.log(availableDb);
-		console.log(dbConfig[`${availableDb}`]);
 		const options = dbConfig[`${availableDb}`]
-		// console.log(options);
 	    this.knex = knex(options)
+		this.database = availableDb
     }
 
-    innit(){
-        this.knex.schema.hasTable("messages").then((exists)=>{
+    async innit(){
+		if(this.database == "messages"){
+			await this.knex.schema.hasTable("messages").then((exists)=>{
 
-	    	if(exists){
-	        	return console.log("tabla ya creada")
-        	}else{
-	        	return this.knex.schema.createTable("messages", async (messages)=>{
-		        	messages.increments()
-                	messages.string("email").notNullable()
-					messages.string("message").notNullable()
-					messages.string("time").notNullable()
-					console.log("se creo la tabla messages!")
-				})
-			}
-		})
+				if(exists){
+					return console.log(`Tabla ${this.database} ya creada en ${dbConfig[`${this.database}`].client}`)
+				}else{
+					return this.knex.schema.createTable("messages", async (messages)=>{
+						messages.increments()
+						messages.string("email").notNullable()
+						messages.string("message").notNullable()
+						messages.string("timestamp").notNullable()
+						console.log(`Se creo la Tabla ${this.database} en base de datos ${dbConfig[`${this.database}`].client} `)
+					})
+				}
+			})
+		}else if(this.database == "products"){
+			await this.knex.schema.hasTable("products").then((exists)=>{
 
-		this.knex.schema.hasTable("products").then((exists)=>{
-			if(exists){
-				return console.log("tabla ya creada")
-			}else{	
-				return this.knex.schema.createTable("products", async (products)=>{
-					products.increments()
-					products.string("title").notNullable()
-					products.decimal("price", 10, 2).notNullable()
-					products.string("thumbnail").notNullable()
-					products.integer("stock").notNullable()
-					products.string("description").notNullable()
-					products.string("code").notNullable()
-					products.string("timestamp").notNullable()
-					console.log("tabla ya creada")
-				})
-			}
-		})
-	}
-
-	get(tableName, id){
-		if(id){
-			return this.knex(tableName).where("id", id)
+				if(exists){
+					return console.log(`Tabla ${this.database} ya creada en ${dbConfig[`${this.database}`].client}`)
+				}else{	
+					return this.knex.schema.createTable("products", async (products)=>{
+						products.increments()
+						products.string("title").notNullable()
+						products.integer("price").notNullable()
+						products.string("thumbnail").notNullable()
+						// await products.integer("stock").notNullable()
+						// await products.string("description").notNullable()
+						// await products.string("code").notNullable()
+						console.log(`Se creo la Tabla ${this.database} en base de datos ${dbConfig[`${this.database}`].client} `)
+					})
+				}
+			})
 		}else{
-			return this.knex(tableName)
+			console.log("Por favor selecciona una base de datos valida");
 		}
 	}
 
-	create(tableName, data){
-		return this.knex(tableName).insert(data)
+	async get(id){
+		if(id){
+			return await this.knex(this.database).where("id", id)
+		}else{
+			return await this.knex(this.database)
+		}
 	}
 
-	update(tableName, id, data){
-		return this.knex(tableName).where("id", id).update(data)
+	async save(data){
+		const savedData = await this.knex(this.database).insert(data)
+		data.id = savedData[0]
+		return await data
 	}
 
-	delete(tableName, id){
-		return this.knex(tableName).where("id", id).del()
+	async update(id, data){
+		return await this.knex(this.database).where("id", id).update(data)
+	}
+
+	async delete(id){
+		return await this.knex(this.database).where("id", id).del()
 	}
 }
 

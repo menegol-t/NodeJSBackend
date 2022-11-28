@@ -1,22 +1,22 @@
 const knex = require("knex")
-const dbConfig = require("../options/knex")
+const {dbConfig} = require("../options/knex")
 
-const options = {
-	client: "mysql",
-	connection: {
-		host: "localhost",
-		user: "root",
-		password: "",
-		port: 3306,
-		database: "sqldb"
-	}
-}
+// const options = {
+// 	client: "mysql",
+// 	connection: {
+// 		host: "localhost",
+// 		user: "root",
+// 		password: "",
+// 		port: 3306,
+// 		database: "sqldb"
+// 	}
+// }
 
 class DBServices {
 	constructor(availableDb){
 		console.log(availableDb);
-		// console.log(dbConfig);
-		// const options = dbConfig
+		console.log(dbConfig[`${availableDb}`]);
+		const options = dbConfig[`${availableDb}`]
 		// console.log(options);
 	    this.knex = knex(options)
     }

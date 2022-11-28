@@ -3,7 +3,7 @@ const DBServices = require("../controllers/DBMethods")
 
 let io
 
-new DBServices("products")
+new DBServices("products").innit()
 
 const innitWebSocket = (server) => {
     io = socketIo(server)

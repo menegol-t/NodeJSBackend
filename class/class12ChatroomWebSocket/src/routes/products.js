@@ -8,7 +8,7 @@ usersRoute.get("/", async (request, response) => {
     response.redirect("/")
     // response.render("index", {allData: await getAll(response)})
     
-})
+}) 
 
 usersRoute.get("/:id", async (request, response) => {
 
@@ -21,9 +21,9 @@ usersRoute.get("/:id", async (request, response) => {
     dataById ? response.send(dataById) : 
     
     response.status(404).json({ Err: `Ninguno de los productos tiene id: ${request.params.id}`}) 
-    
+     
 })
-
+  
 usersRoute.post("/", async (request, response) => {
 
     const err = await requestInputCheck(request)

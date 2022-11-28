@@ -5,4 +5,4 @@ const router = Router()
 
 router.use("/products", products)
 
-module.exports = router
+module.exports = router 

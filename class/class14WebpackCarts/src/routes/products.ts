@@ -10,7 +10,7 @@ const {
     deleteById,
     requestInputCheck,
     requestParamCheck
-} = Methods
+} = Methods 
 
 const prodsRoute = Router()
 

@@ -35,7 +35,7 @@ chatForm.addEventListener("submit", (e) => {
 	let newChat = {
 		email: email.value,
 		message: message.value,
-		time: new Date().getHours() + ":" + new Date().getMinutes()
+		timestamp: new Date().getHours() + ":" + new Date().getMinutes()
 	}
 	
 	console.log(newChat);
@@ -66,7 +66,7 @@ socket.on("addToChatList", (data) => {
 	  
 	<div class="d-flex justify-content-between">
 		<p class="small mb-1"> ${data.email} </p>  
-		<p class="small mb-1 text-muted"> ${data.time} </p> 
+		<p class="small mb-1 text-muted"> ${data.timestamp} </p> 
 	</div>	 
 	<div class="d-flex flex-row justify-content-start"> 
 		<div>

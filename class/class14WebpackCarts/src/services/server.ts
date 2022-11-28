@@ -8,4 +8,4 @@ Server.use(express.urlencoded({extended: true}))
 Server.use(express.static("public"))
 Server.use("/api", endpoints)
 
-export default Server
+export default Server  

@@ -1,33 +1,52 @@
+CREAR DB: 
 use ecommerce
 
+CREAR COLECCION:
 db.createCollection("mensajes")
 db.createCollection("productos")
 
+INTRODUCIR ARRAY DE PRODUCTOS:
 const prod = [ { title: "Lyon Claros", price: 2300, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/lyon%2Flyon.jpeg?alt=media&token=65b8bced-7e06-4bcc-bf48-806e1d17d481" }, { title: "Nantes Oscuros", price: 2990, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/nantes%2Fnantes1.JPG?alt=media&token=c745b029-de2a-4441-8885-3a8ce9114a41" }, { title: "Lyon Oscuros", price: 4500, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/lyon%2FlyonDark1.jpeg?alt=media&token=0787aad9-d7ab-4a74-8415-58a194baf188" }, { title: "Le mans Rojo", price: 1300, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/lemans%2FlemansRedStripes1.jpeg?alt=media&token=5963b37f-c839-4d09-90ef-194db007dbfa" }, { title: "Nantes Claros", price: 3300, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/nantes%2FnantesClear1.jpeg?alt=media&token=306d62f3-f8ce-4b80-b34e-ae3f75978880" }, { title: "Lyon Rayas Claras", price: 4230, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/lyon%2FlyonStripes1.jpeg?alt=media&token=e6d7f6ec-55e8-4836-9c37-39afe27a24ac" }, { title: "Nantes Rayas Rojas", price: 2790, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/nantes%2FnantesRedStripes1.jpeg?alt=media&token=764ef144-2943-45b3-8619-855d6c11c5dc" }, { title: "Le Mans Rayas Claras", price: 3700, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/lemans%2FlemansStripes1.jpeg?alt=media&token=db606118-fef8-477a-b75d-e0290aad11ba" }, { title: "Nantes Rayas Claras", price: 1730, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/nantes%2FnantesStripes1.jpeg?alt=media&token=3088f2aa-9248-45c4-857d-11d3a58f5fcc" }, { title: "Le Mans Oscuros", price: 1900, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/lemans%2Flemans10.JPG?alt=media&token=8b10ff2b-ef66-41a0-b9cb-61fb86d0ad19" } ]; 
 db.productos.insert(prod)
 
+
+INTRODUCIR UN MENSAJES:
 const msg = [ { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }, { email: "tomas.menegol@gmail.com", message: "Prueba", timestamp: ISODate() }];
 db.mensajes.insert(msg)
 
+BUSCAR TODOS LOS PRODUCTOS Y MENSAJES: 
 db.productos.find().pretty()
 db.mensajes.find().pretty()
 
+CONTAR TODOS LOS PRODUCTOS Y MENSAJES: 
 db.productos.countDocuments()
 db.mensajes.countDocuments()
 
+METER UN PRODUCTO MAS:
 db.productos.insert({title: "Dijon Rayados Rojo", price: 588, thumbnail: "https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/dijon%2Fdijon2.jpeg?alt=media&token=56a5fbca-7321-49f3-a16e-0b50bd01ea45"})
 
+FILTRAR PRODUCOS:
+-PRECIO MENOR QUE 1000:
 db.productos.find({"price": {$lt : 1000}})
+
+-PRECIO MAS QUE 1000 PERO MENOR A 3000
 db.productos.find({$and:[{"price": {$lt : 3000}}, {"price":{$gt: 1000}}]})
+
+-PRECIO MAYOR QUE 3000
 db.productos.find({"price": {$gt : 3000}})
+
+-SOLO EL TITULO DEL 3 PRODUCTO MAS BARATO:
 db.productos.find({}, {"title":1}).sort({"price": 1}).skip(2).limit(1)
 
+PONER STOCK EN 100 A TODOS:
 db.productos.update({}, {$set: {"stock" : 100}}, {"multi": true})
 
+SETEAR STOCK A 0 A PRODUCTOS CON RPECIO MAYOR QUE 4000:
 db.productos.update({"price": {$gt: 4000}}, {$set: {"stock" : 0}}, {"multi": true})
 
+BORRAR EL PRIMER PRODUCTOS CON PRECIO MENOR A 1000: 
 db.productos.deleteOne({"price":{$lt: 1000}})
 
+CREAR USUARIO SOLO LECTURA LLAMADO PEPE
 use admin
-db.createUser({user: "pepe", pwd: "asd456", roles: [{ role: "
-read", db: "ecommerce" }]})
+db.createUser({user: "pepe", pwd: "asd456", roles: [{ role: "read", db: "ecommerce" }]})

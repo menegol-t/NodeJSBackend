@@ -6,21 +6,22 @@ setion(class=" h-custom mb-5 mt-auto")
                 div(class="table-responsive")
                     h1(class="txtCenter txtMed2 fontSpecial")="Table of products"
                     table(class="table fieldset__--margin spBorder table-bordered")
-                        thead 
-                            tr 
-                                th(scope="col")="Id"
-                                th(scope="col")="Title"
-                                th(scope="col")="Price"
-                                th(scope="col")="Thumbnail"
-                        tbody(id="tbody")
-                            if allData
-                                each product in allData
-                                    tr 
-                                        td(class="align-middle")= product.id
-                                        td(class="align-middle")= product.title 
-                                        td(class="align-middle")= product.price 
-                                        td(class="align-middle")
-                                            img(class="img-fluid rounded-3" src=product.thumbnail, alt=product.title, width="30%", height="30%")
-                            else 
+                         
+                        if allData.length !=0
+                            thead
                                 tr 
-                                    td="No hay productos cargados"
+                                    th(scope="col")="Id"
+                                    th(scope="col")="Title"
+                                    th(scope="col")="Price"
+                                    th(scope="col")="Thumbnail"
+                                tbody(id="tbody")
+                                
+                                    each product in allData
+                                        tr 
+                                            td(class="align-middle")= product.id
+                                            td(class="align-middle")= product.title 
+                                            td(class="align-middle")= product.price 
+                                            td(class="align-middle")
+                                                img(class="img-fluid rounded-3" src=product.thumbnail, alt=product.title, width="30%", height="30%")
+                        else 
+                            div(class="txtCenter")="No hay productos cargados"

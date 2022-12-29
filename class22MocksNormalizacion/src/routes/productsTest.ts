@@ -1,5 +1,5 @@
 import { Router, Response, Request } from "express";
-import randomProd from "../controlers/fakeController"
+import randomProd from "../controllers/fakeController"
 
 const  productsTestRoute = Router()
 

@@ -8,10 +8,30 @@ form(id="chatForm" class="container py-5 spBorder")
             div(class="form-group fieldset__div--margin txtCenter")
                 label(for="email")="Email"
                 input(id="emailInput" type="text" name="email" placeholder="pepe@gmail.com" class="form-control")
+            
+            div(class="form-group fieldset__div--margin txtCenter")
+                label(for="name")="Name"
+                input(id="nameInput" type="text" name="name" placeholder="Pepe" class="form-control")
+
+            div(class="form-group fieldset__div--margin txtCenter")
+                label(for="surname")="Surname"
+                input(id="surnameInput" type="text" name="surname" placeholder="Gonzalez" class="form-control")
+
+            div(class="form-group fieldset__div--margin txtCenter")
+                label(for="alias")="Alias"
+                input(id="aliasInput" type="text" name="alias" placeholder="Pepito" class="form-control")
 
             div(class="form-group  fieldset__div--margin txtCenter")
-                label(for="message")="message"
-                input(id="textInput" type="text" name="message" placeholder="Hello!" class="form-control")
+                label(for="age")="Age"
+                input(id="ageInput" type="number" name="age" placeholder="20" class="form-control -webkit-appearance: none; -moz-appearance: none; appearance: none;" min="0" onkeydown="javascript: return [`Backspace`,`Delete`,`ArrowLeft`,`ArrowRight`].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!==`Space`")
+
+            div(class="form-group fieldset__div--margin txtCenter")
+                label(for="avatar")="Profile Picture Link"
+                input(id="avatarInput" type="text" name="avatar" placeholder="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/chiquitos%2Ffacebook1.png?alt=media&token=07278c61-f5d1-49cf-ae0b-a81e3f77c2a6" class="form-control")
+
+            div(class="form-group fieldset__div--margin txtCenter")
+                label(for="text")="Text"
+                input(id="textInput" type="text" name="text" placeholder="Hola!" class="form-control")
 
             div(class="form-group  fieldset__div--margin txtCenter")
-                input(type="submit" value="SEND" class="btn btn-primary" style="height:20%;width:20%;")
+                input(type="submit" value="GET" class="btn btn-primary" style="height:20%;width:20%;")

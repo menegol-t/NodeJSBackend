@@ -12,11 +12,11 @@ export interface IProduct{
 
 const productSchema = new mongoose.Schema<IProduct>(
     {
-        title: {},
-        price: {},
-        thumbnail: {},
-        stock: {},
-        description: {},
+        title: {type: String, required: true, maxlength: 2},
+        price: {type: Number, required: true, max: 50},
+        thumbnail: {type: String, required: true},
+        stock: {type: Number, required: true, max: 50},
+        description: {type: String, required: true, max: 500},
     },
     {timestamps: true, versionKey: false}
 )

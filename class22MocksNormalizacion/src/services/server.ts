@@ -1,4 +1,4 @@
-import express, {Request, Response} from "express"
+import express, {Request, Response, ErrorRequestHandler, NextFunction} from "express"
 import path from "path"
 import endpoints from "../routes/endpoints"
 import innitWebSocket from "./socket"
@@ -17,10 +17,18 @@ app.set("views", viewsFolderPath )
 app.set("view engine", "pug")
 
 app.get("/", async (req: Request, res: Response) =>{
-    res.send("todo ok")
-    // res.render("index", {allData: await ACA VA LA FUNCION QUE TRAE TODO DE MONGO, 
-    // msgs: await OTRA FUNCION QUE TRAE OTRO DE MONGO })
+    res.render("chatIndex")
 })
+
+const errorHandler: ErrorRequestHandler = (err, req: Request, res: Response, next: NextFunction) => {
+    return res.status(500).json({
+        msg: "Unexpected error",
+        error: err
+    })
+    next()
+}
+
+app.use(errorHandler)
 
 innitWebSocket(server)
 

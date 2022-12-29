@@ -1,4 +1,4 @@
-import express, {ErrorRequestHandler} from "express"
+import express, {ErrorRequestHandler,Request, Response, NextFunction} from "express"
 import mainRouter from "../routes/endpoints"
 import http from "http"
 
@@ -8,11 +8,12 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use("/api", mainRouter)
 
-const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
+const errorHandler: ErrorRequestHandler = (err, req: Request, res: Response, next: NextFunction) => {
     return res.status(500).json({
         msg: "Unexpected error",
         error: err
     })
+    next()
 }
 
 app.use(errorHandler)

@@ -2,7 +2,7 @@ import mongoose from "mongoose"
 
 const productsCollection = "product"
 
-interface IProduct{
+export interface IProduct{
     title: string;
     price: number;
     thumbnail: string;

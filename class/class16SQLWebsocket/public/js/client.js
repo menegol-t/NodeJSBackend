@@ -93,7 +93,3 @@ function checkParams(x, y, z){
 		return true
 	}
 }
-
-
-
-

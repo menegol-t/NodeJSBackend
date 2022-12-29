@@ -4,7 +4,7 @@ export const requestBodyCheck = async (req : Request, res: Response, next: NextF
 
     if(!req.body.title || !req.body.price || !req.body.thumbnail || !req.body.stock || !req.body.description){
 
-    	return res.status(401).json({ Error: "Por favor completa los campos 'title', 'price', 'thumbnail', 'stock' y 'description'."})
+        return res.status(401).json({ Error: "Por favor completa los campos 'title', 'price', 'thumbnail', 'stock' y 'description'."})
 
     }
 
@@ -31,7 +31,9 @@ export const requestParamCheck = async (req : Request, res:Response, next: NextF
 export const reqBody_ProdIdCheck = async (req : Request, res: Response, next: NextFunction) => {
 
     if(!req.body.productId){
+
         return res.status(401).json({ Error: "Por favor completa el campo 'productId' en el body para añadir o eliminar ese producto del carrito."})
+    
     }
 
     next()
@@ -41,7 +43,7 @@ export const reqBodyUpdateCheck = async (req : Request, res:Response, next: Next
 
     if(req.body.price && isNaN(req.body.price)){
 
-    	return res.status(401).json({ Error:  "El campo 'price' debe ser un numero."})
+        return res.status(401).json({ Error:  "El campo 'price' debe ser un numero."})
             
     }else if(req.body.stock && isNaN(req.body.stock)){
 
@@ -50,7 +52,6 @@ export const reqBodyUpdateCheck = async (req : Request, res:Response, next: Next
     }
         
     next()
-    
 }
 //Esto nada mas chequea que si me quieren actualizar el Stock y price, estos sean numeros.
 //Si no me envian price ni stock es porque no los quieren actualizar, asi que los deja y va al siguiente componente. 

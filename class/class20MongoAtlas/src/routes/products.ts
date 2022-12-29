@@ -1,4 +1,4 @@
-import { Router, Request, Response, NextFunction } from "express";
+import { Router } from "express";
 import { requestBodyCheck, requestParamCheck, reqBodyUpdateCheck } from "../middleware/userInputChecks";
 import {getAllProd, getProdById, saveProd, updateProd, deleteProd}  from "../controllers/prodMethods";
 import { checkAdmin } from "../middleware/auth"

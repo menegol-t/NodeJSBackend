@@ -51,7 +51,6 @@ export const getCartById = async (req: Request, res: Response, next: NextFunctio
 }
 
 export const getProdsInsideCartId = async (req: Request, res: Response, next: NextFunction) =>{
-    
     try {
 
         const cart:any = await getCartById(req, res, next)
@@ -153,7 +152,7 @@ export const deleteProdFromCart = async (req: Request, res: Response, next: Next
         const {productId} = req.body
         const prod = await ProductsModel.findById(productId)        
         const cartToUpdate:any = await getCartById(req, res, next)        
-        let {products} = cartToUpdate
+        const {products} = cartToUpdate
         const {cartId} = req.params
         
 
@@ -167,9 +166,6 @@ export const deleteProdFromCart = async (req: Request, res: Response, next: Next
             })
         }else{
             removeProdById(products, productId)
-
-            console.log(products);
-            
 
             const CartProdsToUpdate = await CartModel.findByIdAndUpdate(
                 cartId,
@@ -192,7 +188,7 @@ export const deleteProdFromCart = async (req: Request, res: Response, next: Next
     }
 }
 
-function removeProdById(arr: [], id: String) {
+function removeProdById(arr: [], id: string) {
     const indexOfProd = arr.findIndex((obj: any) => obj._id == id);
   
     if (indexOfProd > -1) {

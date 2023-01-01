@@ -5,7 +5,7 @@ import innitWebSocket from "./socket"
 
 const http = require("http")
 const app = express()
-const viewsFolderPath = path.resolve(__dirname, "../../views")
+const viewsFolderPath = path.resolve(__dirname, "../views")
 const server = http.Server(app)
 
 app.use(express.static("public"))
@@ -14,6 +14,8 @@ app.use(express.urlencoded({extended: true}))
 app.use("/api", endpoints )
 
 app.set("views", viewsFolderPath )
+console.log(viewsFolderPath);
+
 app.set("view engine", "pug")
 
 app.get("/", async (req: Request, res: Response) =>{

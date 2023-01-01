@@ -10,16 +10,15 @@ const msgsTable = document.querySelector("#msContainer")
 
 const socket = io()
 
-// const author = new normalizr.schema.Entity("author", {}, {idAttribute: "email"})
+const author = new normalizr.schema.Entity("author", {}, {idAttribute: "email"});
+const msg = new normalizr.schema.Entity("messages", {author: author}, {idAttribute: "_id"});
 
-// const msg = new normalizr.schema.Entity("messages", {author: author}, {idAttribute: "_id"})
+const finalSchema = [msg]
 
-// const finalSchema = [msg]
-
-// const denormalizeData = (data) => {
-//     const denormalizedData = normalizr.denormalize(data.result, finalSchema, data.entities)
-//     return denormalizedData
-// }
+const denormalizeData = (data) => {
+    const denormalizedData = normalizr.denormalize(data.result, finalSchema, data.entities)
+    return denormalizedData
+}
 
 chatForm.addEventListener("submit", (e)=> {
     
@@ -50,29 +49,29 @@ chatForm.addEventListener("submit", (e)=> {
     message.value = ""
 })
 
-// socket.on("fetchMsgsFromDB", (normalizedData) => {
-//     console.log(`DATA NORAMLIZADA: ${normalizedData}`);
-//     const denormalized = denormalizeData(normalizedData)
-//     console.log(`DATA DESNORMALIZADA: ${denormalized}`)
+socket.on("fetchMsgsFromDB", (normalizedData) => {
+    console.log(`DATA NORAMLIZADA: ${normalizedData}`);
+    const denormalized = denormalizeData(normalizedData)
+    console.log(`DATA DESNORMALIZADA: ${denormalized}`)
 
-//     denormalized.forEach((msg) => {
-//         const div = document.createElement("div") 
-//         div.innerHTML = `
+    denormalized.forEach((msg) => {
+        const div = document.createElement("div") 
+        div.innerHTML = `
           
-//         <div class="d-flex justify-content-between">
-//             <p class="small mb-1"> ${msg.author.email} </p>  
-//             <p class="small mb-1 text-muted"> ${msg.createdAt} </p> 
-//         </div>	 
-//         <div class="d-flex flex-row justify-content-start"> 
-//             <div>
-//                 <p class="small p-2 ms-3 mb-3 rounded-3" style="background-color: #f5f6f7;"> ${msg.text} </p>
-//             </div>
-//         </div		
+        <div class="d-flex justify-content-between">
+            <p class="small mb-1"> ${msg.author.email} </p>  
+            <p class="small mb-1 text-muted"> ${msg.createdAt} </p> 
+        </div>	 
+        <div class="d-flex flex-row justify-content-start"> 
+            <div>
+                <p class="small p-2 ms-3 mb-3 rounded-3" style="background-color: #f5f6f7;"> ${msg.text} </p>
+            </div>
+        </div		
         
-//         `
-//         msgsTable.appendChild(div)
-//     });
-// })
+        `
+        msgsTable.appendChild(div)
+    });
+})
 
 socket.on("newMsgInDB", (newMsg) => {
     const div = document.createElement("div") 

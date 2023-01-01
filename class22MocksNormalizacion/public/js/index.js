@@ -7,14 +7,11 @@ const alias = document.querySelector("#aliasInput")
 const avatar = document.querySelector("#avatarInput")
 const message = document.querySelector("#textInput")
 const msgsTable = document.querySelector("#msContainer")
-
 const socket = io()
 
 const author = new normalizr.schema.Entity("author", {}, {idAttribute: "email"});
 const msg = new normalizr.schema.Entity("messages", {author: author}, {idAttribute: "_id"});
-
 const finalSchema = [msg]
-
 const denormalizeData = (data) => {
     const denormalizedData = normalizr.denormalize(data.result, finalSchema, data.entities)
     return denormalizedData
@@ -24,7 +21,7 @@ chatForm.addEventListener("submit", (e)=> {
     
     e.preventDefault()
     if(values.every(valueNotNull)){
-        console.log(email.value);
+        console.log(`Rellena todos los campos`);
     }else{
         let data = {
             author: {
@@ -37,7 +34,6 @@ chatForm.addEventListener("submit", (e)=> {
             },
             text: message.value
         }
-        console.log(`DATA QUE RECIBE EL SEND MESSAGE: ${data.author.email}`);
         socket.emit("postMsgToDB", data)
     }
     email.value = ""
@@ -50,11 +46,10 @@ chatForm.addEventListener("submit", (e)=> {
 })
 
 socket.on("fetchMsgsFromDB", (normalizedData) => {
-    console.log(`DATA NORAMLIZADA: ${normalizedData}`);
-    const denormalized = denormalizeData(normalizedData)
-    console.log(`DATA DESNORMALIZADA: ${denormalized}`)
 
+    const denormalized = denormalizeData(normalizedData)
     denormalized.forEach((msg) => {
+
         const div = document.createElement("div") 
         div.innerHTML = `
           
@@ -74,6 +69,7 @@ socket.on("fetchMsgsFromDB", (normalizedData) => {
 })
 
 socket.on("newMsgInDB", (newMsg) => {
+    
     const div = document.createElement("div") 
 	div.innerHTML = `
 	  

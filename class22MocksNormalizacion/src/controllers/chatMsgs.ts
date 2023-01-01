@@ -19,8 +19,7 @@ export const saveMsg = async (ms) => {
     } catch (err) {
         console.log(`Error saving Message to mongo`);
         console.log(err);        
-    }
-    
+    } 
 }
 
 export const getAllMsgs = async () => {

@@ -7,8 +7,8 @@ import * as util from "util"
 const http = require("http")
 const app = express()
 const viewsFolderPath = path.resolve(__dirname, "../../views")
-//IMPORTANT: Por algun motivo, cuando corres la version minimizada usando webpack, esta variable tiene que estar como path.resolve(__dirname, "../views").
-//Pero si corres la version typescript, tiene que estar como  path.resolve(__dirname, "../../views")
+//IMPORTANT: Por algun motivo, cuando corres la version minimizada usando webpack, esta variable tiene que estar como const viewsFolderPath = path.resolve(__dirname, "../views").
+//Pero si corres la version typescript, tiene que estar como const viewsFolderPath = path.resolve(__dirname, "../../views")
 const server = http.Server(app) 
 
 app.use(express.static("public"))

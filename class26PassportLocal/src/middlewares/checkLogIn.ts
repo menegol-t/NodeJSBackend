@@ -1,9 +1,4 @@
-export const checkLogIn = (req: any, res: any, next: any) => {  
-  console.log(req.session);
-  console.log("middlewares");
-  console.log(req.user);
-  
-    
+export const checkLogIn = (req: any, res: any, next: any) => {   
   if (!req.isAuthenticated()){
     return res.redirect("/api/login") 
   }

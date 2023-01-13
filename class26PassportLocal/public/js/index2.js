@@ -1,2 +1,4 @@
 console.log("ACAAAAA");
-setTimeout(location.href = "/api/login", 4000)
+setTimeout(() => {
+    location.href = "/api/login"
+}, 1500)

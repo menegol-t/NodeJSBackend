@@ -11,7 +11,7 @@ import passport from "passport"
 import {loginFunc, signUpFunc} from "./auth"
 import MongoStore from "connect-mongo"
 
-const ttlSeconds = 120
+const ttlSeconds = 600
 
 const sessionOptions = {
 // 	store: MongoStore.create({
@@ -22,7 +22,7 @@ const sessionOptions = {
     resave: true,
     saveUninitialized: false,
     rolling: true,
-    cookie: {maxAge: 3000}
+    cookie: {maxAge: ttlSeconds * 1000}
 }
 
 const app = express()

@@ -1,6 +1,4 @@
-import { Request, Response, NextFunction } from "express";
-
-export const checkLogIn = (req: Request, res: Response, next: NextFunction) => {  
+export const checkLogIn = (req: any, res: any, next: any) => {  
   console.log(req.session);
   console.log("middlewares");
   console.log(req.user);

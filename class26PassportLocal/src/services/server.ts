@@ -21,8 +21,8 @@ const sessionOptions = {
     secret: "shhhhhhhhhhh",
     resave: true,
     saveUninitialized: false,
-    // rolling: true,
-    cookie: {maxAge: ttlSeconds * 1000}
+    rolling: true,
+    cookie: {maxAge: 3000}
 }
 
 const app = express()
@@ -44,10 +44,9 @@ app.use(express.static("public"))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-app.use("/api", endpoints )
 
-app.use(passport.initialize())
 app.use(session(sessionOptions))
+app.use(passport.initialize())
 app.use(passport.session())
 
 passport.use("login", loginFunc)
@@ -62,6 +61,7 @@ app.get("/", checkLogIn, async (req: Request, res: Response) =>{
 
 innitWebSocket(server)
 
+app.use("/api", endpoints)
 app.use(errorHandler)
 
 export default server

@@ -14,7 +14,7 @@ signupRoute.post("/", (req:Request, res:Response, next:NextFunction) => {
         if(err){
             return next(err)
         }else if(!user){
-            return res.render("signup", {error: info})
+            return res.render("signup", {error: info.message})
         }else{
             res.redirect("/")
         }

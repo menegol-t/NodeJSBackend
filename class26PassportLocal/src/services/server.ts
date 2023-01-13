@@ -3,46 +3,35 @@ import path from "path"
 import endpoints from "../routes/endpoints"
 import innitWebSocket from "./socket"
 import * as util from "util"
-import cookieParser from "cookie-parser"
 import session from "express-session"
-import MongoStore from "connect-mongo"
 import http from "http"
 import "dotenv/config"
 import {checkLogIn} from "../middlewares/checkLogIn"
+import passport from "passport"
+import {loginFunc, signUpFunc} from "./auth"
+import MongoStore from "connect-mongo"
 
 const ttlSeconds = 120
 
-const StoreOptions = {
-	store: MongoStore.create({
-        mongoUrl: process.env.MONGO_ATLAS_SRV,
-        crypto: {secret: "dataEncriptadaEnLaDB"},
-    }),
+const sessionOptions = {
+// 	store: MongoStore.create({
+//         mongoUrl: process.env.MONGO_ATLAS_SRV,
+//         crypto: {secret: "dataEncriptadaEnLaDB"},
+//     }),
     secret: "shhhhhhhhhhh",
     resave: true,
     saveUninitialized: false,
-    rolling: true,
+    // rolling: true,
     cookie: {maxAge: ttlSeconds * 1000}
 }
 
 const app = express()
+
 const viewsFolderPath = path.resolve(__dirname, "../../views")
 //IMPORTANT: Por algun motivo, cuando corres la version minimizada usando webpack, esta variable tiene que estar como const viewsFolderPath = path.resolve(__dirname, "../views").
 //Pero si corres la version typescript, tiene que estar como const viewsFolderPath = path.resolve(__dirname, "../../views")
-const server = new http.Server(app) 
 
-app.use(express.static("public"))
-app.use(express.json())
-app.use(express.urlencoded({extended: true}))
-app.use(cookieParser())
-app.use(session(StoreOptions))
-app.use("/api", endpoints )
-
-app.set("views", viewsFolderPath )
-app.set("view engine", "pug")
-
-app.get("/", checkLogIn, async (req: Request, res: Response) =>{
-    res.redirect("/api/chat")
-})
+const server = new http.Server(app)
 
 const errorHandler: ErrorRequestHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
     return res.status(500).json({
@@ -51,8 +40,28 @@ const errorHandler: ErrorRequestHandler = (err: Error, req: Request, res: Respon
     })
 }
 
-app.use(errorHandler)
+app.use(express.static("public"))
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+app.use("/api", endpoints )
+
+app.use(passport.initialize())
+app.use(session(sessionOptions))
+app.use(passport.session())
+
+passport.use("login", loginFunc)
+passport.use("signup", signUpFunc)
+
+app.set("views", viewsFolderPath )
+app.set("view engine", "pug")
+
+app.get("/", checkLogIn, async (req: Request, res: Response) =>{
+    res.redirect("/api/chat")
+})
 
 innitWebSocket(server)
+
+app.use(errorHandler)
 
 export default server

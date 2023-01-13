@@ -14,5 +14,5 @@ export const checkLogIn = (req: Request, res: Response, next: NextFunction) => {
   if (req.session.info == undefined){
     return res.redirect("/api/login") 
   }
-    next()
+  next()
 }

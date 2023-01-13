@@ -2,15 +2,8 @@ import { faker } from "@faker-js/faker"
 
 faker.locale = "en"
 
-interface IFakeData {
-    id: Number
-    title: String
-    price: String,
-    thumbnail: String
-}
-
 const randomProd = async () => {
-    const fakeData : IFakeData[] = []
+    const fakeData: any = []
     for(let i = 0 ; i < 5 ; i++){
         fakeData.push({
             id: i + 1,

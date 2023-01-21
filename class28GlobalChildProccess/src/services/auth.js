@@ -78,8 +78,8 @@ const StrategyOptions = {
 const login = async(req, username, password, done) =>{
     const email = username
     user = await UserModel.findOne({email})
-    console.log(`se ejecuto login funcition ${password}`);
-    console.log(!user.isValidPassword(password));
+    // console.log(`se ejecuto login funcition ${password}`);
+    // console.log(!user.isValidPassword(password));
     if(!user ){
         return done(null, false, {message: "Las credenciales no son correctas."})
     }else{

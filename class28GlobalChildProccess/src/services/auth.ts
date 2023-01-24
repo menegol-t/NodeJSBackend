@@ -65,58 +65,64 @@
 //     await UserModel.findById(userId).then((user)=>{return done(null, user)})
 // })
 
-const passport = require("passport")
-const LocalStrategy = require("passport-local").Strategy
-const {UserModel} = require("../models/userModel")
-
-const StrategyOptions = {
-    usernameField: "username",
-    passwordField: "password",
-    passReqToCallback: true
-}
-
-const login = async(req, username, password, done) =>{
-    const email = username
-    user = await UserModel.findOne({email})
-    // console.log(`se ejecuto login funcition ${password}`);
-    // console.log(!user.isValidPassword(password));
-    if(!user ){
-        return done(null, false, {message: "Las credenciales no son correctas."})
-    }else{
-        return done(null, user)
-    }
-}
-
-const signup = async(req, username, password, done) => {
-    if(!username || !password){
-        return done(null, false, {message: "Completa los datos"})
-    }
+import {IStrategyOptionsWithRequest, Strategy as LocalStrategy} from "passport-local";    
+import {UserModel} from "../models/userModel";
+import passport from "passport";
+    
+const StrategyOptionsWithRequest: IStrategyOptionsWithRequest = { usernameField: "username", passwordField: "password", passReqToCallback: true};
+    
+const logIn = async (req: Express.Request, username: string, password: string, done: (error: any, user?: any, info?: any) => void) => {
     try {
-        const email = username
-        userData = {email, password}
-        const newUser = await UserModel.create(userData)
-        return done(null, newUser)
-    } catch (err) {
-        if (err.code == "11000") {
-            return done(null, false, {message: "Ese usuario ya esta en uso."})
+        const user = await UserModel.findOne({ email: username });
+
+        if (!user) {
+            return done(null, false, { message: "Usuario no encontrado" });
         }
-        return done(null, false, {message: "Error al crear usuario"})
+        
+        const isValid = await user.isValidPassword(password);
+
+        if(!isValid) {
+            return done(null, false, { message: "Contraseña incorrecta" });
+        }else{
+            return done(null, user, { message: "Login correcto" });
+        }
+    
+    } catch (err) {
+        return done(err);
     }
-}
+};
+    
+const signup = async (req: Express.Request, username: string, password: string, done: (error: any, user?: any, info?: any) => void) => {
+    if (!username || !password) {
+        return done(null, false, { message: "Completa los datos" });
+    }
+    
+    try {
+        const email = username;
+        const userData = { email, password };
+        const newUser = await UserModel.create(userData);
+        return done(null, newUser);
+    } catch (err: any) {
+        if (err.code == "11000") {
+            return done(null, false, { message: "Ese usuario ya esta en uso." });
+        }else{
+            return done(null, false, { message: "Error al crear usuario" });
+        }
+    }
+};
+    
+const loginFunc = new LocalStrategy(StrategyOptionsWithRequest, logIn);
+const signUpFunc = new LocalStrategy(StrategyOptionsWithRequest, signup);
+    
+passport.serializeUser((user: any, done) => done(null, user._id));
 
-const loginFunc = new LocalStrategy(StrategyOptions, login)
-const signUpFunc = new LocalStrategy(StrategyOptions, signup)
-
-passport.serializeUser((user, done) =>  {
-    done(null, user._id)
-})
-
-passport.deserializeUser(async(userId, done) => {
-    await UserModel.findById(userId).then((user) => {
-        return done(null, user)
-    })
-})
-
-module.exports = {
-    loginFunc, signUpFunc
-}
+passport.deserializeUser(async (id, done) => {
+    try {
+        const user = await UserModel.findById(id);
+        done(null, user);
+    } catch (err) {
+        done(err);
+    }
+});
+    
+export { loginFunc, signUpFunc };

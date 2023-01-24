@@ -5,7 +5,8 @@ const usersCollection = "user"
 
 interface IUser{
     email: string,
-    password: string
+    password: string,
+    isValidPassword: (password: string) => Promise<boolean>
 }
 
 const userSchema = new mongoose.Schema<IUser>(
@@ -23,7 +24,7 @@ userSchema.pre("save", async function(next) {
     next()
 })
 
-userSchema.methods.isValidPassword = async function(password) {
+userSchema.methods.isValidPassword = async function(password: string) {
     return await bcrypt.compare(password, this.password) 
 }
 

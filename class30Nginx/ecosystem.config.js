@@ -3,7 +3,7 @@ module.exports = {
     {
       script: "dist/main.js",
       watch: true,
-      name: "mainJS",
+      name: "mainJSClusterConfig",
       autorestart: true,
       instances: "max"
     }

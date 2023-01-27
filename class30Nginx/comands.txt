@@ -1,0 +1,31 @@
+Ejecutar el servidor (modos FORK y CLUSTER) 
+$ npm start -- -m CLUSTER 
+(por default corre en FORK puerto 8080)
+
+
+Ejecutar el servidor (con los parámetros adecuados) utilizando Forever
+$ forever start dist/main.js -m FORK -p 8082
+Listar los procesos por Forever y por sistema operativo
+$ forever list
+
+Ejecutar el servidor (con los parámetros adecuados: modo FORK) utilizando PM2 en sus modos modo fork y cluster.
+CLUSTER: $ pm2 start ecosystem.config.js
+FORK: $ pm2 start dist/main.js
+
+Hacer pruebas de finalización de procesos fork y cluster en los casos que corresponda.
+$ pm2 stop all
+
+Redirigir todas las consultas a /api/randoms a un cluster de servidores escuchando en el puerto 8081.
+$ pm2 start dist/main.js -m CLUSTER -p 8081
+
+El resto de las consultas, redirigirlas a un servidor individual escuchando en el puerto 8080
+$ pm2 start dist/main.js -f -- -p 8080
+
+nginx.exe
+
+Luego, modificar la configuración para que todas las consultas a /api/randoms sean redirigidas a un cluster de servidores gestionado desde nginx, repartiéndolas equitativamente entre 4 instancias escuchando en los puertos 8082, 8083, 8084 y 8085 respectivamente.
+
+$ pm2 start dist/main.js -f -- -p 8082
+$ pm2 start dist/main.js -f -- -p 8083
+$ pm2 start dist/main.js -f -- -p 8084
+$ pm2 start dist/main.js -f -- -p 8085

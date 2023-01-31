@@ -17,15 +17,14 @@ const arguments_1 = require("../config/arguments");
 const os_1 = __importDefault(require("os"));
 const infoRoute = (0, express_1.Router)();
 infoRoute.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.json({
-        Arguments: arguments_1.args,
-        SO: process.platform,
-        NodeVersion: process.version,
-        Memory: process.memoryUsage(),
-        ExecPath: process.execPath,
-        PID: process.pid,
-        Folder: process.cwd(),
-        CPUs: os_1.default.cpus().length
-    });
+    console.log(arguments_1.args);
+    console.log(process.platform);
+    console.log(process.version);
+    console.log(process.memoryUsage());
+    console.log(process.execPath);
+    console.log(process.pid);
+    console.log(process.cwd());
+    console.log(os_1.default.cpus().length);
+    res.json({ OK: "ok" });
 }));
 exports.default = infoRoute;

@@ -1,0 +1,587 @@
+Statistical profiling result from prof_WithoutConsole.log, (6433 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   5237   81.4%          C:\WINDOWS\SYSTEM32\ntdll.dll
+   1145   17.8%          C:\Program Files\nodejs\node.exe
+      8    0.1%          C:\WINDOWS\System32\KERNELBASE.dll
+      1    0.0%          C:\WINDOWS\system32\mswsock.dll
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     10    0.2%   23.8%  LazyCompile: *resolve node:path:158:10
+      3    0.0%    7.1%  LazyCompile: *next C:\backend\class32PerformanceTesting\node_modules\express\lib\router\index.js:177:16
+      2    0.0%    4.8%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      2    0.0%    4.8%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      2    0.0%    4.8%  Function: ^validateString node:internal/validators:118:24
+      1    0.0%    2.4%  RegExp: ^\/info\/?(?=\/|$)
+      1    0.0%    2.4%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    2.4%  LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+      1    0.0%    2.4%  LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      1    0.0%    2.4%  LazyCompile: *readFileSync node:fs:450:22
+      1    0.0%    2.4%  LazyCompile: *Writable.write C:\backend\class32PerformanceTesting\node_modules\readable-stream\lib\_stream_writable.js:288:37
+      1    0.0%    2.4%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    2.4%  Function: ^writeHead C:\backend\class32PerformanceTesting\node_modules\on-headers\index.js:28:29
+      1    0.0%    2.4%  Function: ^router C:\backend\class32PerformanceTesting\node_modules\express\lib\router\index.js:46:18
+      1    0.0%    2.4%  Function: ^realpathSync node:fs:2425:22
+      1    0.0%    2.4%  Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    0.0%    2.4%  Function: ^isModified C:\backend\class32PerformanceTesting\node_modules\express-session\index.js:425:24
+      1    0.0%    2.4%  Function: ^getDefaultTriggerAsyncId node:internal/async_hooks:433:34
+      1    0.0%    2.4%  Function: ^fresh C:\backend\class32PerformanceTesting\node_modules\fresh\index.js:33:16
+      1    0.0%    2.4%  Function: ^doWrite node:internal/streams/writable:398:17
+      1    0.0%    2.4%  Function: ^dirname node:path:653:10
+      1    0.0%    2.4%  Function: ^compression C:\backend\class32PerformanceTesting\node_modules\compression\index.js:59:31
+      1    0.0%    2.4%  Function: ^_unrefTimer node:net:431:52
+      1    0.0%    2.4%  Function: ^Writable.write C:\backend\class32PerformanceTesting\node_modules\readable-stream\lib\_stream_writable.js:288:37
+      1    0.0%    2.4%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    2.4%  Function: ^<anonymous> node:internal/validators:84:3
+      1    0.0%    2.4%  Function: ^<anonymous> node:internal/validators:73:3
+      1    0.0%    2.4%  Function: ^<anonymous> node:internal/fs/utils:687:40
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+     42    0.7%  100.0%  JavaScript
+      0    0.0%    0.0%  C++
+     72    1.1%  171.4%  GC
+   6391   99.3%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   5237   81.4%  C:\WINDOWS\SYSTEM32\ntdll.dll
+     98    1.9%    C:\Program Files\nodejs\node.exe
+      4    4.1%      Function: ^realpathSync node:fs:2425:22
+      2   50.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   50.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2   50.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      4    4.1%      C:\Program Files\nodejs\node.exe
+      1   25.0%        LazyCompile: ~path C:\backend\class32PerformanceTesting\node_modules\socket.io\dist\index.js:145:9
+      1  100.0%          LazyCompile: ~Server C:\backend\class32PerformanceTesting\node_modules\socket.io\dist\index.js:79:16
+      1  100.0%            LazyCompile: ~module.exports C:\backend\class32PerformanceTesting\node_modules\socket.io\dist\index.js:738:18
+      1   25.0%        LazyCompile: ~f C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl\internet\index.js:1:259
+      1  100.0%          LazyCompile: ~m C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl\internet\index.js:1:432
+      1  100.0%            Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl\internet\index.js:1:1
+      1   25.0%        Function: ^realpathSync node:fs:2425:22
+      1  100.0%          Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%            Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1   25.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2    2.0%      LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1   50.0%        LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1   50.0%        Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.0%      LazyCompile: ~x C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\mk\name\male_first_name.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\mk\name\male_first_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~x C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es\name\prefix.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es\name\prefix.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~writevGeneric node:internal/stream_base_commons:122:23
+      1  100.0%        Function: ^Socket._writeGeneric node:net:791:42
+      1  100.0%          LazyCompile: ~Socket._writev node:net:823:36
+      1  100.0%            LazyCompile: ~doWrite node:internal/streams/writable:398:17
+      1    1.0%      LazyCompile: ~value node:internal/console/constructor:329:20
+      1  100.0%        LazyCompile: ~warn node:internal/console/constructor:364:7
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: ~writeOut node:internal/process/warning:46:18
+      1    1.0%      LazyCompile: ~updateRsFromPrimary C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\sdam\topology_description.js:257:29
+      1  100.0%        Function: ^update C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\sdam\topology_description.js:131:11
+      1  100.0%          Function: ^serverUpdateHandler C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\sdam\topology.js:320:24
+      1  100.0%            Function: ^<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\sdam\topology.js:480:53
+      1    1.0%      LazyCompile: ~tryReadStart node:net:608:22
+      1  100.0%        Function: ^Socket._read node:net:618:34
+      1  100.0%          Function: ^Readable.read node:internal/streams/readable:394:35
+      1  100.0%            Function: ^Socket.read node:net:661:33
+      1    1.0%      LazyCompile: ~stat C:\backend\class32PerformanceTesting\node_modules\winston\lib\winston\transports\file.js:419:7
+      1  100.0%        LazyCompile: ~open C:\backend\class32PerformanceTesting\node_modules\winston\lib\winston\transports\file.js:387:7
+      1  100.0%          LazyCompile: ~File C:\backend\class32PerformanceTesting\node_modules\winston\lib\winston\transports\file.js:33:14
+      1  100.0%            Function: ~<anonymous> C:\backend\class32PerformanceTesting\dist\config\logger.js:1:1
+      1    1.0%      LazyCompile: ~s C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl_BE\address\index.js:1:259
+      1  100.0%        LazyCompile: ~t C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl_BE\address\index.js:1:432
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl_BE\address\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      1  100.0%        LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:678:31
+      1  100.0%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    1.0%      LazyCompile: ~resolveBSONOptions C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\bson.js:55:28
+      1  100.0%        LazyCompile: ~resolveOptions C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\utils.js:570:24
+      1  100.0%          LazyCompile: ~createCollection C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\db.js:156:21
+      1  100.0%            LazyCompile: ~createCollection C:\backend\class32PerformanceTesting\node_modules\mongoose\lib\connection.js:401:82
+      1    1.0%      LazyCompile: ~processWaitQueue C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\cmap\connection_pool.js:435:21
+      1  100.0%        LazyCompile: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\cmap\connection_pool.js:183:26
+      1  100.0%          Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.0%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.0%      LazyCompile: ~parseAuthority C:\backend\class32PerformanceTesting\node_modules\whatwg-url\lib\url-state-machine.js:731:71
+      1  100.0%        Function: ^URLStateMachine C:\backend\class32PerformanceTesting\node_modules\whatwg-url\lib\url-state-machine.js:481:25
+      1  100.0%          LazyCompile: ~module.exports.basicURLParse C:\backend\class32PerformanceTesting\node_modules\whatwg-url\lib\url-state-machine.js:1206:41
+      1  100.0%            LazyCompile: ~URLImpl C:\backend\class32PerformanceTesting\node_modules\whatwg-url\lib\URL-impl.js:7:14
+      1    1.0%      LazyCompile: ~n C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\en_IND\address\city.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\en_IND\address\city.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~multiplication32 C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\modules\mersenne\twister.js:1:885
+      1  100.0%        LazyCompile: ~initGenrand C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\modules\mersenne\twister.js:1:994
+      1  100.0%          LazyCompile: ~a C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\modules\mersenne\index.js:1:715
+      1  100.0%            LazyCompile: ~Y C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\faker.js:1:1341
+      1    1.0%      LazyCompile: ~m C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ru\address\street_address.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ru\address\street_address.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~m C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pl\address\street_address.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pl\address\street_address.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~log C:\backend\class32PerformanceTesting\node_modules\winston\lib\winston\transports\console.js:44:6
+      1  100.0%        LazyCompile: ~_write C:\backend\class32PerformanceTesting\node_modules\winston-transport\index.js:69:51
+      1  100.0%          LazyCompile: ~doWrite C:\backend\class32PerformanceTesting\node_modules\readable-stream\lib\_stream_writable.js:404:17
+      1  100.0%            LazyCompile: ~writeOrBuffer C:\backend\class32PerformanceTesting\node_modules\readable-stream\lib\_stream_writable.js:363:23
+      1    1.0%      LazyCompile: ~k C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\de\date\index.js:1:533
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\de\date\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~isURLInstance node:internal/url:1495:23
+      1  100.0%        LazyCompile: ~fileURLToPath node:internal/url:1416:23
+      1  100.0%          LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:939:31
+      1  100.0%            LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      1    1.0%      LazyCompile: ~hasbody C:\backend\class32PerformanceTesting\node_modules\type-is\index.js:92:18
+      1  100.0%        LazyCompile: ~jsonParser C:\backend\class32PerformanceTesting\node_modules\body-parser\lib\types\json.js:98:30
+      1  100.0%          Function: ^handle C:\backend\class32PerformanceTesting\node_modules\express\lib\router\layer.js:86:49
+      1  100.0%            Function: ^trim_prefix C:\backend\class32PerformanceTesting\node_modules\express\lib\router\index.js:293:23
+      1    1.0%      LazyCompile: ~get length C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\utils.js:702:15
+      1  100.0%        LazyCompile: ~remove C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\utils.js:756:11
+      1  100.0%          LazyCompile: ~shift C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\utils.js:768:10
+      1  100.0%            LazyCompile: ~read C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\utils.js:839:9
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\sv\name\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\sv\name\index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ru\company\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ru\company\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ru\address\building_number.js:1:324
+      1  100.0%        LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ru\address\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ru\address\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pt_PT\address\street_prefix.js:1:324
+      1  100.0%        LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pt_PT\address\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pt_PT\address\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl_BE\name\index.js:1:368
+      1  100.0%        LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl_BE\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl_BE\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl\date\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nl\date\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\id_ID\internet\index.js:1:368
+      1  100.0%        LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\id_ID\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\id_ID\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\hy\address\street_address.js:1:324
+      1  100.0%        LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\hy\address\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\hy\address\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\he\music\index.js:1:368
+      1  100.0%        LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\he\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\he\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\he\address\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\he\address\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ge\name\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ge\name\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fr\color\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fr\color\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es_MX\company\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es_MX\company\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es\address\city_prefix.js:1:324
+      1  100.0%        LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es\address\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es\address\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\en\name\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\en\name\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\de\company\index.js:1:368
+      1  100.0%        LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\de\index.js:1:368
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\de\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\az\name\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\az\name\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~g C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\it\name\index.js:1:533
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\it\name\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~fromStringFast node:buffer:413:24
+      1  100.0%        LazyCompile: ~fromString node:buffer:432:20
+      1  100.0%          LazyCompile: ~from node:buffer:296:28
+      1  100.0%            Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1    1.0%      LazyCompile: ~from node:buffer:296:28
+      1  100.0%        LazyCompile: ~ensureBuffer C:\backend\class32PerformanceTesting\node_modules\bson\lib\ensure_buffer.js:15:22
+      1  100.0%          LazyCompile: ~Binary C:\backend\class32PerformanceTesting\node_modules\bson\lib\binary.js:42:20
+      1  100.0%            LazyCompile: ~clone C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\sessions.js:559:17
+      1    1.0%      LazyCompile: ~f C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es_MX\index.js:1:259
+      1  100.0%        LazyCompile: ~m C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es_MX\index.js:1:432
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es_MX\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~emit node:events:475:44
+      1  100.0%        LazyCompile: ~connect C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\sdam\topology.js:154:12
+      1  100.0%          LazyCompile: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\mongo_client.js:136:49
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/util:346:24
+      1    1.0%      LazyCompile: ~deserializeObject C:\backend\class32PerformanceTesting\node_modules\bson\lib\parser\deserializer.js:65:27
+      1  100.0%        LazyCompile: ~deserializeObject C:\backend\class32PerformanceTesting\node_modules\bson\lib\parser\deserializer.js:65:27
+      1  100.0%          LazyCompile: ~deserialize C:\backend\class32PerformanceTesting\node_modules\bson\lib\parser\deserializer.js:36:21
+      1  100.0%            LazyCompile: ~deserialize C:\backend\class32PerformanceTesting\node_modules\bson\lib\bson.js:161:21
+      1    1.0%      LazyCompile: ~debug node:internal/util/debuglog:76:15
+      1  100.0%        Function: ^logger node:internal/util/debuglog:95:18
+      1  100.0%          LazyCompile: ~connectionListenerInternal node:_http_server:448:36
+      1  100.0%            Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:456:36
+      1    1.0%      LazyCompile: ~b C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pt_PT\address\city_suffix.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pt_PT\address\city_suffix.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~__extends C:\backend\class32PerformanceTesting\node_modules\bson\lib\timestamp.js:9:21
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\bson\lib\timestamp.js:27:41
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\bson\lib\timestamp.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~Y C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\faker.js:1:1341
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~SessionStrategy.authenticate C:\backend\class32PerformanceTesting\node_modules\passport\lib\strategies\session.js:45:50
+      1  100.0%        LazyCompile: ~attempt C:\backend\class32PerformanceTesting\node_modules\passport\lib\middleware\authenticate.js:180:22
+      1  100.0%          LazyCompile: ~authenticate C:\backend\class32PerformanceTesting\node_modules\passport\lib\middleware\authenticate.js:94:31
+      1  100.0%            LazyCompile: ~handle C:\backend\class32PerformanceTesting\node_modules\express\lib\router\layer.js:86:49
+      1    1.0%      LazyCompile: ~Server C:\backend\class32PerformanceTesting\node_modules\socket.io\dist\index.js:79:16
+      1  100.0%        LazyCompile: ~module.exports C:\backend\class32PerformanceTesting\node_modules\socket.io\dist\index.js:738:18
+      1  100.0%          LazyCompile: ~innitWebSocket C:\backend\class32PerformanceTesting\dist\services\socket.js:6:24
+      1  100.0%            Function: ~<anonymous> C:\backend\class32PerformanceTesting\dist\services\server.js:1:1
+      1    1.0%      LazyCompile: ~MongoClient C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\mongo_client.js:43:16
+      1  100.0%        LazyCompile: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongoose\lib\connection.js:799:31
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: ~Connection.openUri C:\backend\class32PerformanceTesting\node_modules\mongoose\lib\connection.js:681:40
+      1    1.0%      LazyCompile: ~L C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\de\name\first_name.js:1:388
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\de\name\first_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\operations\operation.js:28:51
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/util:346:24
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: ~fn node:internal/util:345:14
+      1    1.0%      LazyCompile: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\cmap\connection_pool.js:486:35
+      1  100.0%        LazyCompile: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\cmap\connection_pool.js:360:48
+      1  100.0%          LazyCompile: ~callback C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\cmap\connect.js:63:31
+      1  100.0%            LazyCompile: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\cmap\connect.js:128:44
+      1    1.0%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\zh_CN\name\index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\vi\address\default_country.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\vi\address\city.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\uk\name\name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\sv\commerce\product_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pt_BR\name\female_first_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\pt_BR\address\default_country.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ne\name\index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nb_NO\internet\domain_suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\nb_NO\address\state.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\mk\name\last_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\mk\cell_phone\index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\hr\address\default_country.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ge\address\postcode.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fr_CH\phone_number\formats.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fr_CH\name\male_first_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fr_CH\commerce\product_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fr\animal\cetacean.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fa\phone_number\index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es_MX\team\index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\es\address\province.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\en_NG\company\index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\en_GH\address\street_suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\de_CH\name\prefix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\cz\name\prefix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ^stringify C:\backend\class32PerformanceTesting\node_modules\express\lib\response.js:1145:20
+      1  100.0%        Function: ^json C:\backend\class32PerformanceTesting\node_modules\express\lib\response.js:250:25
+      1  100.0%          Function: ^<anonymous> C:\backend\class32PerformanceTesting\dist\routes\info.js:19:78
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1    1.0%      Function: ^get node:_http_outgoing:162:6
+      1  100.0%        LazyCompile: ~end node:_http_outgoing:833:45
+      1  100.0%          LazyCompile: ~end C:\backend\class32PerformanceTesting\node_modules\compression\index.js:92:28
+      1  100.0%            LazyCompile: ~end C:\backend\class32PerformanceTesting\node_modules\express-session\index.js:250:27
+      1    1.0%      Function: ^get C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ge\address\index.js:1:368
+      1  100.0%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\ge\address\index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.0%      Function: ^<anonymous> node:internal/validators:236:42
+      1  100.0%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+
+   1145   17.8%  C:\Program Files\nodejs\node.exe
+    877   76.6%    C:\Program Files\nodejs\node.exe
+    207   23.6%      Function: ^compileFunction node:vm:308:25
+    205   99.0%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    109   53.2%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+    107   98.2%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2    1.8%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     96   46.8%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+     96  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     81    9.2%      Function: ^realpathSync node:fs:2425:22
+     61   75.3%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+     60   98.4%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     58   96.7%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      2    3.3%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1    1.6%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     20   24.7%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     20  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     15   75.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      5   25.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     48    5.5%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     48  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     36   75.0%          Function: ^Socket._writeGeneric node:net:791:42
+     36  100.0%            Function: ^Socket._write node:net:828:35
+     12   25.0%          LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      8   66.7%            LazyCompile: *_write node:internal/streams/writable:283:16
+      4   33.3%            Function: ^_write node:internal/streams/writable:283:16
+     46    5.2%      Function: ^stat node:internal/modules/cjs/loader:151:14
+     33   71.7%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     32   97.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+     23   71.9%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      9   28.1%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1    3.0%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     12   26.1%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     12  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     12  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    2.2%        LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%          LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:400:23
+      1  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+     20    2.3%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     17   85.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2   11.8%          Function: ~<anonymous> node:tls:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2   11.8%          Function: ~<anonymous> node:crypto:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      1  100.0%            LazyCompile: ~get node:crypto:287:8
+      1    5.9%          LazyCompile: ~lazyLoadStreams node:fs:2858:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:3001:17
+      1    5.9%          LazyCompile: ~get node:dns:334:8
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1    5.9%          LazyCompile: ~get BlockList node:net:1826:16
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1    5.9%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          Function: ~<anonymous> node:http:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          Function: ~<anonymous> node:child_process:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.9%          Function: ~<anonymous> node:_http_client:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3   15.0%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      3  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     19    2.2%      Function: ^readSync node:fs:684:18
+     16   84.2%        Function: ^tryReadSync node:fs:429:21
+     16  100.0%          Function: ^readFileSync node:fs:450:22
+     16  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3   15.8%        LazyCompile: *readFileSync node:fs:450:22
+      3  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     18    2.1%      C:\Program Files\nodejs\node.exe
+      2   11.1%        Function: ^splitRoot node:fs:2375:33
+      2  100.0%          Function: ^realpathSync node:fs:2425:22
+      2  100.0%            Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      2   11.1%        Function: ^compileFunction node:vm:308:25
+      2  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1   50.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1   50.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      2   11.1%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    5.6%        LazyCompile: ~r C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fr_CH\animal\index.js:1:432
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\@faker-js\faker\dist\cjs\locales\fr_CH\animal\index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    5.6%        LazyCompile: ~exports.install C:\backend\class32PerformanceTesting\node_modules\whatwg-url\lib\URLSearchParams.js:96:19
+      1  100.0%          Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\whatwg-url\index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    5.6%        LazyCompile: ~compressible C:\backend\class32PerformanceTesting\node_modules\compressible\index.js:41:23
+      1  100.0%          LazyCompile: ~shouldCompress C:\backend\class32PerformanceTesting\node_modules\compression\index.js:254:25
+      1  100.0%            LazyCompile: ~onResponseHeaders C:\backend\class32PerformanceTesting\node_modules\compression\index.js:140:47
+      1    5.6%        LazyCompile: ~applyStyle C:\backend\class32PerformanceTesting\node_modules\@colors\colors\lib\colors.js:113:20
+      1  100.0%          LazyCompile: ~builder C:\backend\class32PerformanceTesting\node_modules\@colors\colors\lib\colors.js:86:33
+      1  100.0%            LazyCompile: ~colorize C:\backend\class32PerformanceTesting\node_modules\logform\colorize.js:63:11
+      1    5.6%        LazyCompile: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\operations\indexes.js:88:36
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: ~CreateIndexesOperation C:\backend\class32PerformanceTesting\node_modules\mongodb\lib\operations\indexes.js:84:16
+      1    5.6%        LazyCompile: *setHeader node:_http_outgoing:574:57
+      1  100.0%          Function: ^header C:\backend\class32PerformanceTesting\node_modules\express\lib\response.js:777:29
+      1  100.0%            Function: ^send C:\backend\class32PerformanceTesting\node_modules\express\lib\response.js:111:25
+      1    5.6%        LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1    5.6%        Function: ~<anonymous> C:\backend\class32PerformanceTesting\node_modules\bson\lib\objectid.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    5.6%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    5.6%        Function: ^format C:\backend\class32PerformanceTesting\node_modules\fecha\lib\fecha.umd.js:246:25
+      1  100.0%          Function: ^<anonymous> C:\backend\class32PerformanceTesting\node_modules\logform\timestamp.js:14:25
+      1  100.0%            Function: ^<anonymous> C:\backend\class32PerformanceTesting\node_modules\logform\combine.js:17:10
+      1    5.6%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      1  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      1  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      1    5.6%        Function: ^<anonymous> node:internal/fs/utils:358:35
+      1  100.0%          Function: ^<anonymous> node:internal/fs/utils:669:38
+      1  100.0%            Function: ^realpathSync node:fs:2425:22
+     17    1.9%      Function: ^cpus node:os:133:14
+     17  100.0%        Function: ^<anonymous> C:\backend\class32PerformanceTesting\dist\routes\info.js:19:78
+     17  100.0%          C:\Program Files\nodejs\node.exe
+     17  100.0%            Function: ^<anonymous> C:\backend\class32PerformanceTesting\dist\routes\info.js:4:46
+     16    1.8%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     16  100.0%        Function: ^Socket._writeGeneric node:net:791:42
+     16  100.0%          Function: ^Socket._writev node:net:823:36
+     16  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+     16    1.8%      Function: ^openSync node:fs:576:18
+     16  100.0%        Function: ^readFileSync node:fs:450:22
+     16  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     14   87.5%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2   12.5%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     51    4.5%    LazyCompile: *compileFunction node:vm:308:25
+     51  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     51  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     51  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     33   64.7%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     18   35.3%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+

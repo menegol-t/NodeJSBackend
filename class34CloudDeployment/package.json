@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm i && webpack",
-    "start": "npm run build && node dist/main.js",
+    "build": "npm i && npx tsc",
+    "start": "npm run build && node dist/index.js",
     "dev": "nodemon"
   },
   "keywords": [],

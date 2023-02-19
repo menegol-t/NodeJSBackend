@@ -16,9 +16,9 @@ signupRoute.post("/", async (req:Request, res:Response, next:NextFunction) => {
             logger.error(err)
             return next(err)
         }else if(!user){
-            return res.render("signup.pug", {error: info.message})
+            return res.status(400).render("signup.pug", {error: info.message})
         }else{
-            res.render("login.pug", {invalidUser: "Perfecto! Ahora logueate con tus nuevas credenciales."})
+            res.status(200).render("login.pug", {invalidUser: "Perfecto! Ahora logueate con tus nuevas credenciales."})
         }
     })(req, res, next)
 })

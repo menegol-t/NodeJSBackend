@@ -2,7 +2,7 @@ html
     head 
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title="Chat"
+        title="Home"
         link(rel="icon", href="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/chiquitos%2Ffavicon.png?alt=media&token=d495c188-eb24-46b0-9ea2-218453e192d4")
         link(rel="stylesheet", href="../css/style.css")
         link(rel="stylesheet", href="../css/animate.css")
@@ -26,12 +26,5 @@ html
                         li(class="nav-item")
                             a(class="nav-link active px-4" href="/api/chat")="Chat"
                         li(class="nav-item")
-                            a(class="nav-link active px-4" href="/api/logout")="Logout" 
-        main 
-            include components/chatComponents/chatWelcomeSign
-            include components/chatComponents/chatForm
-            include components/chatComponents/chatTable
-            script(src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js")
-            script(src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
-            script(src="../socket.io/socket.io.js")
-            script(src="../js/index.js")
+                            a(class="nav-link active px-4" href="/api/logout")="Logout"
+        h2(class="txtCenter txtMed2 fontSpecial")=welcomeSign

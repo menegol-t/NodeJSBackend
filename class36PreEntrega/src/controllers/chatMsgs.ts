@@ -1,10 +1,9 @@
-import { ChatMsgModel } from "../models/chaMsgModel";
 import { normalize, schema } from "normalizr";
 import { logger } from "../config/logger";
-import { IUser } from "../models/userModel";
+import { UserModel } from "../models/userModel";
+import { ChatMsgModel } from "../models/chatMsgModel";
 
 const author = new schema.Entity("author", {}, {idAttribute: "email"})
-
 const msg = new schema.Entity("messages", {author: author}, {idAttribute: "_id"})
 
 const finalSchema = [msg]
@@ -14,17 +13,29 @@ const finalSchema = [msg]
 //los datos NO los guardo normalizados en mongo. Los datos se leen
 //y DESPUES que el backend los normalice para que al front le lleguen normalizados.
 
-export const saveMsg = async (usr: IUser, ms: string) => {
+export const saveMsg = async (msg: any) => {
     try {
 
-        const messageToSave =  {
-            author: usr,
-            text: ms
-        }
-        const savedMsg = await ChatMsgModel.create(messageToSave)
-        return savedMsg
+        const {email} = msg        
+
+        return await UserModel.findOne({email: email}).then(async (usr) => {
+
+            const data =  {
+                author: usr,
+                text: msg.text
+            }
+
+            try {                
+                const savedMsg = await ChatMsgModel.create(data)
+                console.log(savedMsg);
+                return savedMsg
+            } catch (err) {
+                logger.error(`Error saving message in DB `, err)       
+            }
+
+        }) 
     } catch (err) {
-        logger.error(`Error saving message to DB `, err)       
+        logger.error(`Error searching user in DB `, err)       
     } 
 }
 

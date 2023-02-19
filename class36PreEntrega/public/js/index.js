@@ -1,5 +1,6 @@
 const chatForm = document.querySelector("#chatForm")
 const message = document.querySelector("#textInput")
+const userEmail = document.querySelector("#userEmail").textContent
 const msgsTable = document.querySelector("#msContainer")
 const socket = io()
 
@@ -11,21 +12,22 @@ const denormalizeData = (data) => {
     return denormalizedData
 }
 
-function validateEmail(mail) {
-    const isRealEmail = /\S+@\S+\.\S+/;
-    return isRealEmail.test(mail);
-}
+console.log(message.value);
 
 chatForm.addEventListener("submit", (e)=> {
     
     e.preventDefault()
-    if(message.value.every(valueNotNull)){
+    if(message.value == undefined || message.value == null || message.value == " "){
         alert(`Escribe algo...`);
     // }else if(!validateEmail(email.value)){
     //     alert("Por favor ingresa un email valido.")
     }else{
-        let text =  message.value
-        socket.emit("postMsgToDB", text)
+        let msg = {
+            email: userEmail,
+            text: message.value
+        }
+        console.log(msg);
+        socket.emit("postMsgToDB", msg)
     }
     message.value = ""
 })
@@ -71,5 +73,3 @@ socket.on("newMsgInDB", (newMsg) => {
 	`
 	msgsTable.appendChild(div)
 })
-
-const valueNotNull = (value) => {value !== undefined || value !== null || value !== " " }

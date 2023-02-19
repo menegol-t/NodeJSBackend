@@ -17,11 +17,15 @@ const author = new normalizr_1.schema.Entity("author", {}, { idAttribute: "email
 const msg = new normalizr_1.schema.Entity("messages", { author: author }, { idAttribute: "_id" });
 const finalSchema = [msg];
 //hasta ahi arriba la definicion de esquemas.
-//los datos NO los guardo normalizados en mongo. La entrega pide que los datos se lean
+//los datos NO los guardo normalizados en mongo. Los datos se leen
 //y DESPUES que el backend los normalice para que al front le lleguen normalizados.
-const saveMsg = (ms) => __awaiter(void 0, void 0, void 0, function* () {
+const saveMsg = (usr, ms) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const savedMsg = yield chaMsgModel_1.ChatMsgModel.create(ms);
+        const messageToSave = {
+            author: usr,
+            text: ms
+        };
+        const savedMsg = yield chaMsgModel_1.ChatMsgModel.create(messageToSave);
         return savedMsg;
     }
     catch (err) {

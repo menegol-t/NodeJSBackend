@@ -83,13 +83,13 @@ passport_1.default.use("signup", auth_1.signUpFunc);
 app.set("views", viewsFolderPath);
 app.set("view engine", "pug");
 app.get("/", checkLogIn_1.checkLogIn, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.redirect("/api/chat");
+    res.redirect("/api/home");
 }));
 (0, socket_1.default)(server);
 app.use("/api", endpoints_1.default);
 app.use(errorHandler);
 app.get('*', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     logger_1.logger.warn(`PID: ${process.pid}, Route ${req.method} ${req.url} doesn't exist.`);
-    res.redirect("/");
+    res.status(400).redirect("/");
 }));
 exports.default = server;

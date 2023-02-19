@@ -6,6 +6,7 @@ import logoutRoute from "./logout"
 import chatRoute from "./chat"
 import infoRoute from "./info"
 import randomsRoute from "./randoms"
+import homeRoute from "./home";
 
 const router = Router()
 router.use("/products-test", productsTestRoute)
@@ -15,5 +16,6 @@ router.use("/logout", logoutRoute)
 router.use("/chat", chatRoute)
 router.use("/info", infoRoute)
 router.use("/randoms", randomsRoute)
+router.use("/home", homeRoute)
 
 export default router

@@ -14,7 +14,7 @@ export interface IUser{
     isValidPassword?: (password: string) => Promise<boolean>
 }
 
-export const userSchema = new mongoose.Schema<IUser>(
+const userSchema = new mongoose.Schema<IUser>(
     {
         email: {type: String, required: true, unique: true},
         password: {type: String, required: true},

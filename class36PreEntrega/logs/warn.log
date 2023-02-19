@@ -1,226 +1,1884 @@
-[31merror[39m | 14-Feb-2023 19:54:09 | Error al crear usuario L52 SRC/SERVICES/AUTH userList validation failed: profileThumbnail: Path `profileThumbnail` is required.
-[31merror[39m | 14-Feb-2023 19:55:27 | Error al crear usuario L52 SRC/SERVICES/AUTH userList validation failed: name: Path `name` is required., location: Path `location` is required., age: Path `age` is required., phone: Path `phone` is required., profileThumbnail: Path `profileThumbnail` is required.
-[31merror[39m | 14-Feb-2023 19:58:38 | Error al crear usuario L52 SRC/SERVICES/AUTH userList validation failed: name: Path `name` is required., location: Path `location` is required., age: Path `age` is required., phone: Path `phone` is required., profileThumbnail: Path `profileThumbnail` is required.
-[31merror[39m | 14-Feb-2023 20:01:23 | Error al crear usuario L52 SRC/SERVICES/AUTH userList validation failed: name: Path `name` is required., location: Path `location` is required., age: Path `age` is required., phone: Path `phone` is required., profileThumbnail: Path `profileThumbnail` is required.
-[31merror[39m | 14-Feb-2023 20:02:33 | Error al crear usuario L52 SRC/SERVICES/AUTH userList validation failed: name: Path `name` is required., location: Path `location` is required., age: Path `age` is required., phone: Path `phone` is required., profileThumbnail: Path `profileThumbnail` is required.
-[33mwarn[39m | 14-Feb-2023 20:02:34 | PID: 11740, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:02:43 | PID: 11740, Route GET /favicon.ico doesn't exist.
-[31merror[39m | 14-Feb-2023 20:03:13 | Error al crear usuario L52 SRC/SERVICES/AUTH userList validation failed: name: Path `name` is required., location: Path `location` is required., age: Path `age` is required., phone: Path `phone` is required., profileThumbnail: Path `profileThumbnail` is required.
-[33mwarn[39m | 14-Feb-2023 20:03:14 | PID: 11740, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:12:26 | PID: 17896, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:12:35 | PID: 17896, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:16:38 | PID: 9620, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:18:06 | true
-[33mwarn[39m | 14-Feb-2023 20:18:07 | PID: 15724, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:18:19 | true
-[33mwarn[39m | 14-Feb-2023 20:18:19 | PID: 15724, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:18:42 | true
-[33mwarn[39m | 14-Feb-2023 20:18:43 | PID: 15724, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:19:02 | false
-[33mwarn[39m | 14-Feb-2023 20:19:02 | PID: 15724, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:20:40 | PID: 16492, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:20:43 | PID: 16492, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:21:10 | PID: 16492, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:21:20 | PID: 16492, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:21:55 | PID: 16492, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:22:03 | PID: 16492, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:22:07 | PID: 16492, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:22:09 | PID: 16492, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:28:30 | PID: 23660, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:28:33 | PID: 23660, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:28:54 | PID: 23660, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:29:00 | PID: 23660, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:30:17 | PID: 21052, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:30:20 | PID: 21052, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:30:43 | false
-[33mwarn[39m | 14-Feb-2023 20:30:44 | PID: 21052, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:31:28 | PID: 23592, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:31:45 | PID: 23592, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:32:08 | PID: 23592, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:32:32 | PID: 23592, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:40:28 | PID: 9920, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:40:37 | PID: 9920, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:40:54 | PID: 9920, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:45:13 | PID: 3388, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:45:15 | PID: 3388, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:45:38 | PID: 3388, Route GET /favicon.ico doesn't exist.
-[31merror[39m | 14-Feb-2023 20:45:50 | Error al crear usuario L26 SRC/SERVICES/AUTH  Cannot read properties of null (reading 'isValidPassword')
-[31merror[39m | 14-Feb-2023 20:45:50 | Cannot read properties of null (reading 'isValidPassword')
-[33mwarn[39m | 14-Feb-2023 20:45:51 | PID: 3388, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:46:08 | PID: 3388, Route GET /api/ doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:46:08 | PID: 3388, Route GET /favicon.ico doesn't exist.
-[31merror[39m | 14-Feb-2023 20:46:14 | Error al crear usuario L26 SRC/SERVICES/AUTH  Cannot read properties of null (reading 'isValidPassword')
-[31merror[39m | 14-Feb-2023 20:46:14 | Cannot read properties of null (reading 'isValidPassword')
-[33mwarn[39m | 14-Feb-2023 20:46:15 | PID: 3388, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:47:48 | PID: 20184, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:47:55 | PID: 20184, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:48:01 | PID: 20184, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:48:13 | PID: 20184, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:48:26 | PID: 20184, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:50:02 | PID: 7684, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:50:58 | true
-[33mwarn[39m | 14-Feb-2023 20:50:59 | PID: 880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:50:59 | true
-[33mwarn[39m | 14-Feb-2023 20:51:19 | PID: 880, Route GET /api/sdeslog doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:51:19 | true
-[33mwarn[39m | 14-Feb-2023 20:51:20 | PID: 880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:51:20 | true
-[33mwarn[39m | 14-Feb-2023 20:51:28 | true
-[33mwarn[39m | 14-Feb-2023 20:51:29 | PID: 880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:51:29 | true
-[33mwarn[39m | 14-Feb-2023 20:51:42 | true
-[33mwarn[39m | 14-Feb-2023 20:51:42 | PID: 880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:51:43 | true
-[33mwarn[39m | 14-Feb-2023 20:52:08 | true
-[33mwarn[39m | 14-Feb-2023 20:52:09 | PID: 880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:52:09 | true
-[33mwarn[39m | 14-Feb-2023 20:52:18 | true
-[33mwarn[39m | 14-Feb-2023 20:52:18 | PID: 880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:52:18 | true
-[33mwarn[39m | 14-Feb-2023 20:53:51 | true
-[33mwarn[39m | 14-Feb-2023 20:53:52 | PID: 23676, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:53:52 | true
-[33mwarn[39m | 14-Feb-2023 20:54:01 | {
-  _id: new ObjectId("63ec1d216684095653defeda"),
-  email: 'tomas@gmail.com',
-  password: '$2b$10$5Wun.vtU4T2SGlNxcIeDlOnESrpuutoi9MN2Pyo.KXGVU7e.a2Rce',
-  name: 'tomas',
-  location: 'tomas',
-  age: 30,
-  phone: 30,
-  profileThumbnail: 'tomas',
-  createdAt: 2023-02-14T23:45:37.355Z,
-  updatedAt: 2023-02-14T23:45:37.355Z
+[33mwarn[39m | 18-Feb-2023 22:53:08 | {
+  headers: {
+    host: [32m'localhost:8080'[39m,
+    connection: [32m'keep-alive'[39m,
+    [32m'sec-ch-ua'[39m: [32m'"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"'[39m,
+    accept: [32m'*/*'[39m,
+    dnt: [32m'1'[39m,
+    [32m'sec-ch-ua-mobile'[39m: [32m'?0'[39m,
+    [32m'user-agent'[39m: [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'[39m,
+    [32m'sec-ch-ua-platform'[39m: [32m'"Windows"'[39m,
+    [32m'sec-fetch-site'[39m: [32m'same-origin'[39m,
+    [32m'sec-fetch-mode'[39m: [32m'cors'[39m,
+    [32m'sec-fetch-dest'[39m: [32m'empty'[39m,
+    referer: [32m'http://localhost:8080/api/chat'[39m,
+    [32m'accept-encoding'[39m: [32m'gzip, deflate, br'[39m,
+    [32m'accept-language'[39m: [32m'en-US,en;q=0.9'[39m
+  },
+  time: [32m'Sat Feb 18 2023 22:53:08 GMT-0300 (hora estándar de Argentina)'[39m,
+  address: [32m'::ffff:127.0.0.1'[39m,
+  xdomain: [33mfalse[39m,
+  secure: [33mfalse[39m,
+  issued: [33m1676771588717[39m,
+  url: [32m'/socket.io/?EIO=4&transport=polling&t=OPdN_4D'[39m,
+  query: [Object: null prototype] {
+    EIO: [32m'4'[39m,
+    transport: [32m'polling'[39m,
+    t: [32m'OPdN_4D'[39m
+  },
+  auth: {}
 }
-[33mwarn[39m | 14-Feb-2023 20:54:01 | true
-[33mwarn[39m | 14-Feb-2023 20:54:02 | PID: 23676, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:54:02 | true
-[33mwarn[39m | 14-Feb-2023 20:56:22 | true
-[33mwarn[39m | 14-Feb-2023 20:56:24 | PID: 22572, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:56:24 | true
-[33mwarn[39m | 14-Feb-2023 20:56:46 | {
-  _id: new ObjectId("63ec1d216684095653defeda"),
-  email: 'tomas@gmail.com',
-  password: '$2b$10$5Wun.vtU4T2SGlNxcIeDlOnESrpuutoi9MN2Pyo.KXGVU7e.a2Rce',
-  name: 'tomas',
-  location: 'tomas',
-  age: 30,
-  phone: 30,
-  profileThumbnail: 'tomas',
-  createdAt: 2023-02-14T23:45:37.355Z,
-  updatedAt: 2023-02-14T23:45:37.355Z
+[33mwarn[39m | 18-Feb-2023 22:55:02 | {
+  headers: {
+    host: [32m'localhost:8080'[39m,
+    connection: [32m'keep-alive'[39m,
+    [32m'sec-ch-ua'[39m: [32m'"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"'[39m,
+    accept: [32m'*/*'[39m,
+    dnt: [32m'1'[39m,
+    [32m'sec-ch-ua-mobile'[39m: [32m'?0'[39m,
+    [32m'user-agent'[39m: [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'[39m,
+    [32m'sec-ch-ua-platform'[39m: [32m'"Windows"'[39m,
+    [32m'sec-fetch-site'[39m: [32m'same-origin'[39m,
+    [32m'sec-fetch-mode'[39m: [32m'cors'[39m,
+    [32m'sec-fetch-dest'[39m: [32m'empty'[39m,
+    referer: [32m'http://localhost:8080/api/chat'[39m,
+    [32m'accept-encoding'[39m: [32m'gzip, deflate, br'[39m,
+    [32m'accept-language'[39m: [32m'en-US,en;q=0.9'[39m
+  },
+  time: [32m'Sat Feb 18 2023 22:55:02 GMT-0300 (hora estándar de Argentina)'[39m,
+  address: [32m'::1'[39m,
+  xdomain: [33mfalse[39m,
+  secure: [33mfalse[39m,
+  issued: [33m1676771702881[39m,
+  url: [32m'/socket.io/?EIO=4&transport=polling&t=OPdOROk'[39m,
+  query: [Object: null prototype] {
+    EIO: [32m'4'[39m,
+    transport: [32m'polling'[39m,
+    t: [32m'OPdOROk'[39m
+  },
+  auth: {}
 }
-[33mwarn[39m | 14-Feb-2023 20:56:46 | true
-[33mwarn[39m | 14-Feb-2023 20:56:46 | PID: 22572, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:56:46 | true
-[33mwarn[39m | 14-Feb-2023 20:59:54 | true
-[33mwarn[39m | 14-Feb-2023 20:59:55 | PID: 22904, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 20:59:55 | true
-[33mwarn[39m | 14-Feb-2023 21:00:02 | PID: 22904, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:00:02 | true
-[33mwarn[39m | 14-Feb-2023 21:00:15 | PID: 22904, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:00:15 | true
-[33mwarn[39m | 14-Feb-2023 21:01:18 | PID: 22904, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:01:18 | true
-[33mwarn[39m | 14-Feb-2023 21:01:32 | true
-[33mwarn[39m | 14-Feb-2023 21:01:32 | PID: 22904, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:01:32 | true
-[33mwarn[39m | 14-Feb-2023 21:03:05 | que carajo
-[33mwarn[39m | 14-Feb-2023 21:03:06 | PID: 21236, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:03:06 | true
-[33mwarn[39m | 14-Feb-2023 21:03:10 | PID: 21236, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:03:10 | true
-[33mwarn[39m | 14-Feb-2023 21:03:36 | PID: 21236, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:03:37 | true
-[33mwarn[39m | 14-Feb-2023 21:03:49 | que mierda
-[33mwarn[39m | 14-Feb-2023 21:03:49 | true
-[33mwarn[39m | 14-Feb-2023 21:03:49 | PID: 21236, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:03:49 | true
-[33mwarn[39m | 14-Feb-2023 21:03:57 | que mierda
-[33mwarn[39m | 14-Feb-2023 21:03:57 | true
-[33mwarn[39m | 14-Feb-2023 21:03:58 | PID: 21236, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:03:58 | true
-[33mwarn[39m | 14-Feb-2023 21:05:14 | true
-[33mwarn[39m | 14-Feb-2023 21:05:16 | PID: 22800, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:05:16 | true
-[33mwarn[39m | 14-Feb-2023 21:05:23 | que mierda
-[33mwarn[39m | 14-Feb-2023 21:05:24 | PID: 22800, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:08:42 | true
-[33mwarn[39m | 14-Feb-2023 21:08:43 | PID: 16824, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:08:43 | true
-[33mwarn[39m | 14-Feb-2023 21:08:52 | true
-[33mwarn[39m | 14-Feb-2023 21:08:52 | PID: 16824, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:08:52 | true
-[33mwarn[39m | 14-Feb-2023 21:10:50 | true
-[33mwarn[39m | 14-Feb-2023 21:10:51 | PID: 19016, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:10:51 | true
-[33mwarn[39m | 14-Feb-2023 21:11:52 | true
-[33mwarn[39m | 14-Feb-2023 21:11:53 | PID: 13012, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:11:53 | true
-[33mwarn[39m | 14-Feb-2023 21:16:52 | true
-[33mwarn[39m | 14-Feb-2023 21:16:54 | PID: 10208, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:16:54 | true
-[33mwarn[39m | 14-Feb-2023 21:17:21 | true
-[33mwarn[39m | 14-Feb-2023 21:17:22 | PID: 10208, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:17:22 | true
-[33mwarn[39m | 14-Feb-2023 21:22:28 | true
-[33mwarn[39m | 14-Feb-2023 21:22:29 | PID: 21936, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:22:29 | true
-[33mwarn[39m | 14-Feb-2023 21:22:38 | true
-[33mwarn[39m | 14-Feb-2023 21:22:38 | PID: 21936, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:22:38 | true
-[33mwarn[39m | 14-Feb-2023 21:23:31 | true
-[33mwarn[39m | 14-Feb-2023 21:23:32 | PID: 18928, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:23:32 | true
-[33mwarn[39m | 14-Feb-2023 21:23:42 | true
-[33mwarn[39m | 14-Feb-2023 21:23:42 | PID: 18928, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:23:42 | true
-[33mwarn[39m | 14-Feb-2023 21:39:22 | PID: 23484, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:43:17 | true
-[33mwarn[39m | 14-Feb-2023 21:43:18 | PID: 11320, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:43:18 | true
-[33mwarn[39m | 14-Feb-2023 21:43:26 | null
-[33mwarn[39m | 14-Feb-2023 21:43:26 | PID: 11320, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:43:26 | true
-[33mwarn[39m | 14-Feb-2023 21:43:43 | true
-[33mwarn[39m | 14-Feb-2023 21:43:43 | PID: 11320, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:43:43 | true
-[33mwarn[39m | 14-Feb-2023 21:43:52 | true
-[33mwarn[39m | 14-Feb-2023 21:43:52 | PID: 11320, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:43:52 | true
-[33mwarn[39m | 14-Feb-2023 21:46:42 | PID: 10460, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:47:55 | true
-[33mwarn[39m | 14-Feb-2023 21:47:56 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:47:56 | true
-[33mwarn[39m | 14-Feb-2023 21:48:04 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:06 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:07 | true
-[33mwarn[39m | 14-Feb-2023 21:48:08 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:08 | true
-[33mwarn[39m | 14-Feb-2023 21:48:10 | null
-[33mwarn[39m | 14-Feb-2023 21:48:11 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:11 | true
-[33mwarn[39m | 14-Feb-2023 21:48:15 | null
-[33mwarn[39m | 14-Feb-2023 21:48:15 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:15 | true
-[33mwarn[39m | 14-Feb-2023 21:48:24 | null
-[33mwarn[39m | 14-Feb-2023 21:48:24 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:24 | true
-[33mwarn[39m | 14-Feb-2023 21:48:31 | null
-[33mwarn[39m | 14-Feb-2023 21:48:32 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:32 | true
-[33mwarn[39m | 14-Feb-2023 21:48:38 | null
-[33mwarn[39m | 14-Feb-2023 21:48:38 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:38 | true
-[33mwarn[39m | 14-Feb-2023 21:48:45 | null
-[33mwarn[39m | 14-Feb-2023 21:48:45 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:45 | true
-[33mwarn[39m | 14-Feb-2023 21:48:47 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:48:47 | true
-[33mwarn[39m | 14-Feb-2023 21:49:36 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:49:36 | true
-[33mwarn[39m | 14-Feb-2023 21:49:55 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:49:55 | true
-[33mwarn[39m | 14-Feb-2023 21:50:14 | PID: 21880, Route GET /favicon.ico doesn't exist.
-[33mwarn[39m | 14-Feb-2023 21:50:15 | true
-[33mwarn[39m | 14-Feb-2023 21:50:24 | PID: 21880, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:55:12 | PID: 23864, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:55:16 | {
+  headers: {
+    host: [32m'localhost:8080'[39m,
+    connection: [32m'keep-alive'[39m,
+    [32m'sec-ch-ua'[39m: [32m'"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"'[39m,
+    accept: [32m'*/*'[39m,
+    dnt: [32m'1'[39m,
+    [32m'sec-ch-ua-mobile'[39m: [32m'?0'[39m,
+    [32m'user-agent'[39m: [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'[39m,
+    [32m'sec-ch-ua-platform'[39m: [32m'"Windows"'[39m,
+    [32m'sec-fetch-site'[39m: [32m'same-origin'[39m,
+    [32m'sec-fetch-mode'[39m: [32m'cors'[39m,
+    [32m'sec-fetch-dest'[39m: [32m'empty'[39m,
+    referer: [32m'http://localhost:8080/api/chat'[39m,
+    [32m'accept-encoding'[39m: [32m'gzip, deflate, br'[39m,
+    [32m'accept-language'[39m: [32m'en-US,en;q=0.9'[39m,
+    cookie: [32m'connect.sid=s%3AebAj19pbt0j5BP4CFN3T4x7p5ccdz1TQ.t7Yf3XwOWv2kIHS%2FOkcwSrpp1%2BiGnBw42Kmf7ZNvFEs'[39m
+  },
+  time: [32m'Sat Feb 18 2023 22:55:16 GMT-0300 (hora estándar de Argentina)'[39m,
+  address: [32m'::ffff:127.0.0.1'[39m,
+  xdomain: [33mfalse[39m,
+  secure: [33mfalse[39m,
+  issued: [33m1676771716594[39m,
+  url: [32m'/socket.io/?EIO=4&transport=polling&t=OPdOUt9'[39m,
+  query: [Object: null prototype] {
+    EIO: [32m'4'[39m,
+    transport: [32m'polling'[39m,
+    t: [32m'OPdOUt9'[39m
+  },
+  auth: {}
+}
+[33mwarn[39m | 18-Feb-2023 22:55:16 | {
+  headers: {
+    host: [32m'localhost:8080'[39m,
+    connection: [32m'keep-alive'[39m,
+    [32m'sec-ch-ua'[39m: [32m'"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"'[39m,
+    accept: [32m'*/*'[39m,
+    dnt: [32m'1'[39m,
+    [32m'sec-ch-ua-mobile'[39m: [32m'?0'[39m,
+    [32m'user-agent'[39m: [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'[39m,
+    [32m'sec-ch-ua-platform'[39m: [32m'"Windows"'[39m,
+    [32m'sec-fetch-site'[39m: [32m'same-origin'[39m,
+    [32m'sec-fetch-mode'[39m: [32m'cors'[39m,
+    [32m'sec-fetch-dest'[39m: [32m'empty'[39m,
+    referer: [32m'http://localhost:8080/api/chat'[39m,
+    [32m'accept-encoding'[39m: [32m'gzip, deflate, br'[39m,
+    [32m'accept-language'[39m: [32m'en-US,en;q=0.9'[39m,
+    cookie: [32m'connect.sid=s%3AebAj19pbt0j5BP4CFN3T4x7p5ccdz1TQ.t7Yf3XwOWv2kIHS%2FOkcwSrpp1%2BiGnBw42Kmf7ZNvFEs'[39m
+  },
+  time: [32m'Sat Feb 18 2023 22:55:16 GMT-0300 (hora estándar de Argentina)'[39m,
+  address: [32m'::ffff:127.0.0.1'[39m,
+  xdomain: [33mfalse[39m,
+  secure: [33mfalse[39m,
+  issued: [33m1676771716594[39m,
+  url: [32m'/socket.io/?EIO=4&transport=polling&t=OPdOUt9'[39m,
+  query: [Object: null prototype] {
+    EIO: [32m'4'[39m,
+    transport: [32m'polling'[39m,
+    t: [32m'OPdOUt9'[39m
+  },
+  auth: {}
+}
+[33mwarn[39m | 18-Feb-2023 22:56:28 | PID: 12576, Route GET /socket.io/?EIO=4&transport=polling&t=OPdOlvE doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:56:45 | PID: 20940, Route GET /socket.io/?EIO=4&transport=polling&t=OPdOq2q doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:56:51 | PID: 20940, Route GET /socket.io/?EIO=4&transport=polling&t=OPdOryE doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:56:51 | PID: 20940, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:56:56 | {
+  headers: {
+    host: [32m'localhost:8080'[39m,
+    connection: [32m'keep-alive'[39m,
+    [32m'sec-ch-ua'[39m: [32m'"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"'[39m,
+    accept: [32m'*/*'[39m,
+    dnt: [32m'1'[39m,
+    [32m'sec-ch-ua-mobile'[39m: [32m'?0'[39m,
+    [32m'user-agent'[39m: [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'[39m,
+    [32m'sec-ch-ua-platform'[39m: [32m'"Windows"'[39m,
+    [32m'sec-fetch-site'[39m: [32m'same-origin'[39m,
+    [32m'sec-fetch-mode'[39m: [32m'cors'[39m,
+    [32m'sec-fetch-dest'[39m: [32m'empty'[39m,
+    referer: [32m'http://localhost:8080/api/chat'[39m,
+    [32m'accept-encoding'[39m: [32m'gzip, deflate, br'[39m,
+    [32m'accept-language'[39m: [32m'en-US,en;q=0.9'[39m,
+    cookie: [32m'connect.sid=s%3AXP3bjn-kZ_GTuz3T1zA9ueuiye80iwpC.H2vPQb8YZobaZEA%2F0k%2BuKcMkaiYp773McvjwbhmtSIc'[39m
+  },
+  time: [32m'Sat Feb 18 2023 22:56:55 GMT-0300 (hora estándar de Argentina)'[39m,
+  address: [32m'::1'[39m,
+  xdomain: [33mfalse[39m,
+  secure: [33mfalse[39m,
+  issued: [33m1676771815994[39m,
+  url: [32m'/socket.io/?EIO=4&transport=polling&t=OPdOt89'[39m,
+  query: [Object: null prototype] {
+    EIO: [32m'4'[39m,
+    transport: [32m'polling'[39m,
+    t: [32m'OPdOt89'[39m
+  },
+  auth: {}
+}
+[33mwarn[39m | 18-Feb-2023 22:59:01 | PID: 5368, Route GET /socket.io/?EIO=4&transport=polling&t=OPdPLVV doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:59:18 | PID: 14960, Route GET /socket.io/?EIO=4&transport=polling&t=OPdPPuk doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:59:20 | PID: 14960, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 18-Feb-2023 22:59:25 | [36m<ref *35>[39m IncomingMessage {
+  _readableState: ReadableState {
+    objectMode: [33mfalse[39m,
+    highWaterMark: [33m16384[39m,
+    buffer: BufferList { head: [1mnull[22m, tail: [1mnull[22m, length: [33m0[39m },
+    length: [33m0[39m,
+    pipes: [ [length]: [33m0[39m ],
+    flowing: [33mtrue[39m,
+    ended: [33mtrue[39m,
+    endEmitted: [33mtrue[39m,
+    reading: [33mfalse[39m,
+    constructed: [33mtrue[39m,
+    sync: [33mtrue[39m,
+    needReadable: [33mfalse[39m,
+    emittedReadable: [33mfalse[39m,
+    readableListening: [33mfalse[39m,
+    resumeScheduled: [33mfalse[39m,
+    errorEmitted: [33mfalse[39m,
+    emitClose: [33mtrue[39m,
+    autoDestroy: [33mtrue[39m,
+    destroyed: [33mtrue[39m,
+    errored: [1mnull[22m,
+    closed: [33mtrue[39m,
+    closeEmitted: [33mtrue[39m,
+    defaultEncoding: [32m'utf8'[39m,
+    awaitDrainWriters: [1mnull[22m,
+    multiAwaitDrain: [33mfalse[39m,
+    readingMore: [33mtrue[39m,
+    dataEmitted: [33mfalse[39m,
+    decoder: [1mnull[22m,
+    encoding: [1mnull[22m,
+    [[32mSymbol(kPaused)[39m]: [33mfalse[39m,
+    [2m[pipesCount]: [36m[Getter][39m[22m,
+    [2m[paused]: [36m[Getter/Setter][39m[22m
+  },
+  [domain]: [1mnull[22m,
+  _events: [Object: null prototype] {
+    end: [
+      [36m<ref *1>[39m [Function: clearRequestTimeout] {
+        [length]: [33m1[39m,
+        [name]: [32m'clearRequestTimeout'[39m,
+        [prototype]: { [constructor]: [36m[Circular *1][39m }
+      },
+      [36m<ref *2>[39m [Function: clearIncoming] {
+        [length]: [33m1[39m,
+        [name]: [32m'clearIncoming'[39m,
+        [prototype]: { [constructor]: [36m[Circular *2][39m }
+      },
+      [length]: [33m2[39m
+    ]
+  },
+  _eventsCount: [33m1[39m,
+  _maxListeners: [90mundefined[39m,
+  socket: [36m<ref *30>[39m Socket {
+    connecting: [33mfalse[39m,
+    _hadError: [33mfalse[39m,
+    _parent: [1mnull[22m,
+    _host: [1mnull[22m,
+    _readableState: ReadableState {
+      objectMode: [33mfalse[39m,
+      highWaterMark: [33m16384[39m,
+      buffer: BufferList { head: [1mnull[22m, tail: [1mnull[22m, length: [33m0[39m },
+      length: [33m0[39m,
+      pipes: [ [length]: [33m0[39m ],
+      flowing: [33mtrue[39m,
+      ended: [33mfalse[39m,
+      endEmitted: [33mfalse[39m,
+      reading: [33mtrue[39m,
+      constructed: [33mtrue[39m,
+      sync: [33mfalse[39m,
+      needReadable: [33mtrue[39m,
+      emittedReadable: [33mfalse[39m,
+      readableListening: [33mfalse[39m,
+      resumeScheduled: [33mfalse[39m,
+      errorEmitted: [33mfalse[39m,
+      emitClose: [33mfalse[39m,
+      autoDestroy: [33mtrue[39m,
+      destroyed: [33mfalse[39m,
+      errored: [1mnull[22m,
+      closed: [33mfalse[39m,
+      closeEmitted: [33mfalse[39m,
+      defaultEncoding: [32m'utf8'[39m,
+      awaitDrainWriters: [1mnull[22m,
+      multiAwaitDrain: [33mfalse[39m,
+      readingMore: [33mfalse[39m,
+      dataEmitted: [33mfalse[39m,
+      decoder: [1mnull[22m,
+      encoding: [1mnull[22m,
+      [[32mSymbol(kPaused)[39m]: [33mfalse[39m,
+      [2m[pipesCount]: [36m[Getter][39m[22m,
+      [2m[paused]: [36m[Getter/Setter][39m[22m
+    },
+    [domain]: [1mnull[22m,
+    _events: [Object: null prototype] {
+      end: [
+        [36m<ref *3>[39m [Function: onReadableStreamEnd] {
+          [length]: [33m0[39m,
+          [name]: [32m'onReadableStreamEnd'[39m,
+          [prototype]: { [constructor]: [36m[Circular *3][39m }
+        },
+        [Function: bound socketOnEnd] {
+          [length]: [33m0[39m,
+          [name]: [32m'bound socketOnEnd'[39m
+        },
+        [length]: [33m2[39m
+      ],
+      timeout: [36m<ref *4>[39m [Function: socketOnTimeout] {
+        [length]: [33m0[39m,
+        [name]: [32m'socketOnTimeout'[39m,
+        [prototype]: { [constructor]: [36m[Circular *4][39m }
+      },
+      data: [Function: bound socketOnData] {
+        [length]: [33m1[39m,
+        [name]: [32m'bound socketOnData'[39m
+      },
+      error: [36m<ref *5>[39m [Function: socketOnError] {
+        [length]: [33m1[39m,
+        [name]: [32m'socketOnError'[39m,
+        [prototype]: { [constructor]: [36m[Circular *5][39m }
+      },
+      close: [Function: bound socketOnClose] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound socketOnClose'[39m
+      },
+      drain: [Function: bound socketOnDrain] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound socketOnDrain'[39m
+      },
+      resume: [36m<ref *6>[39m [Function: onSocketResume] {
+        [length]: [33m0[39m,
+        [name]: [32m'onSocketResume'[39m,
+        [prototype]: { [constructor]: [36m[Circular *6][39m }
+      },
+      pause: [36m<ref *7>[39m [Function: onSocketPause] {
+        [length]: [33m0[39m,
+        [name]: [32m'onSocketPause'[39m,
+        [prototype]: { [constructor]: [36m[Circular *7][39m }
+      }
+    },
+    _eventsCount: [33m8[39m,
+    _maxListeners: [90mundefined[39m,
+    _writableState: WritableState {
+      objectMode: [33mfalse[39m,
+      highWaterMark: [33m16384[39m,
+      finalCalled: [33mfalse[39m,
+      needDrain: [33mfalse[39m,
+      ending: [33mfalse[39m,
+      ended: [33mfalse[39m,
+      finished: [33mfalse[39m,
+      destroyed: [33mfalse[39m,
+      decodeStrings: [33mfalse[39m,
+      defaultEncoding: [32m'utf8'[39m,
+      length: [33m0[39m,
+      writing: [33mfalse[39m,
+      corked: [33m0[39m,
+      sync: [33mfalse[39m,
+      bufferProcessing: [33mfalse[39m,
+      onwrite: [Function: bound onwrite] { [length]: [33m1[39m, [name]: [32m'bound onwrite'[39m },
+      writecb: [1mnull[22m,
+      writelen: [33m0[39m,
+      afterWriteTickInfo: [1mnull[22m,
+      buffered: [ [length]: [33m0[39m ],
+      bufferedIndex: [33m0[39m,
+      allBuffers: [33mtrue[39m,
+      allNoop: [33mtrue[39m,
+      pendingcb: [33m0[39m,
+      constructed: [33mtrue[39m,
+      prefinished: [33mfalse[39m,
+      errorEmitted: [33mfalse[39m,
+      emitClose: [33mfalse[39m,
+      autoDestroy: [33mtrue[39m,
+      errored: [1mnull[22m,
+      closed: [33mfalse[39m,
+      closeEmitted: [33mfalse[39m,
+      [[32mSymbol(kOnFinished)[39m]: [ [length]: [33m0[39m ],
+      [2m[bufferedRequestCount]: [36m[Getter][39m[22m
+    },
+    allowHalfOpen: [33mtrue[39m,
+    _sockname: [1mnull[22m,
+    _pendingData: [1mnull[22m,
+    _pendingEncoding: [32m''[39m,
+    server: [36m<ref *10>[39m Server {
+      maxHeaderSize: [90mundefined[39m,
+      insecureHTTPParser: [90mundefined[39m,
+      [domain]: [1mnull[22m,
+      _events: [Object: null prototype] {
+        connection: [36m<ref *8>[39m [Function: connectionListener] {
+          [length]: [33m1[39m,
+          [name]: [32m'connectionListener'[39m,
+          [prototype]: { [constructor]: [36m[Circular *8][39m }
+        },
+        close: [Function: bound close] { [length]: [33m0[39m, [name]: [32m'bound close'[39m },
+        listening: [Function: bound init] { [length]: [33m0[39m, [name]: [32m'bound init'[39m },
+        upgrade: [Function (anonymous)] { [length]: [33m3[39m, [name]: [32m''[39m },
+        request: [Function (anonymous)] { [length]: [33m2[39m, [name]: [32m''[39m }
+      },
+      _eventsCount: [33m5[39m,
+      _maxListeners: [90mundefined[39m,
+      _connections: [33m3[39m,
+      _handle: TCP {
+        reading: [33mfalse[39m,
+        onconnection: [36m<ref *9>[39m [Function: onconnection] {
+          [length]: [33m2[39m,
+          [name]: [32m'onconnection'[39m,
+          [prototype]: { [constructor]: [36m[Circular *9][39m }
+        },
+        [[32mSymbol(owner_symbol)[39m]: [36m[Circular *10][39m,
+        [2m[owner]: [36m[Getter/Setter][39m[22m,
+        [2mwriteQueueSize: [36m[Getter][39m[22m,
+        [2m[fd]: [36m[Getter][39m[22m,
+        [2m[_externalStream]: [36m[Getter][39m[22m,
+        [2m[bytesRead]: [36m[Getter][39m[22m,
+        [2m[bytesWritten]: [36m[Getter][39m[22m,
+        [2misStreamBase: [33mtrue[39m[22m
+      },
+      _usingWorkers: [33mfalse[39m,
+      _workers: [ [length]: [33m0[39m ],
+      _unref: [33mfalse[39m,
+      allowHalfOpen: [33mtrue[39m,
+      pauseOnConnect: [33mfalse[39m,
+      noDelay: [33mfalse[39m,
+      keepAlive: [33mfalse[39m,
+      keepAliveInitialDelay: [33m0[39m,
+      httpAllowHalfOpen: [33mfalse[39m,
+      timeout: [33m0[39m,
+      keepAliveTimeout: [33m5000[39m,
+      maxHeadersCount: [1mnull[22m,
+      maxRequestsPerSocket: [33m0[39m,
+      headersTimeout: [33m60000[39m,
+      requestTimeout: [33m0[39m,
+      _connectionKey: [32m'6::::8080'[39m,
+      [[32mSymbol(IncomingMessage)[39m]: [36m<ref *11>[39m [Function: IncomingMessage] {
+        [length]: [33m1[39m,
+        [name]: [32m'IncomingMessage'[39m,
+        [prototype]: Readable {
+          [constructor]: [36m[Circular *11][39m,
+          [connection]: [36m[Getter/Setter][39m,
+          [headers]: [36m[Getter/Setter][39m,
+          [trailers]: [36m[Getter/Setter][39m,
+          setTimeout: [36m<ref *12>[39m [Function: setTimeout] {
+            [length]: [33m2[39m,
+            [name]: [32m'setTimeout'[39m,
+            [prototype]: { [constructor]: [36m[Circular *12][39m }
+          },
+          _read: [36m<ref *13>[39m [Function: _read] {
+            [length]: [33m1[39m,
+            [name]: [32m'_read'[39m,
+            [prototype]: { [constructor]: [36m[Circular *13][39m }
+          },
+          _destroy: [36m<ref *14>[39m [Function: _destroy] {
+            [length]: [33m2[39m,
+            [name]: [32m'_destroy'[39m,
+            [prototype]: { [constructor]: [36m[Circular *14][39m }
+          },
+          _addHeaderLines: [36m<ref *15>[39m [Function: _addHeaderLines] {
+            [length]: [33m2[39m,
+            [name]: [32m'_addHeaderLines'[39m,
+            [prototype]: { [constructor]: [36m[Circular *15][39m }
+          },
+          _addHeaderLine: [36m<ref *16>[39m [Function: _addHeaderLine] {
+            [length]: [33m3[39m,
+            [name]: [32m'_addHeaderLine'[39m,
+            [prototype]: { [constructor]: [36m[Circular *16][39m }
+          },
+          _dump: [36m<ref *17>[39m [Function: _dump] {
+            [length]: [33m0[39m,
+            [name]: [32m'_dump'[39m,
+            [prototype]: { [constructor]: [36m[Circular *17][39m }
+          },
+          [2m[readable]: [36m[Getter/Setter][39m[22m,
+          [2m[readableDidRead]: [36m[Getter][39m[22m,
+          [2m[readableAborted]: [36m[Getter][39m[22m,
+          [2m[readableHighWaterMark]: [36m[Getter][39m[22m,
+          [2m[readableBuffer]: [36m[Getter][39m[22m,
+          [2m[readableFlowing]: [36m[Getter/Setter][39m[22m,
+          [2m[readableLength]: [36m[Getter][39m[22m,
+          [2m[readableObjectMode]: [36m[Getter][39m[22m,
+          [2m[readableEncoding]: [36m[Getter][39m[22m,
+          [2m[destroyed]: [36m[Getter/Setter][39m[22m,
+          [2m[readableEnded]: [36m[Getter][39m[22m,
+          [2m_events: [90mundefined[39m[22m,
+          [2m_eventsCount: [33m0[39m[22m,
+          [2m_maxListeners: [90mundefined[39m[22m,
+          [2m[[32mSymbol(kCapture)[39m]: [33mfalse[39m[22m
+        },
+        [2mpromises: [36m[Getter][39m[22m,
+        [2musingDomains: [33mtrue[39m[22m,
+        [2mcaptureRejectionSymbol: [32mSymbol(nodejs.rejection)[39m[22m,
+        [2mcaptureRejections: [36m[Getter/Setter][39m[22m,
+        [2mEventEmitterAsyncResource: [36m[Getter][39m[22m,
+        [2merrorMonitor: [32mSymbol(events.errorMonitor)[39m[22m,
+        [2mdefaultMaxListeners: [36m[Getter/Setter][39m[22m,
+        [2m[kMaxEventTargetListeners]: [32mSymbol(events.maxEventTargetListeners)[39m[22m,
+        [2m[kMaxEventTargetListenersWarned]: [32mSymbol(events.maxEventTargetListenersWarned)[39m[22m
+      },
+      [[32mSymbol(ServerResponse)[39m]: [36m<ref *18>[39m [Function: ServerResponse] {
+        [length]: [33m1[39m,
+        [name]: [32m'ServerResponse'[39m,
+        [prototype]: OutgoingMessage {
+          [constructor]: [36m[Circular *18][39m,
+          _finish: [36m<ref *19>[39m [Function: _finish] {
+            [length]: [33m0[39m,
+            [name]: [32m'_finish'[39m,
+            [prototype]: { [constructor]: [36m[Circular *19][39m }
+          },
+          statusCode: [33m200[39m,
+          statusMessage: [90mundefined[39m,
+          assignSocket: [36m<ref *20>[39m [Function: assignSocket] {
+            [length]: [33m1[39m,
+            [name]: [32m'assignSocket'[39m,
+            [prototype]: { [constructor]: [36m[Circular *20][39m }
+          },
+          detachSocket: [36m<ref *21>[39m [Function: detachSocket] {
+            [length]: [33m1[39m,
+            [name]: [32m'detachSocket'[39m,
+            [prototype]: { [constructor]: [36m[Circular *21][39m }
+          },
+          writeContinue: [36m<ref *22>[39m [Function: writeContinue] {
+            [length]: [33m1[39m,
+            [name]: [32m'writeContinue'[39m,
+            [prototype]: { [constructor]: [36m[Circular *22][39m }
+          },
+          writeProcessing: [36m<ref *23>[39m [Function: writeProcessing] {
+            [length]: [33m1[39m,
+            [name]: [32m'writeProcessing'[39m,
+            [prototype]: { [constructor]: [36m[Circular *23][39m }
+          },
+          _implicitHeader: [36m<ref *24>[39m [Function: _implicitHeader] {
+            [length]: [33m0[39m,
+            [name]: [32m'_implicitHeader'[39m,
+            [prototype]: { [constructor]: [36m[Circular *24][39m }
+          },
+          writeHead: [36m<ref *25>[39m [Function: writeHead] {
+            [length]: [33m3[39m,
+            [name]: [32m'writeHead'[39m,
+            [prototype]: { [constructor]: [36m[Circular *25][39m }
+          },
+          writeHeader: [36m<ref *25>[39m [Function: writeHead] {
+            [length]: [33m3[39m,
+            [name]: [32m'writeHead'[39m,
+            [prototype]: { [constructor]: [36m[Circular *25][39m }
+          },
+          [2m[writableFinished]: [36m[Getter][39m[22m,
+          [2m[writableObjectMode]: [36m[Getter][39m[22m,
+          [2m[writableLength]: [36m[Getter][39m[22m,
+          [2m[writableHighWaterMark]: [36m[Getter][39m[22m,
+          [2m[writableCorked]: [36m[Getter][39m[22m,
+          [2m[_headers]: [36m[Getter/Setter][39m[22m,
+          [2m[connection]: [36m[Getter/Setter][39m[22m,
+          [2m[_headerNames]: [36m[Getter/Setter][39m[22m,
+          [2mheadersSent: [36m[Getter][39m[22m,
+          [2m[writableEnded]: [36m[Getter][39m[22m,
+          [2m[writableNeedDrain]: [36m[Getter][39m[22m,
+          [2m_events: [90mundefined[39m[22m,
+          [2m_eventsCount: [33m0[39m[22m,
+          [2m_maxListeners: [90mundefined[39m[22m,
+          [2m[[32mSymbol(kCapture)[39m]: [33mfalse[39m[22m
+        },
+        [2mpromises: [36m[Getter][39m[22m,
+        [2musingDomains: [33mtrue[39m[22m,
+        [2mcaptureRejectionSymbol: [32mSymbol(nodejs.rejection)[39m[22m,
+        [2mcaptureRejections: [36m[Getter/Setter][39m[22m,
+        [2mEventEmitterAsyncResource: [36m[Getter][39m[22m,
+        [2merrorMonitor: [32mSymbol(events.errorMonitor)[39m[22m,
+        [2mdefaultMaxListeners: [36m[Getter/Setter][39m[22m,
+        [2m[kMaxEventTargetListeners]: [32mSymbol(events.maxEventTargetListeners)[39m[22m,
+        [2m[kMaxEventTargetListenersWarned]: [32mSymbol(events.maxEventTargetListenersWarned)[39m[22m
+      },
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(async_id_symbol)[39m]: [33m120[39m,
+      [2mlistening: [36m[Getter][39m[22m
+    },
+    _server: [36m<ref *10>[39m Server {
+      maxHeaderSize: [90mundefined[39m,
+      insecureHTTPParser: [90mundefined[39m,
+      [domain]: [1mnull[22m,
+      _events: [Object: null prototype] {
+        connection: [36m<ref *8>[39m [Function: connectionListener] {
+          [length]: [33m1[39m,
+          [name]: [32m'connectionListener'[39m,
+          [prototype]: { [constructor]: [36m[Circular *8][39m }
+        },
+        close: [Function: bound close] { [length]: [33m0[39m, [name]: [32m'bound close'[39m },
+        listening: [Function: bound init] { [length]: [33m0[39m, [name]: [32m'bound init'[39m },
+        upgrade: [Function (anonymous)] { [length]: [33m3[39m, [name]: [32m''[39m },
+        request: [Function (anonymous)] { [length]: [33m2[39m, [name]: [32m''[39m }
+      },
+      _eventsCount: [33m5[39m,
+      _maxListeners: [90mundefined[39m,
+      _connections: [33m3[39m,
+      _handle: TCP {
+        reading: [33mfalse[39m,
+        onconnection: [36m<ref *9>[39m [Function: onconnection] {
+          [length]: [33m2[39m,
+          [name]: [32m'onconnection'[39m,
+          [prototype]: { [constructor]: [36m[Circular *9][39m }
+        },
+        [[32mSymbol(owner_symbol)[39m]: [36m[Circular *10][39m,
+        [2m[owner]: [36m[Getter/Setter][39m[22m,
+        [2mwriteQueueSize: [36m[Getter][39m[22m,
+        [2m[fd]: [36m[Getter][39m[22m,
+        [2m[_externalStream]: [36m[Getter][39m[22m,
+        [2m[bytesRead]: [36m[Getter][39m[22m,
+        [2m[bytesWritten]: [36m[Getter][39m[22m,
+        [2misStreamBase: [33mtrue[39m[22m
+      },
+      _usingWorkers: [33mfalse[39m,
+      _workers: [ [length]: [33m0[39m ],
+      _unref: [33mfalse[39m,
+      allowHalfOpen: [33mtrue[39m,
+      pauseOnConnect: [33mfalse[39m,
+      noDelay: [33mfalse[39m,
+      keepAlive: [33mfalse[39m,
+      keepAliveInitialDelay: [33m0[39m,
+      httpAllowHalfOpen: [33mfalse[39m,
+      timeout: [33m0[39m,
+      keepAliveTimeout: [33m5000[39m,
+      maxHeadersCount: [1mnull[22m,
+      maxRequestsPerSocket: [33m0[39m,
+      headersTimeout: [33m60000[39m,
+      requestTimeout: [33m0[39m,
+      _connectionKey: [32m'6::::8080'[39m,
+      [[32mSymbol(IncomingMessage)[39m]: [36m<ref *11>[39m [Function: IncomingMessage] {
+        [length]: [33m1[39m,
+        [name]: [32m'IncomingMessage'[39m,
+        [prototype]: Readable {
+          [constructor]: [36m[Circular *11][39m,
+          [connection]: [36m[Getter/Setter][39m,
+          [headers]: [36m[Getter/Setter][39m,
+          [trailers]: [36m[Getter/Setter][39m,
+          setTimeout: [36m<ref *12>[39m [Function: setTimeout] {
+            [length]: [33m2[39m,
+            [name]: [32m'setTimeout'[39m,
+            [prototype]: { [constructor]: [36m[Circular *12][39m }
+          },
+          _read: [36m<ref *13>[39m [Function: _read] {
+            [length]: [33m1[39m,
+            [name]: [32m'_read'[39m,
+            [prototype]: { [constructor]: [36m[Circular *13][39m }
+          },
+          _destroy: [36m<ref *14>[39m [Function: _destroy] {
+            [length]: [33m2[39m,
+            [name]: [32m'_destroy'[39m,
+            [prototype]: { [constructor]: [36m[Circular *14][39m }
+          },
+          _addHeaderLines: [36m<ref *15>[39m [Function: _addHeaderLines] {
+            [length]: [33m2[39m,
+            [name]: [32m'_addHeaderLines'[39m,
+            [prototype]: { [constructor]: [36m[Circular *15][39m }
+          },
+          _addHeaderLine: [36m<ref *16>[39m [Function: _addHeaderLine] {
+            [length]: [33m3[39m,
+            [name]: [32m'_addHeaderLine'[39m,
+            [prototype]: { [constructor]: [36m[Circular *16][39m }
+          },
+          _dump: [36m<ref *17>[39m [Function: _dump] {
+            [length]: [33m0[39m,
+            [name]: [32m'_dump'[39m,
+            [prototype]: { [constructor]: [36m[Circular *17][39m }
+          },
+          [2m[readable]: [36m[Getter/Setter][39m[22m,
+          [2m[readableDidRead]: [36m[Getter][39m[22m,
+          [2m[readableAborted]: [36m[Getter][39m[22m,
+          [2m[readableHighWaterMark]: [36m[Getter][39m[22m,
+          [2m[readableBuffer]: [36m[Getter][39m[22m,
+          [2m[readableFlowing]: [36m[Getter/Setter][39m[22m,
+          [2m[readableLength]: [36m[Getter][39m[22m,
+          [2m[readableObjectMode]: [36m[Getter][39m[22m,
+          [2m[readableEncoding]: [36m[Getter][39m[22m,
+          [2m[destroyed]: [36m[Getter/Setter][39m[22m,
+          [2m[readableEnded]: [36m[Getter][39m[22m,
+          [2m_events: [90mundefined[39m[22m,
+          [2m_eventsCount: [33m0[39m[22m,
+          [2m_maxListeners: [90mundefined[39m[22m,
+          [2m[[32mSymbol(kCapture)[39m]: [33mfalse[39m[22m
+        },
+        [2mpromises: [36m[Getter][39m[22m,
+        [2musingDomains: [33mtrue[39m[22m,
+        [2mcaptureRejectionSymbol: [32mSymbol(nodejs.rejection)[39m[22m,
+        [2mcaptureRejections: [36m[Getter/Setter][39m[22m,
+        [2mEventEmitterAsyncResource: [36m[Getter][39m[22m,
+        [2merrorMonitor: [32mSymbol(events.errorMonitor)[39m[22m,
+        [2mdefaultMaxListeners: [36m[Getter/Setter][39m[22m,
+        [2m[kMaxEventTargetListeners]: [32mSymbol(events.maxEventTargetListeners)[39m[22m,
+        [2m[kMaxEventTargetListenersWarned]: [32mSymbol(events.maxEventTargetListenersWarned)[39m[22m
+      },
+      [[32mSymbol(ServerResponse)[39m]: [36m<ref *18>[39m [Function: ServerResponse] {
+        [length]: [33m1[39m,
+        [name]: [32m'ServerResponse'[39m,
+        [prototype]: OutgoingMessage {
+          [constructor]: [36m[Circular *18][39m,
+          _finish: [36m<ref *19>[39m [Function: _finish] {
+            [length]: [33m0[39m,
+            [name]: [32m'_finish'[39m,
+            [prototype]: { [constructor]: [36m[Circular *19][39m }
+          },
+          statusCode: [33m200[39m,
+          statusMessage: [90mundefined[39m,
+          assignSocket: [36m<ref *20>[39m [Function: assignSocket] {
+            [length]: [33m1[39m,
+            [name]: [32m'assignSocket'[39m,
+            [prototype]: { [constructor]: [36m[Circular *20][39m }
+          },
+          detachSocket: [36m<ref *21>[39m [Function: detachSocket] {
+            [length]: [33m1[39m,
+            [name]: [32m'detachSocket'[39m,
+            [prototype]: { [constructor]: [36m[Circular *21][39m }
+          },
+          writeContinue: [36m<ref *22>[39m [Function: writeContinue] {
+            [length]: [33m1[39m,
+            [name]: [32m'writeContinue'[39m,
+            [prototype]: { [constructor]: [36m[Circular *22][39m }
+          },
+          writeProcessing: [36m<ref *23>[39m [Function: writeProcessing] {
+            [length]: [33m1[39m,
+            [name]: [32m'writeProcessing'[39m,
+            [prototype]: { [constructor]: [36m[Circular *23][39m }
+          },
+          _implicitHeader: [36m<ref *24>[39m [Function: _implicitHeader] {
+            [length]: [33m0[39m,
+            [name]: [32m'_implicitHeader'[39m,
+            [prototype]: { [constructor]: [36m[Circular *24][39m }
+          },
+          writeHead: [36m<ref *25>[39m [Function: writeHead] {
+            [length]: [33m3[39m,
+            [name]: [32m'writeHead'[39m,
+            [prototype]: { [constructor]: [36m[Circular *25][39m }
+          },
+          writeHeader: [36m<ref *25>[39m [Function: writeHead] {
+            [length]: [33m3[39m,
+            [name]: [32m'writeHead'[39m,
+            [prototype]: { [constructor]: [36m[Circular *25][39m }
+          },
+          [2m[writableFinished]: [36m[Getter][39m[22m,
+          [2m[writableObjectMode]: [36m[Getter][39m[22m,
+          [2m[writableLength]: [36m[Getter][39m[22m,
+          [2m[writableHighWaterMark]: [36m[Getter][39m[22m,
+          [2m[writableCorked]: [36m[Getter][39m[22m,
+          [2m[_headers]: [36m[Getter/Setter][39m[22m,
+          [2m[connection]: [36m[Getter/Setter][39m[22m,
+          [2m[_headerNames]: [36m[Getter/Setter][39m[22m,
+          [2mheadersSent: [36m[Getter][39m[22m,
+          [2m[writableEnded]: [36m[Getter][39m[22m,
+          [2m[writableNeedDrain]: [36m[Getter][39m[22m,
+          [2m_events: [90mundefined[39m[22m,
+          [2m_eventsCount: [33m0[39m[22m,
+          [2m_maxListeners: [90mundefined[39m[22m,
+          [2m[[32mSymbol(kCapture)[39m]: [33mfalse[39m[22m
+        },
+        [2mpromises: [36m[Getter][39m[22m,
+        [2musingDomains: [33mtrue[39m[22m,
+        [2mcaptureRejectionSymbol: [32mSymbol(nodejs.rejection)[39m[22m,
+        [2mcaptureRejections: [36m[Getter/Setter][39m[22m,
+        [2mEventEmitterAsyncResource: [36m[Getter][39m[22m,
+        [2merrorMonitor: [32mSymbol(events.errorMonitor)[39m[22m,
+        [2mdefaultMaxListeners: [36m[Getter/Setter][39m[22m,
+        [2m[kMaxEventTargetListeners]: [32mSymbol(events.maxEventTargetListeners)[39m[22m,
+        [2m[kMaxEventTargetListenersWarned]: [32mSymbol(events.maxEventTargetListenersWarned)[39m[22m
+      },
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(async_id_symbol)[39m]: [33m120[39m,
+      [2mlistening: [36m[Getter][39m[22m
+    },
+    parser: HTTPParser {
+      [32m'0'[39m: [Function: bound setRequestTimeout] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound setRequestTimeout'[39m
+      },
+      [32m'1'[39m: [36m<ref *26>[39m [Function: parserOnHeaders] {
+        [length]: [33m2[39m,
+        [name]: [32m'parserOnHeaders'[39m,
+        [prototype]: { [constructor]: [36m[Circular *26][39m }
+      },
+      [32m'2'[39m: [36m<ref *27>[39m [Function: parserOnHeadersComplete] {
+        [length]: [33m9[39m,
+        [name]: [32m'parserOnHeadersComplete'[39m,
+        [prototype]: { [constructor]: [36m[Circular *27][39m }
+      },
+      [32m'3'[39m: [36m<ref *28>[39m [Function: parserOnBody] {
+        [length]: [33m3[39m,
+        [name]: [32m'parserOnBody'[39m,
+        [prototype]: { [constructor]: [36m[Circular *28][39m }
+      },
+      [32m'4'[39m: [36m<ref *29>[39m [Function: parserOnMessageComplete] {
+        [length]: [33m0[39m,
+        [name]: [32m'parserOnMessageComplete'[39m,
+        [prototype]: { [constructor]: [36m[Circular *29][39m }
+      },
+      [32m'5'[39m: [Function: bound onParserExecute] {
+        [length]: [33m1[39m,
+        [name]: [32m'bound onParserExecute'[39m
+      },
+      [32m'6'[39m: [Function: bound onParserTimeout] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound onParserTimeout'[39m
+      },
+      _headers: [ [length]: [33m0[39m ],
+      _url: [32m''[39m,
+      socket: [36m[Circular *30][39m,
+      incoming: [1mnull[22m,
+      outgoing: [1mnull[22m,
+      maxHeaderPairs: [33m2000[39m,
+      _consumed: [33mtrue[39m,
+      onIncoming: [Function: bound parserOnIncoming] {
+        [length]: [33m2[39m,
+        [name]: [32m'bound parserOnIncoming'[39m
+      },
+      [[32mSymbol(resource_symbol)[39m]: HTTPServerAsyncResource {
+        type: [32m'HTTPINCOMINGMESSAGE'[39m,
+        socket: [36m[Circular *30][39m
+      }
+    },
+    on: [36m<ref *31>[39m [Function: socketListenerWrap] {
+      [length]: [33m2[39m,
+      [name]: [32m'socketListenerWrap'[39m,
+      [prototype]: { [constructor]: [36m[Circular *31][39m }
+    },
+    addListener: [36m<ref *32>[39m [Function: socketListenerWrap] {
+      [length]: [33m2[39m,
+      [name]: [32m'socketListenerWrap'[39m,
+      [prototype]: { [constructor]: [36m[Circular *32][39m }
+    },
+    prependListener: [36m<ref *33>[39m [Function: socketListenerWrap] {
+      [length]: [33m2[39m,
+      [name]: [32m'socketListenerWrap'[39m,
+      [prototype]: { [constructor]: [36m[Circular *33][39m }
+    },
+    setEncoding: [36m<ref *34>[39m [Function: socketSetEncoding] {
+      [length]: [33m0[39m,
+      [name]: [32m'socketSetEncoding'[39m,
+      [prototype]: { [constructor]: [36m[Circular *34][39m }
+    },
+    _paused: [33mfalse[39m,
+    _httpMessage: [1mnull[22m,
+    timeout: [33m5000[39m,
+    _peername: { address: [32m'::1'[39m, family: [32m'IPv6'[39m, port: [33m52299[39m },
+    [[32mSymbol(async_id_symbol)[39m]: [33m566[39m,
+    [[32mSymbol(kHandle)[39m]: TCP {
+      reading: [33mtrue[39m,
+      onconnection: [1mnull[22m,
+      _consumed: [33mtrue[39m,
+      [[32mSymbol(owner_symbol)[39m]: [36m[Circular *30][39m,
+      [2m[owner]: [36m[Getter/Setter][39m[22m,
+      [2mwriteQueueSize: [36m[Getter][39m[22m,
+      [2m[fd]: [36m[Getter][39m[22m,
+      [2m[_externalStream]: [36m[Getter][39m[22m,
+      [2m[bytesRead]: [36m[Getter][39m[22m,
+      [2m[bytesWritten]: [36m[Getter][39m[22m,
+      [2misStreamBase: [33mtrue[39m[22m
+    },
+    [[32mSymbol(lastWriteQueueSize)[39m]: [33m0[39m,
+    [[32mSymbol(timeout)[39m]: Timeout {
+      _idleTimeout: [33m5000[39m,
+      _idlePrev: [36m[TimersList][39m,
+      _idleNext: [36m[Timeout][39m,
+      _idleStart: [33m23689[39m,
+      _onTimeout: [36m[Function][39m,
+      _timerArgs: [90mundefined[39m,
+      _repeat: [1mnull[22m,
+      _destroyed: [33mfalse[39m,
+      [[32mSymbol(refed)[39m]: [33mfalse[39m,
+      [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+      [[32mSymbol(asyncId)[39m]: [33m599[39m,
+      [[32mSymbol(triggerId)[39m]: [33m596[39m
+    },
+    [[32mSymbol(kBuffer)[39m]: [1mnull[22m,
+    [[32mSymbol(kBufferCb)[39m]: [1mnull[22m,
+    [[32mSymbol(kBufferGen)[39m]: [1mnull[22m,
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(kSetNoDelay)[39m]: [33mfalse[39m,
+    [[32mSymbol(kSetKeepAlive)[39m]: [33mfalse[39m,
+    [[32mSymbol(kSetKeepAliveInitialDelay)[39m]: [33m0[39m,
+    [[32mSymbol(kBytesRead)[39m]: [33m0[39m,
+    [[32mSymbol(kBytesWritten)[39m]: [33m0[39m,
+    [[32mSymbol(RequestTimeout)[39m]: [90mundefined[39m,
+    [2m[_connecting]: [36m[Getter][39m[22m,
+    [2m[pending]: [36m[Getter][39m[22m,
+    [2m[readyState]: [36m[Getter][39m[22m,
+    [2m[bufferSize]: [36m[Getter][39m[22m,
+    [2mbytesRead: [36m[Getter][39m[22m,
+    [2mremoteAddress: [36m[Getter][39m[22m,
+    [2mremoteFamily: [36m[Getter][39m[22m,
+    [2mremotePort: [36m[Getter][39m[22m,
+    [2mlocalAddress: [36m[Getter][39m[22m,
+    [2mlocalPort: [36m[Getter][39m[22m,
+    [2m_bytesDispatched: [36m[Getter][39m[22m,
+    [2mbytesWritten: [36m[Getter][39m[22m,
+    [2m[_handle]: [36m[Getter/Setter][39m[22m,
+    [2m[[32mSymbol(kUpdateTimer)[39m]: [36m[Getter][39m[22m,
+    [2m[writable]: [36m[Getter/Setter][39m[22m,
+    [2m[writableHighWaterMark]: [36m[Getter][39m[22m,
+    [2m[writableObjectMode]: [36m[Getter][39m[22m,
+    [2m[writableBuffer]: [36m[Getter][39m[22m,
+    [2m[writableLength]: [36m[Getter][39m[22m,
+    [2m[writableFinished]: [36m[Getter][39m[22m,
+    [2m[writableCorked]: [36m[Getter][39m[22m,
+    [2m[writableEnded]: [36m[Getter][39m[22m,
+    [2m[writableNeedDrain]: [36m[Getter][39m[22m,
+    [2m[destroyed]: [36m[Getter/Setter][39m[22m,
+    [2m[readable]: [36m[Getter/Setter][39m[22m,
+    [2m[readableDidRead]: [36m[Getter][39m[22m,
+    [2m[readableAborted]: [36m[Getter][39m[22m,
+    [2m[readableHighWaterMark]: [36m[Getter][39m[22m,
+    [2m[readableBuffer]: [36m[Getter][39m[22m,
+    [2m[readableFlowing]: [36m[Getter/Setter][39m[22m,
+    [2m[readableLength]: [36m[Getter][39m[22m,
+    [2m[readableObjectMode]: [36m[Getter][39m[22m,
+    [2m[readableEncoding]: [36m[Getter][39m[22m,
+    [2m[readableEnded]: [36m[Getter][39m[22m
+  },
+  httpVersionMajor: [33m1[39m,
+  httpVersionMinor: [33m1[39m,
+  httpVersion: [32m'1.1'[39m,
+  complete: [33mtrue[39m,
+  rawHeaders: [
+    [32m'Host'[39m,
+    [32m'localhost:8080'[39m,
+    [32m'Connection'[39m,
+    [32m'keep-alive'[39m,
+    [32m'sec-ch-ua'[39m,
+    [32m'"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"'[39m,
+    [32m'Accept'[39m,
+    [32m'*/*'[39m,
+    [32m'DNT'[39m,
+    [32m'1'[39m,
+    [32m'sec-ch-ua-mobile'[39m,
+    [32m'?0'[39m,
+    [32m'User-Agent'[39m,
+    [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'[39m,
+    [32m'sec-ch-ua-platform'[39m,
+    [32m'"Windows"'[39m,
+    [32m'Sec-Fetch-Site'[39m,
+    [32m'same-origin'[39m,
+    [32m'Sec-Fetch-Mode'[39m,
+    [32m'cors'[39m,
+    [32m'Sec-Fetch-Dest'[39m,
+    [32m'empty'[39m,
+    [32m'Referer'[39m,
+    [32m'http://localhost:8080/api/chat'[39m,
+    [32m'Accept-Encoding'[39m,
+    [32m'gzip, deflate, br'[39m,
+    [32m'Accept-Language'[39m,
+    [32m'en-US,en;q=0.9'[39m,
+    [32m'Cookie'[39m,
+    [32m'connect.sid=s%3ARzHJbOQRvEbOwpIaMMmyAyJEh-LnPOUN.mcessKDy5rAZDm7PZ2NAfOTOmwO5Va5m33bgSVIJo10'[39m,
+    [length]: [33m30[39m
+  ],
+  rawTrailers: [ [length]: [33m0[39m ],
+  aborted: [33mfalse[39m,
+  upgrade: [33mfalse[39m,
+  url: [32m'/socket.io/?EIO=4&transport=polling&t=OPdPRjj'[39m,
+  method: [32m'GET'[39m,
+  statusCode: [1mnull[22m,
+  statusMessage: [1mnull[22m,
+  client: [36m<ref *30>[39m Socket {
+    connecting: [33mfalse[39m,
+    _hadError: [33mfalse[39m,
+    _parent: [1mnull[22m,
+    _host: [1mnull[22m,
+    _readableState: ReadableState {
+      objectMode: [33mfalse[39m,
+      highWaterMark: [33m16384[39m,
+      buffer: BufferList { head: [1mnull[22m, tail: [1mnull[22m, length: [33m0[39m },
+      length: [33m0[39m,
+      pipes: [ [length]: [33m0[39m ],
+      flowing: [33mtrue[39m,
+      ended: [33mfalse[39m,
+      endEmitted: [33mfalse[39m,
+      reading: [33mtrue[39m,
+      constructed: [33mtrue[39m,
+      sync: [33mfalse[39m,
+      needReadable: [33mtrue[39m,
+      emittedReadable: [33mfalse[39m,
+      readableListening: [33mfalse[39m,
+      resumeScheduled: [33mfalse[39m,
+      errorEmitted: [33mfalse[39m,
+      emitClose: [33mfalse[39m,
+      autoDestroy: [33mtrue[39m,
+      destroyed: [33mfalse[39m,
+      errored: [1mnull[22m,
+      closed: [33mfalse[39m,
+      closeEmitted: [33mfalse[39m,
+      defaultEncoding: [32m'utf8'[39m,
+      awaitDrainWriters: [1mnull[22m,
+      multiAwaitDrain: [33mfalse[39m,
+      readingMore: [33mfalse[39m,
+      dataEmitted: [33mfalse[39m,
+      decoder: [1mnull[22m,
+      encoding: [1mnull[22m,
+      [[32mSymbol(kPaused)[39m]: [33mfalse[39m,
+      [2m[pipesCount]: [36m[Getter][39m[22m,
+      [2m[paused]: [36m[Getter/Setter][39m[22m
+    },
+    [domain]: [1mnull[22m,
+    _events: [Object: null prototype] {
+      end: [
+        [36m<ref *3>[39m [Function: onReadableStreamEnd] {
+          [length]: [33m0[39m,
+          [name]: [32m'onReadableStreamEnd'[39m,
+          [prototype]: { [constructor]: [36m[Circular *3][39m }
+        },
+        [Function: bound socketOnEnd] {
+          [length]: [33m0[39m,
+          [name]: [32m'bound socketOnEnd'[39m
+        },
+        [length]: [33m2[39m
+      ],
+      timeout: [36m<ref *4>[39m [Function: socketOnTimeout] {
+        [length]: [33m0[39m,
+        [name]: [32m'socketOnTimeout'[39m,
+        [prototype]: { [constructor]: [36m[Circular *4][39m }
+      },
+      data: [Function: bound socketOnData] {
+        [length]: [33m1[39m,
+        [name]: [32m'bound socketOnData'[39m
+      },
+      error: [36m<ref *5>[39m [Function: socketOnError] {
+        [length]: [33m1[39m,
+        [name]: [32m'socketOnError'[39m,
+        [prototype]: { [constructor]: [36m[Circular *5][39m }
+      },
+      close: [Function: bound socketOnClose] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound socketOnClose'[39m
+      },
+      drain: [Function: bound socketOnDrain] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound socketOnDrain'[39m
+      },
+      resume: [36m<ref *6>[39m [Function: onSocketResume] {
+        [length]: [33m0[39m,
+        [name]: [32m'onSocketResume'[39m,
+        [prototype]: { [constructor]: [36m[Circular *6][39m }
+      },
+      pause: [36m<ref *7>[39m [Function: onSocketPause] {
+        [length]: [33m0[39m,
+        [name]: [32m'onSocketPause'[39m,
+        [prototype]: { [constructor]: [36m[Circular *7][39m }
+      }
+    },
+    _eventsCount: [33m8[39m,
+    _maxListeners: [90mundefined[39m,
+    _writableState: WritableState {
+      objectMode: [33mfalse[39m,
+      highWaterMark: [33m16384[39m,
+      finalCalled: [33mfalse[39m,
+      needDrain: [33mfalse[39m,
+      ending: [33mfalse[39m,
+      ended: [33mfalse[39m,
+      finished: [33mfalse[39m,
+      destroyed: [33mfalse[39m,
+      decodeStrings: [33mfalse[39m,
+      defaultEncoding: [32m'utf8'[39m,
+      length: [33m0[39m,
+      writing: [33mfalse[39m,
+      corked: [33m0[39m,
+      sync: [33mfalse[39m,
+      bufferProcessing: [33mfalse[39m,
+      onwrite: [Function: bound onwrite] { [length]: [33m1[39m, [name]: [32m'bound onwrite'[39m },
+      writecb: [1mnull[22m,
+      writelen: [33m0[39m,
+      afterWriteTickInfo: [1mnull[22m,
+      buffered: [ [length]: [33m0[39m ],
+      bufferedIndex: [33m0[39m,
+      allBuffers: [33mtrue[39m,
+      allNoop: [33mtrue[39m,
+      pendingcb: [33m0[39m,
+      constructed: [33mtrue[39m,
+      prefinished: [33mfalse[39m,
+      errorEmitted: [33mfalse[39m,
+      emitClose: [33mfalse[39m,
+      autoDestroy: [33mtrue[39m,
+      errored: [1mnull[22m,
+      closed: [33mfalse[39m,
+      closeEmitted: [33mfalse[39m,
+      [[32mSymbol(kOnFinished)[39m]: [ [length]: [33m0[39m ],
+      [2m[bufferedRequestCount]: [36m[Getter][39m[22m
+    },
+    allowHalfOpen: [33mtrue[39m,
+    _sockname: [1mnull[22m,
+    _pendingData: [1mnull[22m,
+    _pendingEncoding: [32m''[39m,
+    server: [36m<ref *10>[39m Server {
+      maxHeaderSize: [90mundefined[39m,
+      insecureHTTPParser: [90mundefined[39m,
+      [domain]: [1mnull[22m,
+      _events: [Object: null prototype] {
+        connection: [36m<ref *8>[39m [Function: connectionListener] {
+          [length]: [33m1[39m,
+          [name]: [32m'connectionListener'[39m,
+          [prototype]: { [constructor]: [36m[Circular *8][39m }
+        },
+        close: [Function: bound close] { [length]: [33m0[39m, [name]: [32m'bound close'[39m },
+        listening: [Function: bound init] { [length]: [33m0[39m, [name]: [32m'bound init'[39m },
+        upgrade: [Function (anonymous)] { [length]: [33m3[39m, [name]: [32m''[39m },
+        request: [Function (anonymous)] { [length]: [33m2[39m, [name]: [32m''[39m }
+      },
+      _eventsCount: [33m5[39m,
+      _maxListeners: [90mundefined[39m,
+      _connections: [33m3[39m,
+      _handle: TCP {
+        reading: [33mfalse[39m,
+        onconnection: [36m<ref *9>[39m [Function: onconnection] {
+          [length]: [33m2[39m,
+          [name]: [32m'onconnection'[39m,
+          [prototype]: { [constructor]: [36m[Circular *9][39m }
+        },
+        [[32mSymbol(owner_symbol)[39m]: [36m[Circular *10][39m,
+        [2m[owner]: [36m[Getter/Setter][39m[22m,
+        [2mwriteQueueSize: [36m[Getter][39m[22m,
+        [2m[fd]: [36m[Getter][39m[22m,
+        [2m[_externalStream]: [36m[Getter][39m[22m,
+        [2m[bytesRead]: [36m[Getter][39m[22m,
+        [2m[bytesWritten]: [36m[Getter][39m[22m,
+        [2misStreamBase: [33mtrue[39m[22m
+      },
+      _usingWorkers: [33mfalse[39m,
+      _workers: [ [length]: [33m0[39m ],
+      _unref: [33mfalse[39m,
+      allowHalfOpen: [33mtrue[39m,
+      pauseOnConnect: [33mfalse[39m,
+      noDelay: [33mfalse[39m,
+      keepAlive: [33mfalse[39m,
+      keepAliveInitialDelay: [33m0[39m,
+      httpAllowHalfOpen: [33mfalse[39m,
+      timeout: [33m0[39m,
+      keepAliveTimeout: [33m5000[39m,
+      maxHeadersCount: [1mnull[22m,
+      maxRequestsPerSocket: [33m0[39m,
+      headersTimeout: [33m60000[39m,
+      requestTimeout: [33m0[39m,
+      _connectionKey: [32m'6::::8080'[39m,
+      [[32mSymbol(IncomingMessage)[39m]: [36m<ref *11>[39m [Function: IncomingMessage] {
+        [length]: [33m1[39m,
+        [name]: [32m'IncomingMessage'[39m,
+        [prototype]: Readable {
+          [constructor]: [36m[Circular *11][39m,
+          [connection]: [36m[Getter/Setter][39m,
+          [headers]: [36m[Getter/Setter][39m,
+          [trailers]: [36m[Getter/Setter][39m,
+          setTimeout: [36m<ref *12>[39m [Function: setTimeout] {
+            [length]: [33m2[39m,
+            [name]: [32m'setTimeout'[39m,
+            [prototype]: { [constructor]: [36m[Circular *12][39m }
+          },
+          _read: [36m<ref *13>[39m [Function: _read] {
+            [length]: [33m1[39m,
+            [name]: [32m'_read'[39m,
+            [prototype]: { [constructor]: [36m[Circular *13][39m }
+          },
+          _destroy: [36m<ref *14>[39m [Function: _destroy] {
+            [length]: [33m2[39m,
+            [name]: [32m'_destroy'[39m,
+            [prototype]: { [constructor]: [36m[Circular *14][39m }
+          },
+          _addHeaderLines: [36m<ref *15>[39m [Function: _addHeaderLines] {
+            [length]: [33m2[39m,
+            [name]: [32m'_addHeaderLines'[39m,
+            [prototype]: { [constructor]: [36m[Circular *15][39m }
+          },
+          _addHeaderLine: [36m<ref *16>[39m [Function: _addHeaderLine] {
+            [length]: [33m3[39m,
+            [name]: [32m'_addHeaderLine'[39m,
+            [prototype]: { [constructor]: [36m[Circular *16][39m }
+          },
+          _dump: [36m<ref *17>[39m [Function: _dump] {
+            [length]: [33m0[39m,
+            [name]: [32m'_dump'[39m,
+            [prototype]: { [constructor]: [36m[Circular *17][39m }
+          },
+          [2m[readable]: [36m[Getter/Setter][39m[22m,
+          [2m[readableDidRead]: [36m[Getter][39m[22m,
+          [2m[readableAborted]: [36m[Getter][39m[22m,
+          [2m[readableHighWaterMark]: [36m[Getter][39m[22m,
+          [2m[readableBuffer]: [36m[Getter][39m[22m,
+          [2m[readableFlowing]: [36m[Getter/Setter][39m[22m,
+          [2m[readableLength]: [36m[Getter][39m[22m,
+          [2m[readableObjectMode]: [36m[Getter][39m[22m,
+          [2m[readableEncoding]: [36m[Getter][39m[22m,
+          [2m[destroyed]: [36m[Getter/Setter][39m[22m,
+          [2m[readableEnded]: [36m[Getter][39m[22m,
+          [2m_events: [90mundefined[39m[22m,
+          [2m_eventsCount: [33m0[39m[22m,
+          [2m_maxListeners: [90mundefined[39m[22m,
+          [2m[[32mSymbol(kCapture)[39m]: [33mfalse[39m[22m
+        },
+        [2mpromises: [36m[Getter][39m[22m,
+        [2musingDomains: [33mtrue[39m[22m,
+        [2mcaptureRejectionSymbol: [32mSymbol(nodejs.rejection)[39m[22m,
+        [2mcaptureRejections: [36m[Getter/Setter][39m[22m,
+        [2mEventEmitterAsyncResource: [36m[Getter][39m[22m,
+        [2merrorMonitor: [32mSymbol(events.errorMonitor)[39m[22m,
+        [2mdefaultMaxListeners: [36m[Getter/Setter][39m[22m,
+        [2m[kMaxEventTargetListeners]: [32mSymbol(events.maxEventTargetListeners)[39m[22m,
+        [2m[kMaxEventTargetListenersWarned]: [32mSymbol(events.maxEventTargetListenersWarned)[39m[22m
+      },
+      [[32mSymbol(ServerResponse)[39m]: [36m<ref *18>[39m [Function: ServerResponse] {
+        [length]: [33m1[39m,
+        [name]: [32m'ServerResponse'[39m,
+        [prototype]: OutgoingMessage {
+          [constructor]: [36m[Circular *18][39m,
+          _finish: [36m<ref *19>[39m [Function: _finish] {
+            [length]: [33m0[39m,
+            [name]: [32m'_finish'[39m,
+            [prototype]: { [constructor]: [36m[Circular *19][39m }
+          },
+          statusCode: [33m200[39m,
+          statusMessage: [90mundefined[39m,
+          assignSocket: [36m<ref *20>[39m [Function: assignSocket] {
+            [length]: [33m1[39m,
+            [name]: [32m'assignSocket'[39m,
+            [prototype]: { [constructor]: [36m[Circular *20][39m }
+          },
+          detachSocket: [36m<ref *21>[39m [Function: detachSocket] {
+            [length]: [33m1[39m,
+            [name]: [32m'detachSocket'[39m,
+            [prototype]: { [constructor]: [36m[Circular *21][39m }
+          },
+          writeContinue: [36m<ref *22>[39m [Function: writeContinue] {
+            [length]: [33m1[39m,
+            [name]: [32m'writeContinue'[39m,
+            [prototype]: { [constructor]: [36m[Circular *22][39m }
+          },
+          writeProcessing: [36m<ref *23>[39m [Function: writeProcessing] {
+            [length]: [33m1[39m,
+            [name]: [32m'writeProcessing'[39m,
+            [prototype]: { [constructor]: [36m[Circular *23][39m }
+          },
+          _implicitHeader: [36m<ref *24>[39m [Function: _implicitHeader] {
+            [length]: [33m0[39m,
+            [name]: [32m'_implicitHeader'[39m,
+            [prototype]: { [constructor]: [36m[Circular *24][39m }
+          },
+          writeHead: [36m<ref *25>[39m [Function: writeHead] {
+            [length]: [33m3[39m,
+            [name]: [32m'writeHead'[39m,
+            [prototype]: { [constructor]: [36m[Circular *25][39m }
+          },
+          writeHeader: [36m<ref *25>[39m [Function: writeHead] {
+            [length]: [33m3[39m,
+            [name]: [32m'writeHead'[39m,
+            [prototype]: { [constructor]: [36m[Circular *25][39m }
+          },
+          [2m[writableFinished]: [36m[Getter][39m[22m,
+          [2m[writableObjectMode]: [36m[Getter][39m[22m,
+          [2m[writableLength]: [36m[Getter][39m[22m,
+          [2m[writableHighWaterMark]: [36m[Getter][39m[22m,
+          [2m[writableCorked]: [36m[Getter][39m[22m,
+          [2m[_headers]: [36m[Getter/Setter][39m[22m,
+          [2m[connection]: [36m[Getter/Setter][39m[22m,
+          [2m[_headerNames]: [36m[Getter/Setter][39m[22m,
+          [2mheadersSent: [36m[Getter][39m[22m,
+          [2m[writableEnded]: [36m[Getter][39m[22m,
+          [2m[writableNeedDrain]: [36m[Getter][39m[22m,
+          [2m_events: [90mundefined[39m[22m,
+          [2m_eventsCount: [33m0[39m[22m,
+          [2m_maxListeners: [90mundefined[39m[22m,
+          [2m[[32mSymbol(kCapture)[39m]: [33mfalse[39m[22m
+        },
+        [2mpromises: [36m[Getter][39m[22m,
+        [2musingDomains: [33mtrue[39m[22m,
+        [2mcaptureRejectionSymbol: [32mSymbol(nodejs.rejection)[39m[22m,
+        [2mcaptureRejections: [36m[Getter/Setter][39m[22m,
+        [2mEventEmitterAsyncResource: [36m[Getter][39m[22m,
+        [2merrorMonitor: [32mSymbol(events.errorMonitor)[39m[22m,
+        [2mdefaultMaxListeners: [36m[Getter/Setter][39m[22m,
+        [2m[kMaxEventTargetListeners]: [32mSymbol(events.maxEventTargetListeners)[39m[22m,
+        [2m[kMaxEventTargetListenersWarned]: [32mSymbol(events.maxEventTargetListenersWarned)[39m[22m
+      },
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(async_id_symbol)[39m]: [33m120[39m,
+      [2mlistening: [36m[Getter][39m[22m
+    },
+    _server: [36m<ref *10>[39m Server {
+      maxHeaderSize: [90mundefined[39m,
+      insecureHTTPParser: [90mundefined[39m,
+      [domain]: [1mnull[22m,
+      _events: [Object: null prototype] {
+        connection: [36m<ref *8>[39m [Function: connectionListener] {
+          [length]: [33m1[39m,
+          [name]: [32m'connectionListener'[39m,
+          [prototype]: { [constructor]: [36m[Circular *8][39m }
+        },
+        close: [Function: bound close] { [length]: [33m0[39m, [name]: [32m'bound close'[39m },
+        listening: [Function: bound init] { [length]: [33m0[39m, [name]: [32m'bound init'[39m },
+        upgrade: [Function (anonymous)] { [length]: [33m3[39m, [name]: [32m''[39m },
+        request: [Function (anonymous)] { [length]: [33m2[39m, [name]: [32m''[39m }
+      },
+      _eventsCount: [33m5[39m,
+      _maxListeners: [90mundefined[39m,
+      _connections: [33m3[39m,
+      _handle: TCP {
+        reading: [33mfalse[39m,
+        onconnection: [36m<ref *9>[39m [Function: onconnection] {
+          [length]: [33m2[39m,
+          [name]: [32m'onconnection'[39m,
+          [prototype]: { [constructor]: [36m[Circular *9][39m }
+        },
+        [[32mSymbol(owner_symbol)[39m]: [36m[Circular *10][39m,
+        [2m[owner]: [36m[Getter/Setter][39m[22m,
+        [2mwriteQueueSize: [36m[Getter][39m[22m,
+        [2m[fd]: [36m[Getter][39m[22m,
+        [2m[_externalStream]: [36m[Getter][39m[22m,
+        [2m[bytesRead]: [36m[Getter][39m[22m,
+        [2m[bytesWritten]: [36m[Getter][39m[22m,
+        [2misStreamBase: [33mtrue[39m[22m
+      },
+      _usingWorkers: [33mfalse[39m,
+      _workers: [ [length]: [33m0[39m ],
+      _unref: [33mfalse[39m,
+      allowHalfOpen: [33mtrue[39m,
+      pauseOnConnect: [33mfalse[39m,
+      noDelay: [33mfalse[39m,
+      keepAlive: [33mfalse[39m,
+      keepAliveInitialDelay: [33m0[39m,
+      httpAllowHalfOpen: [33mfalse[39m,
+      timeout: [33m0[39m,
+      keepAliveTimeout: [33m5000[39m,
+      maxHeadersCount: [1mnull[22m,
+      maxRequestsPerSocket: [33m0[39m,
+      headersTimeout: [33m60000[39m,
+      requestTimeout: [33m0[39m,
+      _connectionKey: [32m'6::::8080'[39m,
+      [[32mSymbol(IncomingMessage)[39m]: [36m<ref *11>[39m [Function: IncomingMessage] {
+        [length]: [33m1[39m,
+        [name]: [32m'IncomingMessage'[39m,
+        [prototype]: Readable {
+          [constructor]: [36m[Circular *11][39m,
+          [connection]: [36m[Getter/Setter][39m,
+          [headers]: [36m[Getter/Setter][39m,
+          [trailers]: [36m[Getter/Setter][39m,
+          setTimeout: [36m<ref *12>[39m [Function: setTimeout] {
+            [length]: [33m2[39m,
+            [name]: [32m'setTimeout'[39m,
+            [prototype]: { [constructor]: [36m[Circular *12][39m }
+          },
+          _read: [36m<ref *13>[39m [Function: _read] {
+            [length]: [33m1[39m,
+            [name]: [32m'_read'[39m,
+            [prototype]: { [constructor]: [36m[Circular *13][39m }
+          },
+          _destroy: [36m<ref *14>[39m [Function: _destroy] {
+            [length]: [33m2[39m,
+            [name]: [32m'_destroy'[39m,
+            [prototype]: { [constructor]: [36m[Circular *14][39m }
+          },
+          _addHeaderLines: [36m<ref *15>[39m [Function: _addHeaderLines] {
+            [length]: [33m2[39m,
+            [name]: [32m'_addHeaderLines'[39m,
+            [prototype]: { [constructor]: [36m[Circular *15][39m }
+          },
+          _addHeaderLine: [36m<ref *16>[39m [Function: _addHeaderLine] {
+            [length]: [33m3[39m,
+            [name]: [32m'_addHeaderLine'[39m,
+            [prototype]: { [constructor]: [36m[Circular *16][39m }
+          },
+          _dump: [36m<ref *17>[39m [Function: _dump] {
+            [length]: [33m0[39m,
+            [name]: [32m'_dump'[39m,
+            [prototype]: { [constructor]: [36m[Circular *17][39m }
+          },
+          [2m[readable]: [36m[Getter/Setter][39m[22m,
+          [2m[readableDidRead]: [36m[Getter][39m[22m,
+          [2m[readableAborted]: [36m[Getter][39m[22m,
+          [2m[readableHighWaterMark]: [36m[Getter][39m[22m,
+          [2m[readableBuffer]: [36m[Getter][39m[22m,
+          [2m[readableFlowing]: [36m[Getter/Setter][39m[22m,
+          [2m[readableLength]: [36m[Getter][39m[22m,
+          [2m[readableObjectMode]: [36m[Getter][39m[22m,
+          [2m[readableEncoding]: [36m[Getter][39m[22m,
+          [2m[destroyed]: [36m[Getter/Setter][39m[22m,
+          [2m[readableEnded]: [36m[Getter][39m[22m,
+          [2m_events: [90mundefined[39m[22m,
+          [2m_eventsCount: [33m0[39m[22m,
+          [2m_maxListeners: [90mundefined[39m[22m,
+          [2m[[32mSymbol(kCapture)[39m]: [33mfalse[39m[22m
+        },
+        [2mpromises: [36m[Getter][39m[22m,
+        [2musingDomains: [33mtrue[39m[22m,
+        [2mcaptureRejectionSymbol: [32mSymbol(nodejs.rejection)[39m[22m,
+        [2mcaptureRejections: [36m[Getter/Setter][39m[22m,
+        [2mEventEmitterAsyncResource: [36m[Getter][39m[22m,
+        [2merrorMonitor: [32mSymbol(events.errorMonitor)[39m[22m,
+        [2mdefaultMaxListeners: [36m[Getter/Setter][39m[22m,
+        [2m[kMaxEventTargetListeners]: [32mSymbol(events.maxEventTargetListeners)[39m[22m,
+        [2m[kMaxEventTargetListenersWarned]: [32mSymbol(events.maxEventTargetListenersWarned)[39m[22m
+      },
+      [[32mSymbol(ServerResponse)[39m]: [36m<ref *18>[39m [Function: ServerResponse] {
+        [length]: [33m1[39m,
+        [name]: [32m'ServerResponse'[39m,
+        [prototype]: OutgoingMessage {
+          [constructor]: [36m[Circular *18][39m,
+          _finish: [36m<ref *19>[39m [Function: _finish] {
+            [length]: [33m0[39m,
+            [name]: [32m'_finish'[39m,
+            [prototype]: { [constructor]: [36m[Circular *19][39m }
+          },
+          statusCode: [33m200[39m,
+          statusMessage: [90mundefined[39m,
+          assignSocket: [36m<ref *20>[39m [Function: assignSocket] {
+            [length]: [33m1[39m,
+            [name]: [32m'assignSocket'[39m,
+            [prototype]: { [constructor]: [36m[Circular *20][39m }
+          },
+          detachSocket: [36m<ref *21>[39m [Function: detachSocket] {
+            [length]: [33m1[39m,
+            [name]: [32m'detachSocket'[39m,
+            [prototype]: { [constructor]: [36m[Circular *21][39m }
+          },
+          writeContinue: [36m<ref *22>[39m [Function: writeContinue] {
+            [length]: [33m1[39m,
+            [name]: [32m'writeContinue'[39m,
+            [prototype]: { [constructor]: [36m[Circular *22][39m }
+          },
+          writeProcessing: [36m<ref *23>[39m [Function: writeProcessing] {
+            [length]: [33m1[39m,
+            [name]: [32m'writeProcessing'[39m,
+            [prototype]: { [constructor]: [36m[Circular *23][39m }
+          },
+          _implicitHeader: [36m<ref *24>[39m [Function: _implicitHeader] {
+            [length]: [33m0[39m,
+            [name]: [32m'_implicitHeader'[39m,
+            [prototype]: { [constructor]: [36m[Circular *24][39m }
+          },
+          writeHead: [36m<ref *25>[39m [Function: writeHead] {
+            [length]: [33m3[39m,
+            [name]: [32m'writeHead'[39m,
+            [prototype]: { [constructor]: [36m[Circular *25][39m }
+          },
+          writeHeader: [36m<ref *25>[39m [Function: writeHead] {
+            [length]: [33m3[39m,
+            [name]: [32m'writeHead'[39m,
+            [prototype]: { [constructor]: [36m[Circular *25][39m }
+          },
+          [2m[writableFinished]: [36m[Getter][39m[22m,
+          [2m[writableObjectMode]: [36m[Getter][39m[22m,
+          [2m[writableLength]: [36m[Getter][39m[22m,
+          [2m[writableHighWaterMark]: [36m[Getter][39m[22m,
+          [2m[writableCorked]: [36m[Getter][39m[22m,
+          [2m[_headers]: [36m[Getter/Setter][39m[22m,
+          [2m[connection]: [36m[Getter/Setter][39m[22m,
+          [2m[_headerNames]: [36m[Getter/Setter][39m[22m,
+          [2mheadersSent: [36m[Getter][39m[22m,
+          [2m[writableEnded]: [36m[Getter][39m[22m,
+          [2m[writableNeedDrain]: [36m[Getter][39m[22m,
+          [2m_events: [90mundefined[39m[22m,
+          [2m_eventsCount: [33m0[39m[22m,
+          [2m_maxListeners: [90mundefined[39m[22m,
+          [2m[[32mSymbol(kCapture)[39m]: [33mfalse[39m[22m
+        },
+        [2mpromises: [36m[Getter][39m[22m,
+        [2musingDomains: [33mtrue[39m[22m,
+        [2mcaptureRejectionSymbol: [32mSymbol(nodejs.rejection)[39m[22m,
+        [2mcaptureRejections: [36m[Getter/Setter][39m[22m,
+        [2mEventEmitterAsyncResource: [36m[Getter][39m[22m,
+        [2merrorMonitor: [32mSymbol(events.errorMonitor)[39m[22m,
+        [2mdefaultMaxListeners: [36m[Getter/Setter][39m[22m,
+        [2m[kMaxEventTargetListeners]: [32mSymbol(events.maxEventTargetListeners)[39m[22m,
+        [2m[kMaxEventTargetListenersWarned]: [32mSymbol(events.maxEventTargetListenersWarned)[39m[22m
+      },
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(async_id_symbol)[39m]: [33m120[39m,
+      [2mlistening: [36m[Getter][39m[22m
+    },
+    parser: HTTPParser {
+      [32m'0'[39m: [Function: bound setRequestTimeout] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound setRequestTimeout'[39m
+      },
+      [32m'1'[39m: [36m<ref *26>[39m [Function: parserOnHeaders] {
+        [length]: [33m2[39m,
+        [name]: [32m'parserOnHeaders'[39m,
+        [prototype]: { [constructor]: [36m[Circular *26][39m }
+      },
+      [32m'2'[39m: [36m<ref *27>[39m [Function: parserOnHeadersComplete] {
+        [length]: [33m9[39m,
+        [name]: [32m'parserOnHeadersComplete'[39m,
+        [prototype]: { [constructor]: [36m[Circular *27][39m }
+      },
+      [32m'3'[39m: [36m<ref *28>[39m [Function: parserOnBody] {
+        [length]: [33m3[39m,
+        [name]: [32m'parserOnBody'[39m,
+        [prototype]: { [constructor]: [36m[Circular *28][39m }
+      },
+      [32m'4'[39m: [36m<ref *29>[39m [Function: parserOnMessageComplete] {
+        [length]: [33m0[39m,
+        [name]: [32m'parserOnMessageComplete'[39m,
+        [prototype]: { [constructor]: [36m[Circular *29][39m }
+      },
+      [32m'5'[39m: [Function: bound onParserExecute] {
+        [length]: [33m1[39m,
+        [name]: [32m'bound onParserExecute'[39m
+      },
+      [32m'6'[39m: [Function: bound onParserTimeout] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound onParserTimeout'[39m
+      },
+      _headers: [ [length]: [33m0[39m ],
+      _url: [32m''[39m,
+      socket: [36m[Circular *30][39m,
+      incoming: [1mnull[22m,
+      outgoing: [1mnull[22m,
+      maxHeaderPairs: [33m2000[39m,
+      _consumed: [33mtrue[39m,
+      onIncoming: [Function: bound parserOnIncoming] {
+        [length]: [33m2[39m,
+        [name]: [32m'bound parserOnIncoming'[39m
+      },
+      [[32mSymbol(resource_symbol)[39m]: HTTPServerAsyncResource {
+        type: [32m'HTTPINCOMINGMESSAGE'[39m,
+        socket: [36m[Circular *30][39m
+      }
+    },
+    on: [36m<ref *31>[39m [Function: socketListenerWrap] {
+      [length]: [33m2[39m,
+      [name]: [32m'socketListenerWrap'[39m,
+      [prototype]: { [constructor]: [36m[Circular *31][39m }
+    },
+    addListener: [36m<ref *32>[39m [Function: socketListenerWrap] {
+      [length]: [33m2[39m,
+      [name]: [32m'socketListenerWrap'[39m,
+      [prototype]: { [constructor]: [36m[Circular *32][39m }
+    },
+    prependListener: [36m<ref *33>[39m [Function: socketListenerWrap] {
+      [length]: [33m2[39m,
+      [name]: [32m'socketListenerWrap'[39m,
+      [prototype]: { [constructor]: [36m[Circular *33][39m }
+    },
+    setEncoding: [36m<ref *34>[39m [Function: socketSetEncoding] {
+      [length]: [33m0[39m,
+      [name]: [32m'socketSetEncoding'[39m,
+      [prototype]: { [constructor]: [36m[Circular *34][39m }
+    },
+    _paused: [33mfalse[39m,
+    _httpMessage: [1mnull[22m,
+    timeout: [33m5000[39m,
+    _peername: { address: [32m'::1'[39m, family: [32m'IPv6'[39m, port: [33m52299[39m },
+    [[32mSymbol(async_id_symbol)[39m]: [33m566[39m,
+    [[32mSymbol(kHandle)[39m]: TCP {
+      reading: [33mtrue[39m,
+      onconnection: [1mnull[22m,
+      _consumed: [33mtrue[39m,
+      [[32mSymbol(owner_symbol)[39m]: [36m[Circular *30][39m,
+      [2m[owner]: [36m[Getter/Setter][39m[22m,
+      [2mwriteQueueSize: [36m[Getter][39m[22m,
+      [2m[fd]: [36m[Getter][39m[22m,
+      [2m[_externalStream]: [36m[Getter][39m[22m,
+      [2m[bytesRead]: [36m[Getter][39m[22m,
+      [2m[bytesWritten]: [36m[Getter][39m[22m,
+      [2misStreamBase: [33mtrue[39m[22m
+    },
+    [[32mSymbol(lastWriteQueueSize)[39m]: [33m0[39m,
+    [[32mSymbol(timeout)[39m]: Timeout {
+      _idleTimeout: [33m5000[39m,
+      _idlePrev: [36m[TimersList][39m,
+      _idleNext: [36m[Timeout][39m,
+      _idleStart: [33m23689[39m,
+      _onTimeout: [36m[Function][39m,
+      _timerArgs: [90mundefined[39m,
+      _repeat: [1mnull[22m,
+      _destroyed: [33mfalse[39m,
+      [[32mSymbol(refed)[39m]: [33mfalse[39m,
+      [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+      [[32mSymbol(asyncId)[39m]: [33m599[39m,
+      [[32mSymbol(triggerId)[39m]: [33m596[39m
+    },
+    [[32mSymbol(kBuffer)[39m]: [1mnull[22m,
+    [[32mSymbol(kBufferCb)[39m]: [1mnull[22m,
+    [[32mSymbol(kBufferGen)[39m]: [1mnull[22m,
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(kSetNoDelay)[39m]: [33mfalse[39m,
+    [[32mSymbol(kSetKeepAlive)[39m]: [33mfalse[39m,
+    [[32mSymbol(kSetKeepAliveInitialDelay)[39m]: [33m0[39m,
+    [[32mSymbol(kBytesRead)[39m]: [33m0[39m,
+    [[32mSymbol(kBytesWritten)[39m]: [33m0[39m,
+    [[32mSymbol(RequestTimeout)[39m]: [90mundefined[39m,
+    [2m[_connecting]: [36m[Getter][39m[22m,
+    [2m[pending]: [36m[Getter][39m[22m,
+    [2m[readyState]: [36m[Getter][39m[22m,
+    [2m[bufferSize]: [36m[Getter][39m[22m,
+    [2mbytesRead: [36m[Getter][39m[22m,
+    [2mremoteAddress: [36m[Getter][39m[22m,
+    [2mremoteFamily: [36m[Getter][39m[22m,
+    [2mremotePort: [36m[Getter][39m[22m,
+    [2mlocalAddress: [36m[Getter][39m[22m,
+    [2mlocalPort: [36m[Getter][39m[22m,
+    [2m_bytesDispatched: [36m[Getter][39m[22m,
+    [2mbytesWritten: [36m[Getter][39m[22m,
+    [2m[_handle]: [36m[Getter/Setter][39m[22m,
+    [2m[[32mSymbol(kUpdateTimer)[39m]: [36m[Getter][39m[22m,
+    [2m[writable]: [36m[Getter/Setter][39m[22m,
+    [2m[writableHighWaterMark]: [36m[Getter][39m[22m,
+    [2m[writableObjectMode]: [36m[Getter][39m[22m,
+    [2m[writableBuffer]: [36m[Getter][39m[22m,
+    [2m[writableLength]: [36m[Getter][39m[22m,
+    [2m[writableFinished]: [36m[Getter][39m[22m,
+    [2m[writableCorked]: [36m[Getter][39m[22m,
+    [2m[writableEnded]: [36m[Getter][39m[22m,
+    [2m[writableNeedDrain]: [36m[Getter][39m[22m,
+    [2m[destroyed]: [36m[Getter/Setter][39m[22m,
+    [2m[readable]: [36m[Getter/Setter][39m[22m,
+    [2m[readableDidRead]: [36m[Getter][39m[22m,
+    [2m[readableAborted]: [36m[Getter][39m[22m,
+    [2m[readableHighWaterMark]: [36m[Getter][39m[22m,
+    [2m[readableBuffer]: [36m[Getter][39m[22m,
+    [2m[readableFlowing]: [36m[Getter/Setter][39m[22m,
+    [2m[readableLength]: [36m[Getter][39m[22m,
+    [2m[readableObjectMode]: [36m[Getter][39m[22m,
+    [2m[readableEncoding]: [36m[Getter][39m[22m,
+    [2m[readableEnded]: [36m[Getter][39m[22m
+  },
+  _consuming: [33mfalse[39m,
+  _dumped: [33mtrue[39m,
+  _query: [Object: null prototype] {
+    EIO: [32m'4'[39m,
+    transport: [32m'polling'[39m,
+    t: [32m'OPdPRjj'[39m
+  },
+  res: ServerResponse {
+    [domain]: [1mnull[22m,
+    _events: [Object: null prototype] {
+      finish: [Function: bound resOnFinish] {
+        [length]: [33m0[39m,
+        [name]: [32m'bound resOnFinish'[39m
+      }
+    },
+    _eventsCount: [33m1[39m,
+    _maxListeners: [90mundefined[39m,
+    outputData: [ [length]: [33m0[39m ],
+    outputSize: [33m0[39m,
+    writable: [33mtrue[39m,
+    destroyed: [33mtrue[39m,
+    _last: [33mfalse[39m,
+    chunkedEncoding: [33mfalse[39m,
+    shouldKeepAlive: [33mtrue[39m,
+    maxRequestsOnConnectionReached: [33mfalse[39m,
+    _defaultKeepAlive: [33mtrue[39m,
+    useChunkedEncodingByDefault: [33mtrue[39m,
+    sendDate: [33mtrue[39m,
+    _removedConnection: [33mfalse[39m,
+    _removedContLen: [33mfalse[39m,
+    _removedTE: [33mfalse[39m,
+    _contentLength: [1mnull[22m,
+    _hasBody: [33mtrue[39m,
+    _trailer: [32m''[39m,
+    finished: [33mtrue[39m,
+    _headerSent: [33mtrue[39m,
+    _closed: [33mtrue[39m,
+    socket: [1mnull[22m,
+    _header: [32m'HTTP/1.1 200 OK\r\n'[39m +
+      [32m'Content-Type: text/plain; charset=UTF-8\r\n'[39m +
+      [32m'Content-Length: 118\r\n'[39m +
+      [32m'Date: Sun, 19 Feb 2023 01:59:25 GMT\r\n'[39m +
+      [32m'Connection: keep-alive\r\n'[39m +
+      [32m'Keep-Alive: timeout=5\r\n'[39m +
+      [32m'\r\n'[39m,
+    _keepAliveTimeout: [33m5000[39m,
+    _onPendingData: [Function: bound updateOutgoingData] {
+      [length]: [33m1[39m,
+      [name]: [32m'bound updateOutgoingData'[39m
+    },
+    req: [36m[Circular *35][39m,
+    _sent100: [33mfalse[39m,
+    _expect_continue: [33mfalse[39m,
+    statusMessage: [32m'OK'[39m,
+    statusCode: [33m200[39m,
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(kNeedDrain)[39m]: [33mfalse[39m,
+    [[32mSymbol(corked)[39m]: [33m0[39m,
+    [[32mSymbol(kOutHeaders)[39m]: [1mnull[22m,
+    [2m[writableFinished]: [36m[Getter][39m[22m,
+    [2m[writableObjectMode]: [36m[Getter][39m[22m,
+    [2m[writableLength]: [36m[Getter][39m[22m,
+    [2m[writableHighWaterMark]: [36m[Getter][39m[22m,
+    [2m[writableCorked]: [36m[Getter][39m[22m,
+    [2m[_headers]: [36m[Getter/Setter][39m[22m,
+    [2m[connection]: [36m[Getter/Setter][39m[22m,
+    [2m[_headerNames]: [36m[Getter/Setter][39m[22m,
+    [2mheadersSent: [36m[Getter][39m[22m,
+    [2m[writableEnded]: [36m[Getter][39m[22m,
+    [2m[writableNeedDrain]: [36m[Getter][39m[22m
+  },
+  cleanup: [Function: cleanup] { [length]: [33m0[39m, [name]: [32m'cleanup'[39m },
+  _parsedUrl: Url {
+    protocol: [1mnull[22m,
+    slashes: [1mnull[22m,
+    auth: [1mnull[22m,
+    host: [1mnull[22m,
+    port: [1mnull[22m,
+    hostname: [1mnull[22m,
+    hash: [1mnull[22m,
+    search: [32m'?EIO=4&transport=polling&t=OPdPRjj'[39m,
+    query: [32m'EIO=4&transport=polling&t=OPdPRjj'[39m,
+    pathname: [32m'/socket.io/'[39m,
+    path: [32m'/socket.io/?EIO=4&transport=polling&t=OPdPRjj'[39m,
+    href: [32m'/socket.io/?EIO=4&transport=polling&t=OPdPRjj'[39m,
+    _raw: [32m'/socket.io/?EIO=4&transport=polling&t=OPdPRjj'[39m
+  },
+  sessionStore: MemoryStore {
+    [domain]: [1mnull[22m,
+    _events: [Object: null prototype] {
+      disconnect: [36m<ref *36>[39m [Function: ondisconnect] {
+        [length]: [33m0[39m,
+        [name]: [32m'ondisconnect'[39m,
+        [prototype]: { [constructor]: [36m[Circular *36][39m }
+      },
+      connect: [36m<ref *37>[39m [Function: onconnect] {
+        [length]: [33m0[39m,
+        [name]: [32m'onconnect'[39m,
+        [prototype]: { [constructor]: [36m[Circular *37][39m }
+      }
+    },
+    _eventsCount: [33m2[39m,
+    _maxListeners: [90mundefined[39m,
+    sessions: [Object: null prototype] {
+      [32m'RzHJbOQRvEbOwpIaMMmyAyJEh-LnPOUN'[39m: [32m'{"cookie":{"originalMaxAge":600000,"expires":"2023-02-19T02:09:25.555Z","httpOnly":true,"path":"/"},"passport":{"user":"63ec2c46c9bea40039ea5c04"}}'[39m
+    },
+    generate: [36m<ref *38>[39m [Function (anonymous)] {
+      [length]: [33m1[39m,
+      [name]: [32m''[39m,
+      [prototype]: { [constructor]: [36m[Circular *38][39m }
+    },
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+  },
+  sessionID: [32m'RzHJbOQRvEbOwpIaMMmyAyJEh-LnPOUN'[39m,
+  session: Session {
+    [req]: [36m[Circular *35][39m,
+    [id]: [32m'RzHJbOQRvEbOwpIaMMmyAyJEh-LnPOUN'[39m,
+    cookie: {
+      path: [32m'/'[39m,
+      _expires: [35m2023-02-19T02:09:25.555Z[39m,
+      originalMaxAge: [33m600000[39m,
+      httpOnly: [33mtrue[39m,
+      [2mexpires: [36m[Getter/Setter][39m[22m,
+      [2mmaxAge: [36m[Getter/Setter][39m[22m,
+      [2mdata: [36m[Getter][39m[22m
+    },
+    passport: { user: [32m'63ec2c46c9bea40039ea5c04'[39m },
+    [reload]: [36m<ref *39>[39m [Function: reload] {
+      [length]: [33m1[39m,
+      [name]: [32m'reload'[39m,
+      [prototype]: { [constructor]: [36m[Circular *39][39m }
+    },
+    [save]: [36m<ref *40>[39m [Function: save] {
+      [length]: [33m0[39m,
+      [name]: [32m'save'[39m,
+      [prototype]: { [constructor]: [36m[Circular *40][39m }
+    }
+  },
+  [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+  [[32mSymbol(kHeaders)[39m]: {
+    host: [32m'localhost:8080'[39m,
+    connection: [32m'keep-alive'[39m,
+    [32m'sec-ch-ua'[39m: [32m'"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"'[39m,
+    accept: [32m'*/*'[39m,
+    dnt: [32m'1'[39m,
+    [32m'sec-ch-ua-mobile'[39m: [32m'?0'[39m,
+    [32m'user-agent'[39m: [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'[39m,
+    [32m'sec-ch-ua-platform'[39m: [32m'"Windows"'[39m,
+    [32m'sec-fetch-site'[39m: [32m'same-origin'[39m,
+    [32m'sec-fetch-mode'[39m: [32m'cors'[39m,
+    [32m'sec-fetch-dest'[39m: [32m'empty'[39m,
+    referer: [32m'http://localhost:8080/api/chat'[39m,
+    [32m'accept-encoding'[39m: [32m'gzip, deflate, br'[39m,
+    [32m'accept-language'[39m: [32m'en-US,en;q=0.9'[39m,
+    cookie: [32m'connect.sid=s%3ARzHJbOQRvEbOwpIaMMmyAyJEh-LnPOUN.mcessKDy5rAZDm7PZ2NAfOTOmwO5Va5m33bgSVIJo10'[39m
+  },
+  [[32mSymbol(kHeadersCount)[39m]: [33m30[39m,
+  [[32mSymbol(kTrailers)[39m]: [1mnull[22m,
+  [[32mSymbol(kTrailersCount)[39m]: [33m0[39m,
+  [[32mSymbol(RequestTimeout)[39m]: [90mundefined[39m,
+  [2m[connection]: [36m[Getter/Setter][39m[22m,
+  [2m[headers]: [36m[Getter/Setter][39m[22m,
+  [2m[trailers]: [36m[Getter/Setter][39m[22m,
+  [2m[readable]: [36m[Getter/Setter][39m[22m,
+  [2m[readableDidRead]: [36m[Getter][39m[22m,
+  [2m[readableAborted]: [36m[Getter][39m[22m,
+  [2m[readableHighWaterMark]: [36m[Getter][39m[22m,
+  [2m[readableBuffer]: [36m[Getter][39m[22m,
+  [2m[readableFlowing]: [36m[Getter/Setter][39m[22m,
+  [2m[readableLength]: [36m[Getter][39m[22m,
+  [2m[readableObjectMode]: [36m[Getter][39m[22m,
+  [2m[readableEncoding]: [36m[Getter][39m[22m,
+  [2m[destroyed]: [36m[Getter/Setter][39m[22m,
+  [2m[readableEnded]: [36m[Getter][39m[22m
+}
+[33mwarn[39m | 18-Feb-2023 23:02:28 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQ8Ha doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:02:34 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQ9lJ doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:02:40 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQBCy doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:02:46 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQCgd doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:02:52 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQE8T doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:02:58 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQFcE doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:04 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQH3t doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:10 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQIXj doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:16 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQJ_T doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:22 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQLTB doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:28 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQMww doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:34 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQOOc doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:40 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQPsO doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:46 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQRKJ doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:52 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQSo2 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:03:58 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQUFp doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:04 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQVjS doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:10 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQXB9 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:16 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQYev doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:22 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQa6f doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:28 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQbaY doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:34 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQd2J doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:40 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQeVr doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:46 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQfzf doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:52 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQhRb doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:04:58 | PID: 2236, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQivI doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:05:14 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQmK1 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:05:20 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQoGu doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:05:26 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQpki doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:05:32 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQrCQ doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:05:38 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQsgD doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:05:44 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQu83 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:05:50 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQvbb doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:05:56 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQx3R doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:02 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQyXH doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:08 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQz-u doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:14 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdQ_Si doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:20 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdR0wZ doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:26 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdR2OI doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:32 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdR3rz doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:38 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdR5Jm doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:44 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdR6nX doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:50 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdR8FK doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:06:56 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdR9j1 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:02 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRBAg doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:08 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRCeQ doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:14 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRE6I doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:20 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRFZv doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:26 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRH1k doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:32 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRIVP doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:38 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRJzK doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:44 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRLQv doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:50 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRMul doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:07:56 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdROMP doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:02 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRPqF doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:08 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRRHy doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:14 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRSle doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:20 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRUDM doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:26 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRVh5 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:32 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRX90 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:38 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRYco doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:44 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRa4M doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:50 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRbYL doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:08:56 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRc_x doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:09:02 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdReTd doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:09:08 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRfxR doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:09:14 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRhPI doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:09:20 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRisu doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:09:26 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRkKp doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:09:32 | PID: 4148, Route GET /socket.io/?EIO=4&transport=polling&t=OPdRloW doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:14:27 | PID: 10876, Route GET /socket.io/?EIO=4&transport=polling&t=OPdStaK doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:14:34 | PID: 10876, Route GET /socket.io/?EIO=4&transport=polling&t=OPdSvX9 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:14:40 | PID: 10876, Route GET /socket.io/?EIO=4&transport=polling&t=OPdSw_1 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:15:02 | PID: 22520, Route GET /socket.io/?EIO=4&transport=polling&t=OPdT0Md doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:15:08 | PID: 22520, Route GET /socket.io/?EIO=4&transport=polling&t=OPdT1qP doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:15:14 | PID: 22520, Route GET /socket.io/?EIO=4&transport=polling&t=OPdT3IE doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:15:19 | PID: 22520, Route GET /socket.io/?EIO=4&transport=polling&t=OPdT4Y7 doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:15:21 | PID: 22520, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:37:51 | PID: 2572, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:51:43 | PID: 4488, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:53:14 | PID: 14536, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 18-Feb-2023 23:53:34 | PID: 14536, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 19-Feb-2023 00:01:17 | PID: 11840, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 19-Feb-2023 00:05:44 | PID: 11156, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:06:02 | Error saving message to DB  chatMessages validation failed: author: Cast to Embedded failed for value "[]" (type Array) at path "author" because of "ObjectExpectedError", text: Cast to string failed for value "{ email: 'tomas@gmail.com', text: 'asa' }" (type Object) at path "text"
+[33mwarn[39m | 19-Feb-2023 00:07:56 | PID: 9324, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:08:05 | Error saving message to DB  chatMessages validation failed: author: Cast to Embedded failed for value "[]" (type Array) at path "author" because of "ObjectExpectedError"
+[33mwarn[39m | 19-Feb-2023 00:12:00 | PID: 13556, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 19-Feb-2023 00:12:09 | 
+[31merror[39m | 19-Feb-2023 00:12:09 | Error saving message in DB  chatMessages validation failed: author: Cast to Embedded failed for value "[]" (type Array) at path "author" because of "ObjectExpectedError"
+[33mwarn[39m | 19-Feb-2023 00:14:25 | PID: 18748, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 19-Feb-2023 00:14:33 | 
+[31merror[39m | 19-Feb-2023 00:14:33 | Error saving message in DB  chatMessages validation failed: author: Cast to Embedded failed for value "[]" (type Array) at path "author" because of "ObjectExpectedError"
+[33mwarn[39m | 19-Feb-2023 00:15:54 | PID: 18656, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:16:02 | Error saving message in DB  chatMessages validation failed: author: Cast to Embedded failed for value "[]" (type Array) at path "author" because of "ObjectExpectedError"
+[33mwarn[39m | 19-Feb-2023 00:16:52 | PID: 18680, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:17:01 | Error saving message in DB  chatMessages validation failed: author: Cast to Embedded failed for value "[]" (type Array) at path "author" because of "ObjectExpectedError"
+[33mwarn[39m | 19-Feb-2023 00:18:51 | PID: 268, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:19:00 | Error saving message in DB  chatMessages validation failed: author: Cast to Embedded failed for value "[
+  {
+    _id: new ObjectId("63ec2c46c9bea40039ea5c04"),
+    email: 'tomas@gmail.com',
+    password: '$2b$10$hPaLFlR3W1YtiRHKOCTsW.Z6UunudKT.F9.K2lbXe9pUghsgJ7Rme',
+    name: 'tomas',
+    location: 'tomas',
+    age: 312,
+    phone: 132,
+    profileThumbnail: 'tomas',
+    createdAt: 2023-02-15T00:50:14.455Z,
+    updatedAt: 2023-02-15T00:50:14.455Z
+  }
+]" (type Array) at path "author" because of "ObjectExpectedError"
+[33mwarn[39m | 19-Feb-2023 00:19:55 | PID: 7552, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:20:29 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 00:23:04 | PID: 13208, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:23:13 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 00:25:53 | PID: 23716, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:26:01 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 00:28:56 | PID: 14092, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:29:05 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[31merror[39m | 19-Feb-2023 00:32:06 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 00:35:18 | PID: 24156, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:35:29 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[31merror[39m | 19-Feb-2023 00:36:16 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 00:36:18 | PID: 23768, Route GET /api/products doesn't exist.
+[33mwarn[39m | 19-Feb-2023 00:36:20 | PID: 23768, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:36:28 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 00:42:50 | PID: 24264, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:42:58 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[31merror[39m | 19-Feb-2023 00:44:04 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 00:53:40 | PID: 6828, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 00:53:48 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 01:00:13 | PID: 17524, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 19-Feb-2023 01:01:31 | PID: 12364, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 19-Feb-2023 01:01:42 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[33mwarn[39m | 19-Feb-2023 01:02:48 | PID: 13960, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 19-Feb-2023 01:04:26 | PID: 1916, Route GET /favicon.ico doesn't exist.

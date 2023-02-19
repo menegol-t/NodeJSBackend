@@ -16,10 +16,12 @@ const io = new socket_io_1.Server;
 const initWebSocket = (server) => {
     io.attach(server);
     io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
-        logger_1.logger.info("New WS connection");
-        socket.emit("fetchMsgsFromDB", yield (0, chatMsgs_1.getAllMsgs)());
-        socket.on("postMsgToDB", (msg) => __awaiter(void 0, void 0, void 0, function* () {
-            io.emit("newMsgInDB", yield (0, chatMsgs_1.saveMsg)(msg));
+        socket.on("userLoggedToChat", (usr) => __awaiter(void 0, void 0, void 0, function* () {
+            logger_1.logger.info("New WS connection");
+            socket.emit("fetchMsgsFromDB", yield (0, chatMsgs_1.getAllMsgs)());
+            socket.on("postMsgToDB", (msg) => __awaiter(void 0, void 0, void 0, function* () {
+                io.emit("newMsgInDB", yield (0, chatMsgs_1.saveMsg)(usr, msg));
+            }));
         }));
     }));
 };

@@ -10,9 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const checkLogIn_1 = require("../middlewares/checkLogIn");
-const chatRoute = (0, express_1.Router)();
-chatRoute.get("/", checkLogIn_1.checkLogIn, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.render("chatIndex.pug", { msg: `Bienvenido ${req.user.name}` });
+const homeRoute = (0, express_1.Router)();
+homeRoute.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    res.render("home.pug");
 }));
-exports.default = chatRoute;
+exports.default = homeRoute;

@@ -41,3 +41,380 @@
 [31merror[39m | 19-Feb-2023 00:44:04 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
 [31merror[39m | 19-Feb-2023 00:53:48 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
 [31merror[39m | 19-Feb-2023 01:01:42 | Error saving message in DB  E11000 duplicate key error collection: test.chatmessages index: author.email_1 dup key: { author.email: "tomas@gmail.com" }
+[31merror[39m | 19-Feb-2023 15:40:03 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\components\chatComponents\chatWelcomeSign.pug'
+    at C:\backend\class36PreEntrega\views\components\chatIndex.pug line 2
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:40:04 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\components\chatComponents\chatWelcomeSign.pug'
+    at C:\backend\class36PreEntrega\views\components\chatIndex.pug line 2
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:41:12 | Error: Failed to lookup view "chatIndex.pug" in views directory "C:\backend\class36PreEntrega\views"
+    at Function.render (C:\backend\class36PreEntrega\node_modules\[4mexpress[24m\lib\application.js:597:17)
+    at ServerResponse.render (C:\backend\class36PreEntrega\node_modules\[4mexpress[24m\lib\response.js:1039:7)
+    at C:\backend\class36PreEntrega\src\routes\chat.ts:7:9
+    at Generator.next (<anonymous>)
+    at C:\backend\class36PreEntrega\src\routes\chat.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\backend\class36PreEntrega\src\routes\chat.ts:4:12)
+    at C:\backend\class36PreEntrega\src\routes\chat.ts:6:66
+    at Layer.handle [as handle_request] (C:\backend\class36PreEntrega\node_modules\[4mexpress[24m\lib\router\layer.js:95:5)
+    at next (C:\backend\class36PreEntrega\node_modules\[4mexpress[24m\lib\router\route.js:144:13) {
+  [stack]: [32m'Error: Failed to lookup view "chatIndex.pug" in views directory "C:\\backend\\class36PreEntrega\\views"\n'[39m +
+    [32m'    at Function.render (C:\\backend\\class36PreEntrega\\node_modules\\express\\lib\\application.js:597:17)\n'[39m +
+    [32m'    at ServerResponse.render (C:\\backend\\class36PreEntrega\\node_modules\\express\\lib\\response.js:1039:7)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\src\\routes\\chat.ts:7:9\n'[39m +
+    [32m'    at Generator.next (<anonymous>)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\src\\routes\\chat.ts:8:71\n'[39m +
+    [32m'    at new Promise (<anonymous>)\n'[39m +
+    [32m'    at __awaiter (C:\\backend\\class36PreEntrega\\src\\routes\\chat.ts:4:12)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\src\\routes\\chat.ts:6:66\n'[39m +
+    [32m'    at Layer.handle [as handle_request] (C:\\backend\\class36PreEntrega\\node_modules\\express\\lib\\router\\layer.js:95:5)\n'[39m +
+    [32m'    at next (C:\\backend\\class36PreEntrega\\node_modules\\express\\lib\\router\\route.js:144:13)'[39m,
+  [message]: [32m'Failed to lookup view "chatIndex.pug" in views directory "C:\\backend\\class36PreEntrega\\views"'[39m,
+  view: View {
+    defaultEngine: [32m'pug'[39m,
+    ext: [32m'.pug'[39m,
+    name: [32m'chatIndex.pug'[39m,
+    root: [32m'C:\\backend\\class36PreEntrega\\views'[39m,
+    engine: [36m<ref *1>[39m [Function (anonymous)] {
+      [length]: [33m3[39m,
+      [name]: [32m''[39m,
+      [prototype]: { [constructor]: [36m[Circular *1][39m }
+    },
+    path: [90mundefined[39m
+  }
+}
+[31merror[39m | 19-Feb-2023 15:41:13 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\components\chatComponents\chatWelcomeSign.pug'
+    at C:\backend\class36PreEntrega\views\components\chatIndex.pug line 2
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:42:15 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\components\chatComponents\chatWelcomeSign.pug'
+    at C:\backend\class36PreEntrega\views\components\chatIndex.pug line 2
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:42:17 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\components\chatComponents\chatWelcomeSign.pug'
+    at C:\backend\class36PreEntrega\views\components\chatIndex.pug line 2
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\components\\chatIndex.pug line 2'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\components\\chatComponents\\chatWelcomeSign.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:43:21 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\productsIndex.pug'
+    at C:\backend\class36PreEntrega\views\home.pug line 37
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:43:22 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\productsIndex.pug'
+    at C:\backend\class36PreEntrega\views\home.pug line 37
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:43:35 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\productsIndex.pug'
+    at C:\backend\class36PreEntrega\views\home.pug line 37
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:43:36 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\productsIndex.pug'
+    at C:\backend\class36PreEntrega\views\home.pug line 37
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:43:39 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\productsIndex.pug'
+    at C:\backend\class36PreEntrega\views\home.pug line 37
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'[39m
+}
+[31merror[39m | 19-Feb-2023 15:43:40 | Error: ENOENT: no such file or directory, open 'C:\backend\class36PreEntrega\views\components\productsIndex.pug'
+    at C:\backend\class36PreEntrega\views\home.pug line 37
+[90m    at Object.openSync (node:fs:585:3)[39m
+[90m    at Object.readFileSync (node:fs:453:35)[39m
+    at Function.read (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:85:13)
+    at Object.read (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:164:25)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:28:25
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:26:18)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:112:20
+    at Array.reduce (<anonymous>)
+    at walkAndMergeNodes (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:111:18)
+    at walkAST (C:\backend\class36PreEntrega\node_modules\[4mpug-walk[24m\index.js:40:19) {
+  [stack]: [32m"Error: ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37\n'[39m +
+    [32m'    at Object.openSync (node:fs:585:3)\n'[39m +
+    [32m'    at Object.readFileSync (node:fs:453:35)\n'[39m +
+    [32m'    at Function.read (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:85:13)\n'[39m +
+    [32m'    at Object.read (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:164:25)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:28:25\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:26:18)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:112:20\n'[39m +
+    [32m'    at Array.reduce (<anonymous>)\n'[39m +
+    [32m'    at walkAndMergeNodes (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:111:18)\n'[39m +
+    [32m'    at walkAST (C:\\backend\\class36PreEntrega\\node_modules\\pug-walk\\index.js:40:19)'[39m,
+  [message]: [32m"ENOENT: no such file or directory, open 'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'\n"[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\views\\home.pug line 37'[39m,
+  errno: [33m-4058[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\productsIndex.pug'[39m
+}

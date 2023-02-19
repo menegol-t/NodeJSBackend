@@ -27,4 +27,11 @@ html
                             a(class="nav-link active px-4" href="/api/chat")="Chat"
                         li(class="nav-item")
                             a(class="nav-link active px-4" href="/api/logout")="Logout"
-        h2(class="txtCenter txtMed2 fontSpecial")=welcomeSign
+        if welcomeSign
+            h2(class="txtCenter txtMed2 fontSpecial")=welcomeSign
+        else if userData 
+            include components/profile
+        else if email 
+            include components/chatIndex
+        else if allData 
+            include components/prodIndex

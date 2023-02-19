@@ -7,6 +7,7 @@ import chatRoute from "./chat"
 import infoRoute from "./info"
 import randomsRoute from "./randoms"
 import homeRoute from "./home";
+import profileRoute from "./profile";
 
 const router = Router()
 router.use("/products-test", productsTestRoute)
@@ -17,5 +18,6 @@ router.use("/chat", chatRoute)
 router.use("/info", infoRoute)
 router.use("/randoms", randomsRoute)
 router.use("/home", homeRoute)
+router.use("/profile", profileRoute)
 
 export default router

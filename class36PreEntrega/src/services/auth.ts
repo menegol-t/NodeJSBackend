@@ -38,14 +38,22 @@ const signup = async (req: Request, username: string, password: string, done: (e
 
     const {name, location, age, phone, profileThumbnail} = req.body
 
-    const signUpData = [username, password, name, location, age, phone, profileThumbnail]
+    const telephone = phone.split(' ').join('') 
+
+    const signUpData = [username, password, name, location, age, telephone, profileThumbnail]
 
     const missingSomeInfo = signUpData.some(item => item == undefined || item == '' || item == null || item == false)
 
     if (missingSomeInfo) {
         return done(null, false, { message: "Completa todos los datos." });
-    }else if(isNaN(age) || isNaN(phone)){
-        return done(null, false, { message: "Asegurate de que el telefono y la edad sean numeros." })
+    }else if(isNaN(age) || isNaN(telephone)){
+        return done(null, false, { message: "Asegurate de que la edad sea un numero, y el telfono contenga unicamente numeros, sin espacios ni simbolos." })
+    }else if(telephone.length > 15 || telephone.length < 8){
+        return done(null, false, {message: "El numero de telefono debe tener 8 caracteres como minimo y 15 como maximo."})
+    }else if(age.length > 2){
+        return done(null, false, {message: "Ingresa una edad real."})
+    }else if(age < 18){
+        return done(null, false, {message: "Tienes que tener mas de 18 años para usar esta app."})
     }else if(!validateEmail(username)){
         return done(null, false, { message: "Por favor ingresa un email real." })
     }

@@ -1,10 +1,11 @@
 import { Router, Response, Request } from "express";
 import { args } from "../config/arguments";
 import os from "os"
+import { checkLogIn } from "../middlewares/checkLogIn";
 
 const infoRoute = Router()
 
-infoRoute.get("/", async (req: Request, res: Response) => {
+infoRoute.get("/", checkLogIn, async (req: Request, res: Response) => {
     res.json({
         Arguments: args,
         SO: process.platform,

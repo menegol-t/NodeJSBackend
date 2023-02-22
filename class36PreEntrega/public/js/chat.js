@@ -1,7 +1,8 @@
 const chatForm = document.querySelector("#chatForm")
 const message = document.querySelector("#textInput")
-const userEmail = document.querySelector("#userEmail").textContent
+const userEmail = document.querySelector("#userEmail")
 const msgsTable = document.querySelector("#msContainer")
+
 const socket = io()
 
 const author = new normalizr.schema.Entity("author", {}, {idAttribute: "email"});
@@ -12,26 +13,21 @@ const denormalizeData = (data) => {
     return denormalizedData
 }
 
-console.log(message.value);
-
 chatForm.addEventListener("submit", (e)=> {
     
     e.preventDefault()
     if(message.value == undefined || message.value == null || message.value == " "){
-        alert(`Escribe algo...`);
-    // }else if(!validateEmail(email.value)){
-    //     alert("Por favor ingresa un email valido.")
+        console.log("Por favor escribe algo...");
     }else{
         let msg = {
-            email: userEmail,
+            email: userEmail.textContent,
             text: message.value
         }
-        console.log(msg);
         socket.emit("postMsgToDB", msg)
     }
     message.value = ""
 })
-
+ 
 socket.on("fetchMsgsFromDB", (normalizedData) => {
 
     const denormalized = denormalizeData(normalizedData)

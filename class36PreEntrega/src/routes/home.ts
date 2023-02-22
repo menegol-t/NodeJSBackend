@@ -1,8 +1,9 @@
 import { Router, Response, Request } from "express";
+import { checkLogIn } from "../middlewares/checkLogIn";
 
 const  homeRoute = Router()
 
-homeRoute.get("/", async (req: any, res: Response) => {
+homeRoute.get("/", checkLogIn, async (req: any, res: Response) => {
     res.render("home.pug", {welcomeSign: `Hola, ${req.user.name}`})
 })
 

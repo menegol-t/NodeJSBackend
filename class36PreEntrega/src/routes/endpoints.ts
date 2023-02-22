@@ -8,9 +8,11 @@ import infoRoute from "./info"
 import randomsRoute from "./randoms"
 import homeRoute from "./home";
 import profileRoute from "./profile";
+import prodsRoute from "./products";
 
 const router = Router()
 router.use("/products-test", productsTestRoute)
+router.use("/products", prodsRoute)
 router.use("/signup", signupRoute)
 router.use("/login", loginRoute)
 router.use("/logout", logoutRoute)

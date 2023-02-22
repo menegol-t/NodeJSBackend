@@ -8,11 +8,6 @@ const msg = new schema.Entity("messages", {author: author}, {idAttribute: "_id"}
 
 const finalSchema = [msg]
 
-//hasta ahi arriba la definicion de esquemas.
-
-//los datos NO los guardo normalizados en mongo. Los datos se leen
-//y DESPUES que el backend los normalice para que al front le lleguen normalizados.
-
 export const saveMsg = async (msg: any) => {
     try {
 

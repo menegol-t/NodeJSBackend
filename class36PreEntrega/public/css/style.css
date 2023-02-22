@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Yeseva+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap');
 /*background-color: map-get($map:$bg,$key:'cinco'); */
 /* @include caja(block,auto);*/
 html {
@@ -95,6 +96,11 @@ html {
 
 .fontSpecial {
   font-family: "Yeseva One", sans-serif;
+  color: black; }
+
+.fontMenu {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 900;
   color: black; }
 
 .border {

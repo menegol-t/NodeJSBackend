@@ -88,9 +88,6 @@ export const addOrderToCart = async (order) => {
         const cartId = cartToUpdate._id
         const indexOfDuplicatedItem = products.findIndex((itemInTheCart) => itemInTheCart._id == prodId)
 
-        logger.info(`Los id de prodId es ${prodId} y de produycts[prod] es ${products[0]._id}`)
-        logger.info(`esto me da un ${indexOfDuplicatedItem}`)
-
         if(!prod){
             logger.error("No se encontro ningun producto con ese ID")
             return false
@@ -106,9 +103,7 @@ export const addOrderToCart = async (order) => {
                 products.push(prod)
             }
 
-            await CartModel.findByIdAndUpdate(cartId, {products}, {new: true}, (err) => {
-                err ? logger.error(err) : logger.info("ok mongoose")
-            })
+            await CartModel.findByIdAndUpdate(cartId, {products}, {new: true})
             return true
         }
     } catch (err) {

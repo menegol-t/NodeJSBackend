@@ -12,16 +12,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const socket_io_1 = require("socket.io");
 const logger_1 = require("../config/logger");
 const chatMsgs_1 = require("../controllers/chatMsgs");
+const cartMethods_1 = require("../controllers/cartMethods");
 const io = new socket_io_1.Server;
 const initWebSocket = (server) => {
     io.attach(server);
     io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
-        socket.on("userLoggedToChat", (usr) => __awaiter(void 0, void 0, void 0, function* () {
-            logger_1.logger.info("New WS connection");
-            socket.emit("fetchMsgsFromDB", yield (0, chatMsgs_1.getAllMsgs)());
-            socket.on("postMsgToDB", (msg) => __awaiter(void 0, void 0, void 0, function* () {
-                io.emit("newMsgInDB", yield (0, chatMsgs_1.saveMsg)(usr, msg));
-            }));
+        logger_1.logger.info("New WS connection");
+        socket.emit("fetchMsgsFromDB", yield (0, chatMsgs_1.getAllMsgs)());
+        socket.on("postMsgToDB", (msg) => __awaiter(void 0, void 0, void 0, function* () {
+            io.emit("newMsgInDB", yield (0, chatMsgs_1.saveMsg)(msg));
+        }));
+        socket.on("addProdToCart", (order) => __awaiter(void 0, void 0, void 0, function* () {
+            io.emit("prodAddedToCart", yield (0, cartMethods_1.addOrderToCart)(order));
         }));
     }));
 };

@@ -924,3 +924,4 @@ Syntax Error: Unexpected token
 [33mwarn[39m | 26-Feb-2023 19:52:37 | PID: 19188, Route GET /favicon.ico doesn't exist.
 [33mwarn[39m | 26-Feb-2023 19:54:46 | PID: 10280, Route GET /favicon.ico doesn't exist.
 [33mwarn[39m | 26-Feb-2023 20:08:26 | PID: 7780, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 20:14:18 | PID: 15788, Route GET /favicon.ico doesn't exist.

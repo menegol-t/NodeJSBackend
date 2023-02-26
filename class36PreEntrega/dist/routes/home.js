@@ -10,8 +10,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
+const checkLogIn_1 = require("../middlewares/checkLogIn");
 const homeRoute = (0, express_1.Router)();
-homeRoute.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.render("home.pug");
+homeRoute.get("/", checkLogIn_1.checkLogIn, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    res.render("home.pug", { welcomeSign: `Hola, ${req.user.name}` });
 }));
 exports.default = homeRoute;

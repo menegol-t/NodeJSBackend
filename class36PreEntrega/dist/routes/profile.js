@@ -8,15 +8,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const fakeController_1 = __importDefault(require("../controllers/fakeController"));
+const logger_1 = require("../config/logger");
 const checkLogIn_1 = require("../middlewares/checkLogIn");
-const productsTestRoute = (0, express_1.Router)();
-productsTestRoute.get("/", checkLogIn_1.checkLogIn, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.render("prodIndex.pug", { prodData: yield (0, fakeController_1.default)() });
+const profileRoute = (0, express_1.Router)();
+profileRoute.get("/", checkLogIn_1.checkLogIn, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    logger_1.logger.info(req.user.phone);
+    res.render("home.pug", { userData: req.user });
 }));
-exports.default = productsTestRoute;
+exports.default = profileRoute;

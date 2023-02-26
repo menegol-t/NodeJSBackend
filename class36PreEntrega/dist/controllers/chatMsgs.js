@@ -10,32 +10,39 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAllMsgs = exports.saveMsg = void 0;
-const chaMsgModel_1 = require("../models/chaMsgModel");
 const normalizr_1 = require("normalizr");
 const logger_1 = require("../config/logger");
+const userModel_1 = require("../models/userModel");
+const chatMsgModel_1 = require("../models/chatMsgModel");
 const author = new normalizr_1.schema.Entity("author", {}, { idAttribute: "email" });
 const msg = new normalizr_1.schema.Entity("messages", { author: author }, { idAttribute: "_id" });
 const finalSchema = [msg];
-//hasta ahi arriba la definicion de esquemas.
-//los datos NO los guardo normalizados en mongo. Los datos se leen
-//y DESPUES que el backend los normalice para que al front le lleguen normalizados.
-const saveMsg = (usr, ms) => __awaiter(void 0, void 0, void 0, function* () {
+const saveMsg = (msg) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const messageToSave = {
-            author: usr,
-            text: ms
-        };
-        const savedMsg = yield chaMsgModel_1.ChatMsgModel.create(messageToSave);
-        return savedMsg;
+        const { email } = msg;
+        return yield userModel_1.UserModel.findOne({ email: email }).then((usr) => __awaiter(void 0, void 0, void 0, function* () {
+            const data = {
+                author: usr,
+                text: msg.text
+            };
+            try {
+                const savedMsg = yield chatMsgModel_1.ChatMsgModel.create(data);
+                console.log(savedMsg);
+                return savedMsg;
+            }
+            catch (err) {
+                logger_1.logger.error(`Error saving message in DB `, err);
+            }
+        }));
     }
     catch (err) {
-        logger_1.logger.error(`Error saving message to DB `, err);
+        logger_1.logger.error(`Error searching user in DB `, err);
     }
 });
 exports.saveMsg = saveMsg;
 const getAllMsgs = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const rawData = yield chaMsgModel_1.ChatMsgModel.find().lean();
+        const rawData = yield chatMsgModel_1.ChatMsgModel.find().lean();
         const normalizedData = (0, normalizr_1.normalize)(rawData, finalSchema);
         return normalizedData;
     }

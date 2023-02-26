@@ -12,11 +12,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserModel = exports.userSchema = void 0;
+exports.UserModel = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 const bcrypt_1 = __importDefault(require("bcrypt"));
 const usersCollection = "userList";
-exports.userSchema = new mongoose_1.default.Schema({
+const userSchema = new mongoose_1.default.Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     name: { type: String, required: true },
@@ -25,7 +25,7 @@ exports.userSchema = new mongoose_1.default.Schema({
     phone: { type: Number, required: true },
     profileThumbnail: { type: String, required: true }
 }, { timestamps: true, versionKey: false });
-exports.userSchema.pre("save", function (next) {
+userSchema.pre("save", function (next) {
     return __awaiter(this, void 0, void 0, function* () {
         const user = this;
         const hash = yield bcrypt_1.default.hash(user.password, 10);
@@ -33,9 +33,9 @@ exports.userSchema.pre("save", function (next) {
         next();
     });
 });
-exports.userSchema.methods.isValidPassword = function (password) {
+userSchema.methods.isValidPassword = function (password) {
     return __awaiter(this, void 0, void 0, function* () {
         return yield bcrypt_1.default.compare(password, this.password);
     });
 };
-exports.UserModel = mongoose_1.default.model(usersCollection, exports.userSchema);
+exports.UserModel = mongoose_1.default.model(usersCollection, userSchema);

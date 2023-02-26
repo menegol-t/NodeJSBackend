@@ -82,6 +82,9 @@ html {
 .txtBlack {
   color: black; }
 
+.anularStretch {
+  align-content: center; }
+
 .bgBrown {
   background-color: #E0A367; }
 
@@ -145,6 +148,15 @@ html {
 .width2 {
   width: 90%; }
 
+.width4 {
+  width: 3%; }
+
+.width5 {
+  width: 40%; }
+
+.width6 {
+  width: 50%; }
+
 .form__width {
   width: 25%;
   font-size: 2rem; }
@@ -161,6 +173,10 @@ html {
 
 .header__z-index {
   z-index: 1; }
+
+.nav-link:hover {
+  color: white !important;
+  background-size: 100% 2px; }
 
 #oops {
   background-color: white !important; }
@@ -318,6 +334,37 @@ html {
 
 section article div a p:hover {
   color: white; }
+
+.img__margin {
+  margin-right: 10%; }
+
+section div div article figure {
+  margin: 4%;
+  display: inline-block;}
+
+section div div article figure img {
+  width: 100%; }
+
+.itemCount__botoncitos {
+  margin: 0.5% auto;
+  display: flex;
+  justify-content: space-evenly;}
+
+.boton__deactiv:hover{
+  cursor: default;
+  cursor: initial;}
+
+.itemCount__div {
+    width: 100%;
+    align-content: center;}
+
+.emptyCart__displayFlex{
+  align-items: center;
+  flex-direction: column;}
+
+.displayFlex__Cart{
+  align-items: center;
+  flex-direction: row;}
 
 /*BEM PRODUCTOS*/
 .section__anteojo--font {

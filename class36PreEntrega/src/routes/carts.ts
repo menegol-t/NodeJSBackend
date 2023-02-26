@@ -1,27 +1,39 @@
-import { Router, Request, Response, NextFunction} from "express"; 
+import { Router, Response, NextFunction} from "express"; 
 import {reqBody_ProdIdCheck} from "../middlewares/userInputChecks"
 import { getAllCarts, getCartById, getProdsInsideCartId, createCart, deleteCartById, addProdToCart, deleteProdFromCart } from "../controllers/apiCartMethods"
 import { checkAdmin } from "../middlewares/auth";
 import { checkLogIn } from "../middlewares/checkLogIn";
+import {createCartLogin, finishCartByOwner, getCartByOwner} from "../controllers/cartMethods"
 
 const cartsRoute = Router()
 
-cartsRoute.get("/", checkAdmin, getAllCarts)
-
-cartsRoute.get("/:cartId", checkLogIn, async (req : Request, res : Response, next: NextFunction) => {
-    const cart = await getCartById(req, res, next)
-    res.send(cart)
+cartsRoute.get("/", checkLogIn, async (req: any, res: Response, next: NextFunction) => {
+    const cartData = await getCartByOwner(req.user.email)
+    cartData == false ? next() : res.render("home", {cartData})
 })
 
+cartsRoute.post("/buy", checkLogIn, async (req: any, res: Response, next: NextFunction) => {
+    const cartFinished = await finishCartByOwner(req.user)
+    if (cartFinished == false){
+        res.redirect("/api/cart")
+    }else{
+        await createCartLogin(req.user.email, next)
+        res.redirect("/api/cart")
+    } 
+})
 
-cartsRoute.get("/:cartId/products", checkLogIn, getProdsInsideCartId)
+cartsRoute.get("/all", checkLogIn, checkAdmin, getAllCarts)
 
-cartsRoute.post("/", checkLogIn, createCart)
+cartsRoute.get("/:cartId", checkLogIn, checkAdmin, getCartById)
 
-cartsRoute.post("/:cartId/products", checkLogIn, reqBody_ProdIdCheck, addProdToCart)
+cartsRoute.get("/:cartId/products", checkLogIn, checkAdmin, getProdsInsideCartId)
 
-cartsRoute.delete("/:cartId", checkLogIn, deleteCartById)
+cartsRoute.post("/", checkLogIn, checkAdmin, createCart)
 
-cartsRoute.delete("/:cartId/products/", checkLogIn, reqBody_ProdIdCheck, deleteProdFromCart)
+cartsRoute.post("/:cartId/products", checkLogIn, checkAdmin, reqBody_ProdIdCheck, addProdToCart)
+
+cartsRoute.delete("/:cartId", checkLogIn, checkAdmin, deleteCartById)
+
+cartsRoute.delete("/:cartId/products/", checkLogIn, checkAdmin, reqBody_ProdIdCheck, deleteProdFromCart)
 
 export default cartsRoute

@@ -23,9 +23,12 @@ loginRoute.post("/",(req:Request, res:Response, next:NextFunction) => {
                     logger.error(`Error en login `, err)
                     next(err)
                 }else{
-                    await createCartLogin(user.email, next)
-                    logger.info(`Cart created for user: `, await createCartLogin(user.email, next))
-                    res.status(200).redirect("/api/home")
+                    try {
+                        await createCartLogin(user.email, next)
+                        res.status(200).redirect("/api/home")
+                    } catch (err) {
+                        logger.error(`Error en la creacion de cart.`)
+                    }
                 }
             });
         }

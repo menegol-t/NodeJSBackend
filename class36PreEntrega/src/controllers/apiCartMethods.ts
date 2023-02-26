@@ -24,7 +24,7 @@ export const getCartById = async (req: Request, res: Response, next: NextFunctio
                 msg: "No se encontro ningun cart con ese ID"
             })
         }else{
-            return cart
+            res.send(cart)
         }
 
     } catch (err) {

@@ -3,6 +3,8 @@ import { CartModel } from "../models/cartsModel";
 import { ProductsModel } from "../models/prodsModel";
 import { logger } from "../config/logger";
 import* as utils from "util"
+import { sendSms, sendWhatsapp } from "../services/smsAndWhatsap";
+import {transporter} from "../services/email"
 
 export const getCartByOwner = async (owner: string) => {
     try {
@@ -22,7 +24,7 @@ export const getProdsInsideCartOwner = async (ownerEmail: string) =>{
             return cart.products
         }   
     } catch (err) {
-        logger.error(`Errir ak ebcibtrar productos dentro de Cart por Owner `,err)
+        logger.error(`Error al obtener productos dentro de Cart por Owner `,err)
         return false
     }
 }
@@ -58,22 +60,62 @@ export const createCartLogin = async (ownerEmail, next: NextFunction) => {
     }
 }
 
-export const finishCartByOwner = async (ownerEmail: string) => {
+export const finishCartByOwner = async (owner: any) => {
     try {       
-        const cartToUpdate:any = await getCartByOwner(ownerEmail)        
-        const {cartId} = cartToUpdate._id
+        const cartToUpdate:any = await getCartByOwner(owner.email) 
+        const cartId = cartToUpdate._id
 
         if(!cartToUpdate){
             logger.error("No se encontro ningun cart con ese ID")
             return false
         }else{
             const done = true
-            const CartToBeFinished = await CartModel.findByIdAndUpdate(cartId, {done}, {new: true})
-            return CartToBeFinished
-        }
+            const cartToBeFinished:any = await CartModel.findByIdAndUpdate(cartId, {done}, {new: true})
+            
+            if(cartToBeFinished){
 
+                let prodsItems:string = ""
+
+                for (let i=0; i < cartToBeFinished.products.length; i++){
+                    prodsItems += 
+                        "<li>" + cartToBeFinished.products[i].title + "<ul> <li>ProdID: " + cartToBeFinished.products[i]._id + "</li> <li> Precio: " + cartToBeFinished.products[i].price + "</li> <li>Cantidad: " + cartToBeFinished.products[i].quantity + "</li> </ul> </li>"
+                }
+                
+                const mailOptions = {
+                    from: process.env.ETHEREAL_EMAIL,
+                    to: process.env.ETHEREAL_EMAIL,
+                    subject: `Nuevo pedido de ${owner.name}, ${owner.email}`,
+                    html: `
+                    <h1>Nuevo pedido. CartID: ${cartToBeFinished._id}</h1>
+                    <h2> Informacion del usuario: </h2>
+                    <ul>
+                        <li>UserID: ${owner._id}</li>
+                        <li>Email: ${owner.email}</li>
+                        <li>Name: ${owner.name}</li>
+                        <li>Phone: ${owner.phone}</li>
+                        <li>Location: ${owner.location}</li>
+                        <li>Age: ${owner.age}</li>
+                    </ul>
+                    <h3>Productos:</h3>
+                    <ol>
+                        ${prodsItems}
+                    </ol>
+                    `
+                }
+    
+                try {
+                    await transporter.sendMail(mailOptions)
+                    // await sendSms(process.env.ADMIN_PHONE, `${owner.email} made an order.`)
+                    await sendWhatsapp(process.env.ADMIN_PHONE, `Nuevo pedido numero "${cartToBeFinished._id}" de ${owner.email}, ${owner.name}`)
+                    await sendWhatsapp(owner.phone, `${owner.name}, recibimos tu pedido numero "${cartToBeFinished._id}" y ya esta en proceso.`)
+                }catch(err){
+                    logger.error("Error al enviar informacion de cart via email, SMS y Whatsapp.", err)
+                    return false
+                } 
+            } 
+        }
     } catch (err) {
-        logger.error(`Error al finalizar compra `, err)
+        logger.error(`Error al obtener cartByOwner `, err)
         return false
     }
 }

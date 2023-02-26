@@ -1,0 +1,926 @@
+[33mwarn[39m | 21-Feb-2023 23:05:57 | PID: 21492, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 21-Feb-2023 23:05:59 | Error: C:\backend\class36PreEntrega\views\components\cartComponents\cartTable.pug:32:72
+    30|                             p(class="mb-2")= "${ivaTax}"
+    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")
+  > 32|                             div(class="d-flex justify-content-between")=
+-------------------------------------------------------------------------------^
+    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "
+    34|                                 span(class='txtSmall2')= "${finalCheckoutPrice} "
+
+unexpected text "=
+   "
+    at makeError (C:\backend\class36PreEntrega\node_modules\[4mpug-error[24m\index.js:34:13)
+    at Lexer.error (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:62:15)
+    at Lexer.fail (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1629:10)
+    at Lexer.advance (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1694:12)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.getTokens (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1706:12)
+    at lex (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:12:42)
+    at Object.lex (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:53:24)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:37:27 {
+  [stack]: [32m'Error: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:32:72\n'[39m +
+    [32m'    30|                             p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'  > 32|                             div(class="d-flex justify-content-between")=\n'[39m +
+    [32m'-------------------------------------------------------------------------------^\n'[39m +
+    [32m`    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'    34|                                 span(class=\'txtSmall2\')= "${finalCheckoutPrice} "\n'[39m +
+    [32m'\n'[39m +
+    [32m'unexpected text "=\n'[39m +
+    [32m'   "\n'[39m +
+    [32m'    at makeError (C:\\backend\\class36PreEntrega\\node_modules\\pug-error\\index.js:34:13)\n'[39m +
+    [32m'    at Lexer.error (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:62:15)\n'[39m +
+    [32m'    at Lexer.fail (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1629:10)\n'[39m +
+    [32m'    at Lexer.advance (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1694:12)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.getTokens (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1706:12)\n'[39m +
+    [32m'    at lex (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:12:42)\n'[39m +
+    [32m'    at Object.lex (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:104:9)\n'[39m +
+    [32m'    at Function.loadString [as string] (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:53:24)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:37:27'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:32:72\n'[39m +
+    [32m'    30|                             p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'  > 32|                             div(class="d-flex justify-content-between")=\n'[39m +
+    [32m'-------------------------------------------------------------------------------^\n'[39m +
+    [32m`    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'    34|                                 span(class=\'txtSmall2\')= "${finalCheckoutPrice} "\n'[39m +
+    [32m'\n'[39m +
+    [32m'unexpected text "=\n'[39m +
+    [32m'   "'[39m,
+  code: [32m'PUG:UNEXPECTED_TEXT'[39m,
+  msg: [32m'unexpected text "=\n   "'[39m,
+  line: [33m32[39m,
+  column: [33m72[39m,
+  filename: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug'[39m,
+  src: [32m'if cartData.products.length \n'[39m +
+    [32m'    h2(class="txtCenter txtMed2 fontSpecial")="Todavia no tienes productos en tu carrito!"\n'[39m +
+    [32m'else \n'[39m +
+    [32m'    section(class="h-100 h-custom mb-5 mt-auto")\n'[39m +
+    [32m'        div(class="container h-100 py-3")\n'[39m +
+    [32m'            div(class="row d-flex justify-content-center align-items-center h-100")\n'[39m +
+    [32m'                div(class="col-10 ")\n'[39m +
+    [32m'                    div(class="table-responsive")\n'[39m +
+    [32m'                        table(class="table")\n'[39m +
+    [32m'                            thead\n'[39m +
+    [32m'                                tr\n'[39m +
+    [32m'                                    th(scope="col" class="h5 txtMed2")= "Carrito de compras"\n'[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Quitar"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Cantidad"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Unidad"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Subtotal"\n`[39m +
+    [32m'                            tbody\n'[39m +
+    [32m'                                include cartItem  \n'[39m +
+    [32m'                    div(class="col-md-6  offset-md-3 mb-5 mt-5 txtCenter")\n'[39m +
+    [32m'                        button(type="button" class="btn btn-info btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Limpiar carrito"\n`[39m +
+    [32m'                    div(class="col-md-6 offset-md-3")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between")\n'[39m +
+    [32m'                            p(class="mb-2")="Total (sin IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")="${totalPrice}"\n'[39m +
+    [32m'                        hr(class="my-4")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between mb-4" )\n'[39m +
+    [32m'                            p(class="mb-2")= "Impuestos (IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'                        button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")=\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'                                span(class=\'txtSmall2\')= "${finalCheckoutPrice} "'[39m,
+  toJSON: [36m<ref *1>[39m [Function (anonymous)] {
+    [length]: [33m0[39m,
+    [name]: [32m''[39m,
+    [prototype]: { [constructor]: [36m[Circular *1][39m }
+  }
+}
+[33mwarn[39m | 21-Feb-2023 23:05:59 | PID: 21492, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 21-Feb-2023 23:05:59 | Error: C:\backend\class36PreEntrega\views\components\cartComponents\cartTable.pug:32:72
+    30|                             p(class="mb-2")= "${ivaTax}"
+    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")
+  > 32|                             div(class="d-flex justify-content-between")=
+-------------------------------------------------------------------------------^
+    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "
+    34|                                 span(class='txtSmall2')= "${finalCheckoutPrice} "
+
+unexpected text "=
+   "
+    at makeError (C:\backend\class36PreEntrega\node_modules\[4mpug-error[24m\index.js:34:13)
+    at Lexer.error (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:62:15)
+    at Lexer.fail (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1629:10)
+    at Lexer.advance (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1694:12)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.getTokens (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1706:12)
+    at lex (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:12:42)
+    at Object.lex (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:53:24)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:37:27 {
+  [stack]: [32m'Error: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:32:72\n'[39m +
+    [32m'    30|                             p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'  > 32|                             div(class="d-flex justify-content-between")=\n'[39m +
+    [32m'-------------------------------------------------------------------------------^\n'[39m +
+    [32m`    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'    34|                                 span(class=\'txtSmall2\')= "${finalCheckoutPrice} "\n'[39m +
+    [32m'\n'[39m +
+    [32m'unexpected text "=\n'[39m +
+    [32m'   "\n'[39m +
+    [32m'    at makeError (C:\\backend\\class36PreEntrega\\node_modules\\pug-error\\index.js:34:13)\n'[39m +
+    [32m'    at Lexer.error (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:62:15)\n'[39m +
+    [32m'    at Lexer.fail (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1629:10)\n'[39m +
+    [32m'    at Lexer.advance (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1694:12)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.getTokens (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1706:12)\n'[39m +
+    [32m'    at lex (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:12:42)\n'[39m +
+    [32m'    at Object.lex (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:104:9)\n'[39m +
+    [32m'    at Function.loadString [as string] (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:53:24)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:37:27'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:32:72\n'[39m +
+    [32m'    30|                             p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'  > 32|                             div(class="d-flex justify-content-between")=\n'[39m +
+    [32m'-------------------------------------------------------------------------------^\n'[39m +
+    [32m`    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'    34|                                 span(class=\'txtSmall2\')= "${finalCheckoutPrice} "\n'[39m +
+    [32m'\n'[39m +
+    [32m'unexpected text "=\n'[39m +
+    [32m'   "'[39m,
+  code: [32m'PUG:UNEXPECTED_TEXT'[39m,
+  msg: [32m'unexpected text "=\n   "'[39m,
+  line: [33m32[39m,
+  column: [33m72[39m,
+  filename: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug'[39m,
+  src: [32m'if cartData.products.length \n'[39m +
+    [32m'    h2(class="txtCenter txtMed2 fontSpecial")="Todavia no tienes productos en tu carrito!"\n'[39m +
+    [32m'else \n'[39m +
+    [32m'    section(class="h-100 h-custom mb-5 mt-auto")\n'[39m +
+    [32m'        div(class="container h-100 py-3")\n'[39m +
+    [32m'            div(class="row d-flex justify-content-center align-items-center h-100")\n'[39m +
+    [32m'                div(class="col-10 ")\n'[39m +
+    [32m'                    div(class="table-responsive")\n'[39m +
+    [32m'                        table(class="table")\n'[39m +
+    [32m'                            thead\n'[39m +
+    [32m'                                tr\n'[39m +
+    [32m'                                    th(scope="col" class="h5 txtMed2")= "Carrito de compras"\n'[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Quitar"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Cantidad"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Unidad"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Subtotal"\n`[39m +
+    [32m'                            tbody\n'[39m +
+    [32m'                                include cartItem  \n'[39m +
+    [32m'                    div(class="col-md-6  offset-md-3 mb-5 mt-5 txtCenter")\n'[39m +
+    [32m'                        button(type="button" class="btn btn-info btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Limpiar carrito"\n`[39m +
+    [32m'                    div(class="col-md-6 offset-md-3")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between")\n'[39m +
+    [32m'                            p(class="mb-2")="Total (sin IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")="${totalPrice}"\n'[39m +
+    [32m'                        hr(class="my-4")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between mb-4" )\n'[39m +
+    [32m'                            p(class="mb-2")= "Impuestos (IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'                        button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")=\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'                                span(class=\'txtSmall2\')= "${finalCheckoutPrice} "'[39m,
+  toJSON: [36m<ref *1>[39m [Function (anonymous)] {
+    [length]: [33m0[39m,
+    [name]: [32m''[39m,
+    [prototype]: { [constructor]: [36m[Circular *1][39m }
+  }
+}
+[31merror[39m | 21-Feb-2023 23:06:19 | Error: C:\backend\class36PreEntrega\views\components\cartComponents\cartTable.pug:32:72
+    30|                             p(class="mb-2")= "${ivaTax}"
+    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")
+  > 32|                             div(class="d-flex justify-content-between")=
+-------------------------------------------------------------------------------^
+    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "
+    34|                                 span(class='txtSmall2')= "${finalCheckoutPrice} "
+
+unexpected text "=
+   "
+    at makeError (C:\backend\class36PreEntrega\node_modules\[4mpug-error[24m\index.js:34:13)
+    at Lexer.error (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:62:15)
+    at Lexer.fail (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1629:10)
+    at Lexer.advance (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1694:12)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.getTokens (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1706:12)
+    at lex (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:12:42)
+    at Object.lex (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:53:24)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:37:27 {
+  [stack]: [32m'Error: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:32:72\n'[39m +
+    [32m'    30|                             p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'  > 32|                             div(class="d-flex justify-content-between")=\n'[39m +
+    [32m'-------------------------------------------------------------------------------^\n'[39m +
+    [32m`    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'    34|                                 span(class=\'txtSmall2\')= "${finalCheckoutPrice} "\n'[39m +
+    [32m'\n'[39m +
+    [32m'unexpected text "=\n'[39m +
+    [32m'   "\n'[39m +
+    [32m'    at makeError (C:\\backend\\class36PreEntrega\\node_modules\\pug-error\\index.js:34:13)\n'[39m +
+    [32m'    at Lexer.error (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:62:15)\n'[39m +
+    [32m'    at Lexer.fail (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1629:10)\n'[39m +
+    [32m'    at Lexer.advance (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1694:12)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.getTokens (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1706:12)\n'[39m +
+    [32m'    at lex (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:12:42)\n'[39m +
+    [32m'    at Object.lex (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:104:9)\n'[39m +
+    [32m'    at Function.loadString [as string] (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:53:24)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:37:27'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:32:72\n'[39m +
+    [32m'    30|                             p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'  > 32|                             div(class="d-flex justify-content-between")=\n'[39m +
+    [32m'-------------------------------------------------------------------------------^\n'[39m +
+    [32m`    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'    34|                                 span(class=\'txtSmall2\')= "${finalCheckoutPrice} "\n'[39m +
+    [32m'\n'[39m +
+    [32m'unexpected text "=\n'[39m +
+    [32m'   "'[39m,
+  code: [32m'PUG:UNEXPECTED_TEXT'[39m,
+  msg: [32m'unexpected text "=\n   "'[39m,
+  line: [33m32[39m,
+  column: [33m72[39m,
+  filename: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug'[39m,
+  src: [32m'if cartData.products.length \n'[39m +
+    [32m'    h2(class="txtCenter txtMed2 fontSpecial")="Todavia no tienes productos en tu carrito!"\n'[39m +
+    [32m'else \n'[39m +
+    [32m'    section(class="h-100 h-custom mb-5 mt-auto")\n'[39m +
+    [32m'        div(class="container h-100 py-3")\n'[39m +
+    [32m'            div(class="row d-flex justify-content-center align-items-center h-100")\n'[39m +
+    [32m'                div(class="col-10 ")\n'[39m +
+    [32m'                    div(class="table-responsive")\n'[39m +
+    [32m'                        table(class="table")\n'[39m +
+    [32m'                            thead\n'[39m +
+    [32m'                                tr\n'[39m +
+    [32m'                                    th(scope="col" class="h5 txtMed2")= "Carrito de compras"\n'[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Quitar"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Cantidad"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Unidad"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Subtotal"\n`[39m +
+    [32m'                            tbody\n'[39m +
+    [32m'                                include cartItem  \n'[39m +
+    [32m'                    div(class="col-md-6  offset-md-3 mb-5 mt-5 txtCenter")\n'[39m +
+    [32m'                        button(type="button" class="btn btn-info btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Limpiar carrito"\n`[39m +
+    [32m'                    div(class="col-md-6 offset-md-3")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between")\n'[39m +
+    [32m'                            p(class="mb-2")="Total (sin IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")="${totalPrice}"\n'[39m +
+    [32m'                        hr(class="my-4")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between mb-4" )\n'[39m +
+    [32m'                            p(class="mb-2")= "Impuestos (IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'                        button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")=\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'                                span(class=\'txtSmall2\')= "${finalCheckoutPrice} "'[39m,
+  toJSON: [36m<ref *1>[39m [Function (anonymous)] {
+    [length]: [33m0[39m,
+    [name]: [32m''[39m,
+    [prototype]: { [constructor]: [36m[Circular *1][39m }
+  }
+}
+[33mwarn[39m | 21-Feb-2023 23:06:19 | PID: 21492, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 21-Feb-2023 23:06:19 | Error: C:\backend\class36PreEntrega\views\components\cartComponents\cartTable.pug:32:72
+    30|                             p(class="mb-2")= "${ivaTax}"
+    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")
+  > 32|                             div(class="d-flex justify-content-between")=
+-------------------------------------------------------------------------------^
+    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "
+    34|                                 span(class='txtSmall2')= "${finalCheckoutPrice} "
+
+unexpected text "=
+   "
+    at makeError (C:\backend\class36PreEntrega\node_modules\[4mpug-error[24m\index.js:34:13)
+    at Lexer.error (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:62:15)
+    at Lexer.fail (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1629:10)
+    at Lexer.advance (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1694:12)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.getTokens (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1706:12)
+    at lex (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:12:42)
+    at Object.lex (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:104:9)
+    at Function.loadString [as string] (C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:53:24)
+    at C:\backend\class36PreEntrega\node_modules\[4mpug-load[24m\index.js:37:27 {
+  [stack]: [32m'Error: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:32:72\n'[39m +
+    [32m'    30|                             p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'  > 32|                             div(class="d-flex justify-content-between")=\n'[39m +
+    [32m'-------------------------------------------------------------------------------^\n'[39m +
+    [32m`    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'    34|                                 span(class=\'txtSmall2\')= "${finalCheckoutPrice} "\n'[39m +
+    [32m'\n'[39m +
+    [32m'unexpected text "=\n'[39m +
+    [32m'   "\n'[39m +
+    [32m'    at makeError (C:\\backend\\class36PreEntrega\\node_modules\\pug-error\\index.js:34:13)\n'[39m +
+    [32m'    at Lexer.error (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:62:15)\n'[39m +
+    [32m'    at Lexer.fail (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1629:10)\n'[39m +
+    [32m'    at Lexer.advance (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1694:12)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.getTokens (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1706:12)\n'[39m +
+    [32m'    at lex (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:12:42)\n'[39m +
+    [32m'    at Object.lex (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:104:9)\n'[39m +
+    [32m'    at Function.loadString [as string] (C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:53:24)\n'[39m +
+    [32m'    at C:\\backend\\class36PreEntrega\\node_modules\\pug-load\\index.js:37:27'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:32:72\n'[39m +
+    [32m'    30|                             p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'    31|                         button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'  > 32|                             div(class="d-flex justify-content-between")=\n'[39m +
+    [32m'-------------------------------------------------------------------------------^\n'[39m +
+    [32m`    33|                                 span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'    34|                                 span(class=\'txtSmall2\')= "${finalCheckoutPrice} "\n'[39m +
+    [32m'\n'[39m +
+    [32m'unexpected text "=\n'[39m +
+    [32m'   "'[39m,
+  code: [32m'PUG:UNEXPECTED_TEXT'[39m,
+  msg: [32m'unexpected text "=\n   "'[39m,
+  line: [33m32[39m,
+  column: [33m72[39m,
+  filename: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug'[39m,
+  src: [32m'if cartData.products.length \n'[39m +
+    [32m'    h2(class="txtCenter txtMed2 fontSpecial")="Todavia no tienes productos en tu carrito!"\n'[39m +
+    [32m'else \n'[39m +
+    [32m'    section(class="h-100 h-custom mb-5 mt-auto")\n'[39m +
+    [32m'        div(class="container h-100 py-3")\n'[39m +
+    [32m'            div(class="row d-flex justify-content-center align-items-center h-100")\n'[39m +
+    [32m'                div(class="col-10 ")\n'[39m +
+    [32m'                    div(class="table-responsive")\n'[39m +
+    [32m'                        table(class="table")\n'[39m +
+    [32m'                            thead\n'[39m +
+    [32m'                                tr\n'[39m +
+    [32m'                                    th(scope="col" class="h5 txtMed2")= "Carrito de compras"\n'[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Quitar"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Cantidad"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Unidad"\n`[39m +
+    [32m`                                    th(scope="col" class='txtMed txtCenter')= "Subtotal"\n`[39m +
+    [32m'                            tbody\n'[39m +
+    [32m'                                include cartItem  \n'[39m +
+    [32m'                    div(class="col-md-6  offset-md-3 mb-5 mt-5 txtCenter")\n'[39m +
+    [32m'                        button(type="button" class="btn btn-info btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Limpiar carrito"\n`[39m +
+    [32m'                    div(class="col-md-6 offset-md-3")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between")\n'[39m +
+    [32m'                            p(class="mb-2")="Total (sin IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")="${totalPrice}"\n'[39m +
+    [32m'                        hr(class="my-4")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between mb-4" )\n'[39m +
+    [32m'                            p(class="mb-2")= "Impuestos (IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")= "${ivaTax}"\n'[39m +
+    [32m'                        button(type="button" class="btn bgBrown btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")=\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Terminar la compra, total: "\n`[39m +
+    [32m'                                span(class=\'txtSmall2\')= "${finalCheckoutPrice} "'[39m,
+  toJSON: [36m<ref *1>[39m [Function (anonymous)] {
+    [length]: [33m0[39m,
+    [name]: [32m''[39m,
+    [prototype]: { [constructor]: [36m[Circular *1][39m }
+  }
+}
+[33mwarn[39m | 21-Feb-2023 23:07:18 | PID: 21492, Route GET /api/cart doesn't exist.
+[33mwarn[39m | 21-Feb-2023 23:08:24 | PID: 22696, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 21-Feb-2023 23:10:38 | PID: 2856, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 21-Feb-2023 23:13:16 | TypeError: C:\backend\class36PreEntrega\views\components\cartComponents\cartItem.pug:5
+    3|     th(scope="row")
+    4|         div(class="d-flex align-items-center")
+  > 5|         img(src=cartItem.thumbnail class="img-fluid rounded-3 width6" alt=cartItem.alt)
+    6|         div(class="flex-column ms-4")
+    7|             p(class="mb-2 txtSmall2")=cartItem.title
+    8|     td(class="align-middle")
+
+Cannot read properties of undefined (reading 'thumbnail')
+    at eval (eval at wrap (C:\backend\class36PreEntrega\node_modules\[4mpug-runtime[24m\wrap.js:6:10), <anonymous>:408:103)
+    at eval (eval at wrap (C:\backend\class36PreEntrega\node_modules\[4mpug-runtime[24m\wrap.js:6:10), <anonymous>:447:4)
+    at template (eval at wrap (C:\backend\class36PreEntrega\node_modules\[4mpug-runtime[24m\wrap.js:6:10), <anonymous>:501:7)
+    at Object.exports.renderFile (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:454:38)
+    at Object.exports.renderFile (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:444:21)
+    at View.exports.__express [as engine] (C:\backend\class36PreEntrega\node_modules\[4mpug[24m\lib\index.js:493:11)
+    at View.render (C:\backend\class36PreEntrega\node_modules\[4mexpress[24m\lib\view.js:135:8)
+    at tryRender (C:\backend\class36PreEntrega\node_modules\[4mexpress[24m\lib\application.js:657:10)
+    at Function.render (C:\backend\class36PreEntrega\node_modules\[4mexpress[24m\lib\application.js:609:3)
+    at ServerResponse.render (C:\backend\class36PreEntrega\node_modules\[4mexpress[24m\lib\response.js:1039:7) {
+  [stack]: [32m'TypeError: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartItem.pug:5\n'[39m +
+    [32m'    3|     th(scope="row")\r\n'[39m +
+    [32m'    4|         div(class="d-flex align-items-center")\r\n'[39m +
+    [32m'  > 5|         img(src=cartItem.thumbnail class="img-fluid rounded-3 width6" alt=cartItem.alt)\r\n'[39m +
+    [32m'    6|         div(class="flex-column ms-4")\r\n'[39m +
+    [32m'    7|             p(class="mb-2 txtSmall2")=cartItem.title\r\n'[39m +
+    [32m'    8|     td(class="align-middle")\r\n'[39m +
+    [32m'\n'[39m +
+    [32m"Cannot read properties of undefined (reading 'thumbnail')\n"[39m +
+    [32m'    at eval (eval at wrap (C:\\backend\\class36PreEntrega\\node_modules\\pug-runtime\\wrap.js:6:10), <anonymous>:408:103)\n'[39m +
+    [32m'    at eval (eval at wrap (C:\\backend\\class36PreEntrega\\node_modules\\pug-runtime\\wrap.js:6:10), <anonymous>:447:4)\n'[39m +
+    [32m'    at template (eval at wrap (C:\\backend\\class36PreEntrega\\node_modules\\pug-runtime\\wrap.js:6:10), <anonymous>:501:7)\n'[39m +
+    [32m'    at Object.exports.renderFile (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:454:38)\n'[39m +
+    [32m'    at Object.exports.renderFile (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:444:21)\n'[39m +
+    [32m'    at View.exports.__express [as engine] (C:\\backend\\class36PreEntrega\\node_modules\\pug\\lib\\index.js:493:11)\n'[39m +
+    [32m'    at View.render (C:\\backend\\class36PreEntrega\\node_modules\\express\\lib\\view.js:135:8)\n'[39m +
+    [32m'    at tryRender (C:\\backend\\class36PreEntrega\\node_modules\\express\\lib\\application.js:657:10)\n'[39m +
+    [32m'    at Function.render (C:\\backend\\class36PreEntrega\\node_modules\\express\\lib\\application.js:609:3)\n'[39m +
+    [32m'    at ServerResponse.render (C:\\backend\\class36PreEntrega\\node_modules\\express\\lib\\response.js:1039:7)'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartItem.pug:5\n'[39m +
+    [32m'    3|     th(scope="row")\r\n'[39m +
+    [32m'    4|         div(class="d-flex align-items-center")\r\n'[39m +
+    [32m'  > 5|         img(src=cartItem.thumbnail class="img-fluid rounded-3 width6" alt=cartItem.alt)\r\n'[39m +
+    [32m'    6|         div(class="flex-column ms-4")\r\n'[39m +
+    [32m'    7|             p(class="mb-2 txtSmall2")=cartItem.title\r\n'[39m +
+    [32m'    8|     td(class="align-middle")\r\n'[39m +
+    [32m'\n'[39m +
+    [32m"Cannot read properties of undefined (reading 'thumbnail')"[39m,
+  path: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartItem.pug'[39m
+}
+[33mwarn[39m | 21-Feb-2023 23:13:16 | PID: 2856, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 21-Feb-2023 23:15:40 | PID: 9308, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 21-Feb-2023 23:25:41 | PID: 17100, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 22-Feb-2023 00:33:03 | PID: 17100, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 22-Feb-2023 02:53:42 | PID: 23120, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:17:32 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:18:25 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:18:39 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:19:07 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:19:15 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:20:06 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:20:46 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:21:01 | PID: 10160, Route GET /api/cosate doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:23:05 | PID: 10160, Route GET /api/cosate doesn't exist.
+[31merror[39m | 26-Feb-2023 02:26:39 | Cast to ObjectId failed for value "buy" (type string) at path "_id" for model "cart"
+[31merror[39m | 26-Feb-2023 02:26:39 | CastError: Cast to ObjectId failed for value "buy" (type string) at path "_id" for model "cart"
+    at model.Query.exec (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\query.js:4913:21)
+    at model.Query.Query.then (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\query.js:5012:15)
+    at runMicrotasks (<anonymous>)
+[90m    at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m {
+  [stack]: [32m'CastError: Cast to ObjectId failed for value "buy" (type string) at path "_id" for model "cart"\n'[39m +
+    [32m'    at model.Query.exec (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\query.js:4913:21)\n'[39m +
+    [32m'    at model.Query.Query.then (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\query.js:5012:15)\n'[39m +
+    [32m'    at runMicrotasks (<anonymous>)\n'[39m +
+    [32m'    at processTicksAndRejections (node:internal/process/task_queues:96:5)'[39m,
+  [message]: [32m'Cast to ObjectId failed for value "buy" (type string) at path "_id" for model "cart"'[39m,
+  messageFormat: [90mundefined[39m,
+  stringValue: [32m'"buy"'[39m,
+  kind: [32m'ObjectId'[39m,
+  value: [32m'buy'[39m,
+  path: [32m'_id'[39m,
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\backend\class36PreEntrega\node_modules\[4mbson[24m\src\error.ts:16:5)
+      at new ObjectId (C:\backend\class36PreEntrega\node_modules\[4mbson[24m\src\objectid.ts:88:15)
+      at castObjectId (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\schematype.js:1612:20)
+      at cast (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\cast.js:342:32)
+      at model.Query.Query.cast (C:\backend\class36PreEntrega\node_modules\[4mmongoose[24m\lib\query.js:5341:12) {
+    [stack]: [32m'BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\n'[39m +
+      [32m'    at new BSONTypeError (C:\\backend\\class36PreEntrega\\node_modules\\bson\\src\\error.ts:16:5)\n'[39m +
+      [32m'    at new ObjectId (C:\\backend\\class36PreEntrega\\node_modules\\bson\\src\\objectid.ts:88:15)\n'[39m +
+      [32m'    at castObjectId (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\cast\\objectid.js:25:12)\n'[39m +
+      [32m'    at ObjectId.cast (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\schema\\objectid.js:246:12)\n'[39m +
+      [32m'    at ObjectId.SchemaType.applySetters (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\schematype.js:1201:12)\n'[39m +
+      [32m'    at ObjectId.SchemaType._castForQuery (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\schematype.js:1648:15)\n'[39m +
+      [32m'    at ObjectId.SchemaType.castForQuery (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\schematype.js:1636:15)\n'[39m +
+      [32m'    at ObjectId.SchemaType.castForQueryWrapper (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\schematype.js:1612:20)\n'[39m +
+      [32m'    at cast (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\cast.js:342:32)\n'[39m +
+      [32m'    at model.Query.Query.cast (C:\\backend\\class36PreEntrega\\node_modules\\mongoose\\lib\\query.js:5341:12)'[39m,
+    [message]: [32m'Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer'[39m,
+    [2m[name]: [36m[Getter][39m[22m
+  },
+  valueType: [32m'string'[39m,
+  level: [32m'\x1B[31merror\x1B[39m'[39m,
+  timestamp: [32m'26-Feb-2023 02:26:39'[39m,
+  [[32mSymbol(level)[39m]: [32m'error'[39m,
+  [[32mSymbol(message)[39m]: [32m'\x1B[31merror\x1B[39m | 26-Feb-2023 02:26:39 | Cast to ObjectId failed for value "buy" (type string) at path "_id" for model "cart"'[39m,
+  [2m[name]: [32m'CastError'[39m[22m
+}
+[33mwarn[39m | 26-Feb-2023 02:26:39 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:38:08 | PID: 10160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 02:38:26 | PID: 10160, Route GET /api/cosate doesn't exist.
+[33mwarn[39m | 26-Feb-2023 16:35:58 | PID: 18652, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 16:36:02 | PID: 18652, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 16:36:04 | PID: 18652, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 16:36:34 | PID: 18652, Route GET /cart doesn't exist.
+[33mwarn[39m | 26-Feb-2023 16:54:55 | PID: 21104, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:01:09 | PID: 21104, Route GET /cart doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:02:57 | PID: 20404, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:03:07 | PID: 20404, Route GET /cart doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:04:00 | PID: 11824, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:04:09 | PID: 11824, Route GET /cart doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:05:32 | PID: 22860, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:12:53 | PID: 19200, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:13:06 | PID: 19200, Route GET /api/css/style.css doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:13:06 | PID: 19200, Route GET /api/css/animate.css doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:14:49 | PID: 20076, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:15:02 | PID: 20076, Route GET /cart doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:16:39 | PID: 8400, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:16:52 | PID: 8400, Route GET /cart doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:17:42 | PID: 21356, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:19:06 | PID: 12976, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:19:26 | PID: 12976, Route GET /cart doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:22:46 | PID: 16480, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:25:10 | PID: 3944, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 17:28:03 | PID: 21472, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 18:09:44 | PID: 21536, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 26-Feb-2023 18:10:41 | The 'To' number whatsapp:+undefined is not a valid phone number.
+[33mwarn[39m | 26-Feb-2023 18:13:45 | PID: 17624, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 18:37:52 | PID: 17224, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 26-Feb-2023 18:42:30 | Error: C:\backend\class36PreEntrega\views\components\cartComponents\cartTable.pug:9:78
+    7|                 div(class="table-responsive")
+    8|                     h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "
+  > 9|                     img(class="justify-content-center" style="display:block;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")
+------------------------------------------------------------------------------------^
+    10| 
+    11|                     table(class="table")
+    12|                         thead
+
+Syntax Error: Unexpected token
+    at makeError (C:\backend\class36PreEntrega\node_modules\[4mpug-error[24m\index.js:34:13)
+    at Lexer.error (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:62:15)
+    at Lexer.assertExpression (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:96:12)
+    at Lexer.attributeValue (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1428:10)
+    at Lexer.attribute (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1275:30)
+    at Lexer.attrs (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.advance (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.getTokens (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1706:12) {
+  [stack]: [32m'Error: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:9:78\n'[39m +
+    [32m'    7|                 div(class="table-responsive")\n'[39m +
+    [32m'    8|                     h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'  > 9|                     img(class="justify-content-center" style="display:block;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'------------------------------------------------------------------------------------^\n'[39m +
+    [32m'    10| \n'[39m +
+    [32m'    11|                     table(class="table")\n'[39m +
+    [32m'    12|                         thead\n'[39m +
+    [32m'\n'[39m +
+    [32m'Syntax Error: Unexpected token\n'[39m +
+    [32m'    at makeError (C:\\backend\\class36PreEntrega\\node_modules\\pug-error\\index.js:34:13)\n'[39m +
+    [32m'    at Lexer.error (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:62:15)\n'[39m +
+    [32m'    at Lexer.assertExpression (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:96:12)\n'[39m +
+    [32m'    at Lexer.attributeValue (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1428:10)\n'[39m +
+    [32m'    at Lexer.attribute (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1275:30)\n'[39m +
+    [32m'    at Lexer.attrs (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1454:20)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.advance (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1686:12)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.getTokens (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1706:12)'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:9:78\n'[39m +
+    [32m'    7|                 div(class="table-responsive")\n'[39m +
+    [32m'    8|                     h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'  > 9|                     img(class="justify-content-center" style="display:block;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'------------------------------------------------------------------------------------^\n'[39m +
+    [32m'    10| \n'[39m +
+    [32m'    11|                     table(class="table")\n'[39m +
+    [32m'    12|                         thead\n'[39m +
+    [32m'\n'[39m +
+    [32m'Syntax Error: Unexpected token'[39m,
+  code: [32m'PUG:SYNTAX_ERROR'[39m,
+  msg: [32m'Syntax Error: Unexpected token'[39m,
+  line: [33m9[39m,
+  column: [33m78[39m,
+  filename: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug'[39m,
+  src: [32m'if cartData.products.length == 0\n'[39m +
+    [32m'    h2(class="txtCenter txtMed2 fontSpecial")="No tienes productos en tu carrito!"\n'[39m +
+    [32m'else \n'[39m +
+    [32m'    section(class="h-100 h-custom mb-5 mt-auto")\n'[39m +
+    [32m'        div(class="row d-flex justify-content-center align-items-center ")\n'[39m +
+    [32m'            div(class="col-10 ")\n'[39m +
+    [32m'                div(class="table-responsive")\n'[39m +
+    [32m'                    h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'                    img(class="justify-content-center" style="display:block;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'\n'[39m +
+    [32m'                    table(class="table")\n'[39m +
+    [32m'                        thead\n'[39m +
+    [32m'                            tr\n'[39m +
+    [32m'                                th(scope="col" class="txtMed2")= "Carrito"\n'[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Quitar"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Cantidad"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "P.Unidad"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Subtotal"\n`[39m +
+    [32m'                        tbody\n'[39m +
+    [32m'                            include cartItem  \n'[39m +
+    [32m'                    div(class="col-md-6  offset-md-3 mb-5 mt-5 txtCenter")\n'[39m +
+    [32m'                        button(type="button" class="btn btn-info btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Lorem"\n`[39m +
+    [32m'                    div(class="col-md-6 offset-md-3")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between")\n'[39m +
+    [32m'                            p(class="mb-2")="Total (sin IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")=`Lorem`\n'[39m +
+    [32m'                        hr(class="my-4")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between mb-4" )\n'[39m +
+    [32m'                            p(class="mb-2")= "Impuestos (IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")= "Ipsum"\n'[39m +
+    [32m'                        form(action="/api/cart/buy" method="POST" class="d-flex txtCenter justify-content-center mb-4")\n'[39m +
+    [32m'                            input(type="submit" value="Terminar la compra, total: X" style="font-size: 2rem;" class="btn btn-block btn-info btn-lg" )                                '[39m,
+  toJSON: [36m<ref *1>[39m [Function (anonymous)] {
+    [length]: [33m0[39m,
+    [name]: [32m''[39m,
+    [prototype]: { [constructor]: [36m[Circular *1][39m }
+  }
+}
+[33mwarn[39m | 26-Feb-2023 18:42:31 | PID: 17224, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 26-Feb-2023 18:42:31 | Error: C:\backend\class36PreEntrega\views\components\cartComponents\cartTable.pug:9:78
+    7|                 div(class="table-responsive")
+    8|                     h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "
+  > 9|                     img(class="justify-content-center" style="display:block;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")
+------------------------------------------------------------------------------------^
+    10| 
+    11|                     table(class="table")
+    12|                         thead
+
+Syntax Error: Unexpected token
+    at makeError (C:\backend\class36PreEntrega\node_modules\[4mpug-error[24m\index.js:34:13)
+    at Lexer.error (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:62:15)
+    at Lexer.assertExpression (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:96:12)
+    at Lexer.attributeValue (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1428:10)
+    at Lexer.attribute (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1275:30)
+    at Lexer.attrs (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.advance (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.getTokens (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1706:12) {
+  [stack]: [32m'Error: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:9:78\n'[39m +
+    [32m'    7|                 div(class="table-responsive")\n'[39m +
+    [32m'    8|                     h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'  > 9|                     img(class="justify-content-center" style="display:block;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'------------------------------------------------------------------------------------^\n'[39m +
+    [32m'    10| \n'[39m +
+    [32m'    11|                     table(class="table")\n'[39m +
+    [32m'    12|                         thead\n'[39m +
+    [32m'\n'[39m +
+    [32m'Syntax Error: Unexpected token\n'[39m +
+    [32m'    at makeError (C:\\backend\\class36PreEntrega\\node_modules\\pug-error\\index.js:34:13)\n'[39m +
+    [32m'    at Lexer.error (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:62:15)\n'[39m +
+    [32m'    at Lexer.assertExpression (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:96:12)\n'[39m +
+    [32m'    at Lexer.attributeValue (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1428:10)\n'[39m +
+    [32m'    at Lexer.attribute (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1275:30)\n'[39m +
+    [32m'    at Lexer.attrs (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1454:20)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.advance (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1686:12)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.getTokens (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1706:12)'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:9:78\n'[39m +
+    [32m'    7|                 div(class="table-responsive")\n'[39m +
+    [32m'    8|                     h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'  > 9|                     img(class="justify-content-center" style="display:block;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'------------------------------------------------------------------------------------^\n'[39m +
+    [32m'    10| \n'[39m +
+    [32m'    11|                     table(class="table")\n'[39m +
+    [32m'    12|                         thead\n'[39m +
+    [32m'\n'[39m +
+    [32m'Syntax Error: Unexpected token'[39m,
+  code: [32m'PUG:SYNTAX_ERROR'[39m,
+  msg: [32m'Syntax Error: Unexpected token'[39m,
+  line: [33m9[39m,
+  column: [33m78[39m,
+  filename: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug'[39m,
+  src: [32m'if cartData.products.length == 0\n'[39m +
+    [32m'    h2(class="txtCenter txtMed2 fontSpecial")="No tienes productos en tu carrito!"\n'[39m +
+    [32m'else \n'[39m +
+    [32m'    section(class="h-100 h-custom mb-5 mt-auto")\n'[39m +
+    [32m'        div(class="row d-flex justify-content-center align-items-center ")\n'[39m +
+    [32m'            div(class="col-10 ")\n'[39m +
+    [32m'                div(class="table-responsive")\n'[39m +
+    [32m'                    h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'                    img(class="justify-content-center" style="display:block;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'\n'[39m +
+    [32m'                    table(class="table")\n'[39m +
+    [32m'                        thead\n'[39m +
+    [32m'                            tr\n'[39m +
+    [32m'                                th(scope="col" class="txtMed2")= "Carrito"\n'[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Quitar"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Cantidad"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "P.Unidad"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Subtotal"\n`[39m +
+    [32m'                        tbody\n'[39m +
+    [32m'                            include cartItem  \n'[39m +
+    [32m'                    div(class="col-md-6  offset-md-3 mb-5 mt-5 txtCenter")\n'[39m +
+    [32m'                        button(type="button" class="btn btn-info btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Lorem"\n`[39m +
+    [32m'                    div(class="col-md-6 offset-md-3")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between")\n'[39m +
+    [32m'                            p(class="mb-2")="Total (sin IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")=`Lorem`\n'[39m +
+    [32m'                        hr(class="my-4")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between mb-4" )\n'[39m +
+    [32m'                            p(class="mb-2")= "Impuestos (IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")= "Ipsum"\n'[39m +
+    [32m'                        form(action="/api/cart/buy" method="POST" class="d-flex txtCenter justify-content-center mb-4")\n'[39m +
+    [32m'                            input(type="submit" value="Terminar la compra, total: X" style="font-size: 2rem;" class="btn btn-block btn-info btn-lg" )                                '[39m,
+  toJSON: [36m<ref *1>[39m [Function (anonymous)] {
+    [length]: [33m0[39m,
+    [name]: [32m''[39m,
+    [prototype]: { [constructor]: [36m[Circular *1][39m }
+  }
+}
+[31merror[39m | 26-Feb-2023 18:49:21 | Error: C:\backend\class36PreEntrega\views\components\cartComponents\cartTable.pug:7:64
+    5|         div(class="row d-flex justify-content-center align-items-center ")
+    6|             h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "
+  > 7|             img(class="img-fluid rounded-3" style="width:auto;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")
+----------------------------------------------------------------------^
+    8|             div(class="col-10 ")
+    9|                 div(class="table-responsive")
+    10|                     table(class="table")
+
+Syntax Error: Unexpected token
+    at makeError (C:\backend\class36PreEntrega\node_modules\[4mpug-error[24m\index.js:34:13)
+    at Lexer.error (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:62:15)
+    at Lexer.assertExpression (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:96:12)
+    at Lexer.attributeValue (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1428:10)
+    at Lexer.attribute (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1275:30)
+    at Lexer.attrs (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.advance (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.getTokens (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1706:12) {
+  [stack]: [32m'Error: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:7:64\n'[39m +
+    [32m'    5|         div(class="row d-flex justify-content-center align-items-center ")\n'[39m +
+    [32m'    6|             h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'  > 7|             img(class="img-fluid rounded-3" style="width:auto;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'----------------------------------------------------------------------^\n'[39m +
+    [32m'    8|             div(class="col-10 ")\n'[39m +
+    [32m'    9|                 div(class="table-responsive")\n'[39m +
+    [32m'    10|                     table(class="table")\n'[39m +
+    [32m'\n'[39m +
+    [32m'Syntax Error: Unexpected token\n'[39m +
+    [32m'    at makeError (C:\\backend\\class36PreEntrega\\node_modules\\pug-error\\index.js:34:13)\n'[39m +
+    [32m'    at Lexer.error (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:62:15)\n'[39m +
+    [32m'    at Lexer.assertExpression (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:96:12)\n'[39m +
+    [32m'    at Lexer.attributeValue (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1428:10)\n'[39m +
+    [32m'    at Lexer.attribute (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1275:30)\n'[39m +
+    [32m'    at Lexer.attrs (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1454:20)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.advance (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1686:12)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.getTokens (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1706:12)'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:7:64\n'[39m +
+    [32m'    5|         div(class="row d-flex justify-content-center align-items-center ")\n'[39m +
+    [32m'    6|             h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'  > 7|             img(class="img-fluid rounded-3" style="width:auto;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'----------------------------------------------------------------------^\n'[39m +
+    [32m'    8|             div(class="col-10 ")\n'[39m +
+    [32m'    9|                 div(class="table-responsive")\n'[39m +
+    [32m'    10|                     table(class="table")\n'[39m +
+    [32m'\n'[39m +
+    [32m'Syntax Error: Unexpected token'[39m,
+  code: [32m'PUG:SYNTAX_ERROR'[39m,
+  msg: [32m'Syntax Error: Unexpected token'[39m,
+  line: [33m7[39m,
+  column: [33m64[39m,
+  filename: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug'[39m,
+  src: [32m'if cartData.products.length == 0\n'[39m +
+    [32m'    h2(class="txtCenter txtMed2 fontSpecial")="No tienes productos en tu carrito!"\n'[39m +
+    [32m'else \n'[39m +
+    [32m'    section(class="h-100 h-custom mb-5 mt-auto")\n'[39m +
+    [32m'        div(class="row d-flex justify-content-center align-items-center ")\n'[39m +
+    [32m'            h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'            img(class="img-fluid rounded-3" style="width:auto;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'            div(class="col-10 ")\n'[39m +
+    [32m'                div(class="table-responsive")\n'[39m +
+    [32m'                    table(class="table")\n'[39m +
+    [32m'                        thead\n'[39m +
+    [32m'                            tr\n'[39m +
+    [32m'                                th(scope="col" class="txtMed2")= "Carrito"\n'[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Quitar"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Cantidad"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "P.Unidad"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Subtotal"\n`[39m +
+    [32m'                        tbody\n'[39m +
+    [32m'                            include cartItem  \n'[39m +
+    [32m'                    div(class="col-md-6  offset-md-3 mb-5 mt-5 txtCenter")\n'[39m +
+    [32m'                        button(type="button" class="btn btn-info btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Lorem"\n`[39m +
+    [32m'                    div(class="col-md-6 offset-md-3")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between")\n'[39m +
+    [32m'                            p(class="mb-2")="Total (sin IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")=`Lorem`\n'[39m +
+    [32m'                        hr(class="my-4")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between mb-4" )\n'[39m +
+    [32m'                            p(class="mb-2")= "Impuestos (IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")= "Ipsum"\n'[39m +
+    [32m'                        form(action="/api/cart/buy" method="POST" class="d-flex txtCenter justify-content-center mb-4")\n'[39m +
+    [32m'                            input(type="submit" value="Terminar la compra, total: X" style="font-size: 2rem;" class="btn btn-block btn-info btn-lg" )                                '[39m,
+  toJSON: [36m<ref *1>[39m [Function (anonymous)] {
+    [length]: [33m0[39m,
+    [name]: [32m''[39m,
+    [prototype]: { [constructor]: [36m[Circular *1][39m }
+  }
+}
+[33mwarn[39m | 26-Feb-2023 18:49:21 | PID: 17224, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 26-Feb-2023 18:49:21 | Error: C:\backend\class36PreEntrega\views\components\cartComponents\cartTable.pug:7:64
+    5|         div(class="row d-flex justify-content-center align-items-center ")
+    6|             h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "
+  > 7|             img(class="img-fluid rounded-3" style="width:auto;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")
+----------------------------------------------------------------------^
+    8|             div(class="col-10 ")
+    9|                 div(class="table-responsive")
+    10|                     table(class="table")
+
+Syntax Error: Unexpected token
+    at makeError (C:\backend\class36PreEntrega\node_modules\[4mpug-error[24m\index.js:34:13)
+    at Lexer.error (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:62:15)
+    at Lexer.assertExpression (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:96:12)
+    at Lexer.attributeValue (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1428:10)
+    at Lexer.attribute (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1275:30)
+    at Lexer.attrs (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1454:20)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.advance (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1686:12)
+    at Lexer.callLexerFunction (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1647:23)
+    at Lexer.getTokens (C:\backend\class36PreEntrega\node_modules\[4mpug-lexer[24m\index.js:1706:12) {
+  [stack]: [32m'Error: C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:7:64\n'[39m +
+    [32m'    5|         div(class="row d-flex justify-content-center align-items-center ")\n'[39m +
+    [32m'    6|             h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'  > 7|             img(class="img-fluid rounded-3" style="width:auto;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'----------------------------------------------------------------------^\n'[39m +
+    [32m'    8|             div(class="col-10 ")\n'[39m +
+    [32m'    9|                 div(class="table-responsive")\n'[39m +
+    [32m'    10|                     table(class="table")\n'[39m +
+    [32m'\n'[39m +
+    [32m'Syntax Error: Unexpected token\n'[39m +
+    [32m'    at makeError (C:\\backend\\class36PreEntrega\\node_modules\\pug-error\\index.js:34:13)\n'[39m +
+    [32m'    at Lexer.error (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:62:15)\n'[39m +
+    [32m'    at Lexer.assertExpression (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:96:12)\n'[39m +
+    [32m'    at Lexer.attributeValue (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1428:10)\n'[39m +
+    [32m'    at Lexer.attribute (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1275:30)\n'[39m +
+    [32m'    at Lexer.attrs (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1454:20)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.advance (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1686:12)\n'[39m +
+    [32m'    at Lexer.callLexerFunction (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1647:23)\n'[39m +
+    [32m'    at Lexer.getTokens (C:\\backend\\class36PreEntrega\\node_modules\\pug-lexer\\index.js:1706:12)'[39m,
+  [message]: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug:7:64\n'[39m +
+    [32m'    5|         div(class="row d-flex justify-content-center align-items-center ")\n'[39m +
+    [32m'    6|             h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'  > 7|             img(class="img-fluid rounded-3" style="width:auto;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'----------------------------------------------------------------------^\n'[39m +
+    [32m'    8|             div(class="col-10 ")\n'[39m +
+    [32m'    9|                 div(class="table-responsive")\n'[39m +
+    [32m'    10|                     table(class="table")\n'[39m +
+    [32m'\n'[39m +
+    [32m'Syntax Error: Unexpected token'[39m,
+  code: [32m'PUG:SYNTAX_ERROR'[39m,
+  msg: [32m'Syntax Error: Unexpected token'[39m,
+  line: [33m7[39m,
+  column: [33m64[39m,
+  filename: [32m'C:\\backend\\class36PreEntrega\\views\\components\\cartComponents\\cartTable.pug'[39m,
+  src: [32m'if cartData.products.length == 0\n'[39m +
+    [32m'    h2(class="txtCenter txtMed2 fontSpecial")="No tienes productos en tu carrito!"\n'[39m +
+    [32m'else \n'[39m +
+    [32m'    section(class="h-100 h-custom mb-5 mt-auto")\n'[39m +
+    [32m'        div(class="row d-flex justify-content-center align-items-center ")\n'[39m +
+    [32m'            h2(class="txtCenter txtMed2 fontSpecial")="Para recibir confirmación de tu pedido por Whatsapp, escanea el QR. "\n'[39m +
+    [32m'            img(class="img-fluid rounded-3" style="width:auto;"src="https://firebasestorage.googleapis.com/v0/b/aubier-coderhousereact.appspot.com/o/twilioWhatsappQR.png?alt=media&token=91a34af2-1cd6-40ac-a4f7-0b542c366c69", alt="QR para recibir Whatsapp de confirmacion.")\n'[39m +
+    [32m'            div(class="col-10 ")\n'[39m +
+    [32m'                div(class="table-responsive")\n'[39m +
+    [32m'                    table(class="table")\n'[39m +
+    [32m'                        thead\n'[39m +
+    [32m'                            tr\n'[39m +
+    [32m'                                th(scope="col" class="txtMed2")= "Carrito"\n'[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Quitar"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Cantidad"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "P.Unidad"\n`[39m +
+    [32m`                                th(scope="col" class='txtMed txtCenter')= "Subtotal"\n`[39m +
+    [32m'                        tbody\n'[39m +
+    [32m'                            include cartItem  \n'[39m +
+    [32m'                    div(class="col-md-6  offset-md-3 mb-5 mt-5 txtCenter")\n'[39m +
+    [32m'                        button(type="button" class="btn btn-info btn-block btn-lg")\n'[39m +
+    [32m'                            div(class="d-flex justify-content-between")\n'[39m +
+    [32m`                                span(class='txtSmall2')= "Lorem"\n`[39m +
+    [32m'                    div(class="col-md-6 offset-md-3")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between")\n'[39m +
+    [32m'                            p(class="mb-2")="Total (sin IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")=`Lorem`\n'[39m +
+    [32m'                        hr(class="my-4")\n'[39m +
+    [32m'                        div(class="d-flex justify-content-between mb-4" )\n'[39m +
+    [32m'                            p(class="mb-2")= "Impuestos (IVA)"\n'[39m +
+    [32m'                            p(class="mb-2")= "Ipsum"\n'[39m +
+    [32m'                        form(action="/api/cart/buy" method="POST" class="d-flex txtCenter justify-content-center mb-4")\n'[39m +
+    [32m'                            input(type="submit" value="Terminar la compra, total: X" style="font-size: 2rem;" class="btn btn-block btn-info btn-lg" )                                '[39m,
+  toJSON: [36m<ref *1>[39m [Function (anonymous)] {
+    [length]: [33m0[39m,
+    [name]: [32m''[39m,
+    [prototype]: { [constructor]: [36m[Circular *1][39m }
+  }
+}
+[33mwarn[39m | 26-Feb-2023 18:56:34 | PID: 17772, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 18:58:48 | PID: 4008, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:06:36 | PID: 21564, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:13:50 | PID: 10100, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:18:03 | PID: 22892, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:20:27 | PID: 7092, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:24:38 | PID: 1160, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:27:16 | PID: 14472, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:30:59 | PID: 7992, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:33:45 | PID: 16460, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:36:11 | PID: 22532, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:38:25 | PID: 16360, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:47:08 | PID: 10896, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:50:25 | PID: 8420, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:52:37 | PID: 19188, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 19:54:46 | PID: 10280, Route GET /favicon.ico doesn't exist.
+[33mwarn[39m | 26-Feb-2023 20:08:26 | PID: 7780, Route GET /favicon.ico doesn't exist.

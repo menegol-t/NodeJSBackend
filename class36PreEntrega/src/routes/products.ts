@@ -8,7 +8,7 @@ const prodsRoute = Router()
 
 prodsRoute.get("/", checkLogIn, getAllProd)
 
-prodsRoute.get("/:productId", checkLogIn, requestParamCheck, getProdById)
+prodsRoute.get("/:productId", checkLogIn, checkAdmin, requestParamCheck, getProdById)
 
 prodsRoute.post("/", checkLogIn, checkAdmin, requestBodyCheck, saveProd)
 

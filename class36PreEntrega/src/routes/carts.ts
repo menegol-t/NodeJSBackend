@@ -34,6 +34,6 @@ cartsRoute.post("/:cartId/products", checkLogIn, checkAdmin, reqBody_ProdIdCheck
 
 cartsRoute.delete("/:cartId", checkLogIn, checkAdmin, deleteCartById)
 
-cartsRoute.delete("/:cartId/products/", checkLogIn, checkAdmin, reqBody_ProdIdCheck, deleteProdFromCart)
+cartsRoute.delete("/:cartId/products", checkLogIn, checkAdmin, reqBody_ProdIdCheck, deleteProdFromCart)
 
 export default cartsRoute

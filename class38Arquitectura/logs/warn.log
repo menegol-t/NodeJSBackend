@@ -1,2 +1,76 @@
 [33mwarn[39m | 02-Apr-2023 17:28:01 | PID: 14196, Route GET /favicon.ico doesn't exist.
 [33mwarn[39m | 02-Apr-2023 17:28:04 | PID: 14196, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 02-Apr-2023 19:12:24 | Error: Failed to lookup view "login.pug" in views directory "C:\backend\class38Arquitectura\dist\views"
+    at Function.render (C:\backend\class38Arquitectura\node_modules\[4mexpress[24m\lib\application.js:597:17)
+    at ServerResponse.render (C:\backend\class38Arquitectura\node_modules\[4mexpress[24m\lib\response.js:1039:7)
+    at C:\backend\class38Arquitectura\dist\routes\login.js:21:9
+    at Generator.next (<anonymous>)
+    at C:\backend\class38Arquitectura\dist\routes\login.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\backend\class38Arquitectura\dist\routes\login.js:4:12)
+    at C:\backend\class38Arquitectura\dist\routes\login.js:20:35
+    at Layer.handle [as handle_request] (C:\backend\class38Arquitectura\node_modules\[4mexpress[24m\lib\router\layer.js:95:5)
+    at next (C:\backend\class38Arquitectura\node_modules\[4mexpress[24m\lib\router\route.js:144:13) {
+  [stack]: [32m'Error: Failed to lookup view "login.pug" in views directory "C:\\backend\\class38Arquitectura\\dist\\views"\n'[39m +
+    [32m'    at Function.render (C:\\backend\\class38Arquitectura\\node_modules\\express\\lib\\application.js:597:17)\n'[39m +
+    [32m'    at ServerResponse.render (C:\\backend\\class38Arquitectura\\node_modules\\express\\lib\\response.js:1039:7)\n'[39m +
+    [32m'    at C:\\backend\\class38Arquitectura\\dist\\routes\\login.js:21:9\n'[39m +
+    [32m'    at Generator.next (<anonymous>)\n'[39m +
+    [32m'    at C:\\backend\\class38Arquitectura\\dist\\routes\\login.js:8:71\n'[39m +
+    [32m'    at new Promise (<anonymous>)\n'[39m +
+    [32m'    at __awaiter (C:\\backend\\class38Arquitectura\\dist\\routes\\login.js:4:12)\n'[39m +
+    [32m'    at C:\\backend\\class38Arquitectura\\dist\\routes\\login.js:20:35\n'[39m +
+    [32m'    at Layer.handle [as handle_request] (C:\\backend\\class38Arquitectura\\node_modules\\express\\lib\\router\\layer.js:95:5)\n'[39m +
+    [32m'    at next (C:\\backend\\class38Arquitectura\\node_modules\\express\\lib\\router\\route.js:144:13)'[39m,
+  [message]: [32m'Failed to lookup view "login.pug" in views directory "C:\\backend\\class38Arquitectura\\dist\\views"'[39m,
+  view: View {
+    defaultEngine: [32m'pug'[39m,
+    ext: [32m'.pug'[39m,
+    name: [32m'login.pug'[39m,
+    root: [32m'C:\\backend\\class38Arquitectura\\dist\\views'[39m,
+    engine: [36m<ref *1>[39m [Function (anonymous)] {
+      [length]: [33m3[39m,
+      [name]: [32m''[39m,
+      [prototype]: { [constructor]: [36m[Circular *1][39m }
+    },
+    path: [90mundefined[39m
+  }
+}
+[33mwarn[39m | 02-Apr-2023 19:12:24 | PID: 16864, Route GET /favicon.ico doesn't exist.
+[31merror[39m | 02-Apr-2023 19:12:24 | Error: Failed to lookup view "login.pug" in views directory "C:\backend\class38Arquitectura\dist\views"
+    at Function.render (C:\backend\class38Arquitectura\node_modules\[4mexpress[24m\lib\application.js:597:17)
+    at ServerResponse.render (C:\backend\class38Arquitectura\node_modules\[4mexpress[24m\lib\response.js:1039:7)
+    at C:\backend\class38Arquitectura\dist\routes\login.js:21:9
+    at Generator.next (<anonymous>)
+    at C:\backend\class38Arquitectura\dist\routes\login.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\backend\class38Arquitectura\dist\routes\login.js:4:12)
+    at C:\backend\class38Arquitectura\dist\routes\login.js:20:35
+    at Layer.handle [as handle_request] (C:\backend\class38Arquitectura\node_modules\[4mexpress[24m\lib\router\layer.js:95:5)
+    at next (C:\backend\class38Arquitectura\node_modules\[4mexpress[24m\lib\router\route.js:144:13) {
+  [stack]: [32m'Error: Failed to lookup view "login.pug" in views directory "C:\\backend\\class38Arquitectura\\dist\\views"\n'[39m +
+    [32m'    at Function.render (C:\\backend\\class38Arquitectura\\node_modules\\express\\lib\\application.js:597:17)\n'[39m +
+    [32m'    at ServerResponse.render (C:\\backend\\class38Arquitectura\\node_modules\\express\\lib\\response.js:1039:7)\n'[39m +
+    [32m'    at C:\\backend\\class38Arquitectura\\dist\\routes\\login.js:21:9\n'[39m +
+    [32m'    at Generator.next (<anonymous>)\n'[39m +
+    [32m'    at C:\\backend\\class38Arquitectura\\dist\\routes\\login.js:8:71\n'[39m +
+    [32m'    at new Promise (<anonymous>)\n'[39m +
+    [32m'    at __awaiter (C:\\backend\\class38Arquitectura\\dist\\routes\\login.js:4:12)\n'[39m +
+    [32m'    at C:\\backend\\class38Arquitectura\\dist\\routes\\login.js:20:35\n'[39m +
+    [32m'    at Layer.handle [as handle_request] (C:\\backend\\class38Arquitectura\\node_modules\\express\\lib\\router\\layer.js:95:5)\n'[39m +
+    [32m'    at next (C:\\backend\\class38Arquitectura\\node_modules\\express\\lib\\router\\route.js:144:13)'[39m,
+  [message]: [32m'Failed to lookup view "login.pug" in views directory "C:\\backend\\class38Arquitectura\\dist\\views"'[39m,
+  view: View {
+    defaultEngine: [32m'pug'[39m,
+    ext: [32m'.pug'[39m,
+    name: [32m'login.pug'[39m,
+    root: [32m'C:\\backend\\class38Arquitectura\\dist\\views'[39m,
+    engine: [36m<ref *1>[39m [Function (anonymous)] {
+      [length]: [33m3[39m,
+      [name]: [32m''[39m,
+      [prototype]: { [constructor]: [36m[Circular *1][39m }
+    },
+    path: [90mundefined[39m
+  }
+}
+[33mwarn[39m | 02-Apr-2023 19:14:17 | PID: 13944, Route GET /favicon.ico doesn't exist.

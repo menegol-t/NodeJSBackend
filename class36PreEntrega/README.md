@@ -1,4 +1,4 @@
-Pre entrega funcional:
+Pre Entrega funcional:
 $ npm run start
 
 Por default, se usa puerto 8080 en modo FORK. Se puede seleccionar si se usan otros puertos o se utiliza el modo cluster con "-p" y "-m", por ejemplo: 
@@ -11,12 +11,12 @@ Requisitos en varibales de entorno para la aplicacion, en un archivo .env a nive
 
 * MONGO_ATLAS_SRV= Link a la base de datos a usar. 
 
-* ETHEREAL_EMAIL= Un email de la paltaforma Ethereal. Por ahora la app solo funciona con ethereal y no Gmail.
+* ETHEREAL_EMAIL= Un email de la paltaforma Ethereal. Por ahora la app solo funciona con ethereal y no Gmail. En este email se recibiran las ordenes de compra para el admin.
 * ETHEREAL_PASSWORD= Password de ethereal.
 * ETHEREAL_NAME= Nombre en ethereal.
 
-* ADMIN_EMIAL= Email del administrador en caso de integrar Gmail.
-* ADMIN_PHONE= Numero de telefono del adminsitrador, con "+" al inicio y todos los prefijos internacionales. (por ej: +5491112345678) Es usado para recibir un SMS cuando se realiza una compra. Es importante que este numero sea el que se tiene hbailitado en twilio.
+* ADMIN_EMIAL= Email del administrador en caso de integrar Gmail en un futuro.
+* ADMIN_PHONE= Numero de telefono del adminsitrador, con "+" al inicio y todos los prefijos internacionales. (por ej: +5491112345678) Es usado para recibir un SMS cuando se realiza una compra. Es importante que este numero sea el que se tiene habilitado en twilio.
 
 * TWILIO_TOKEN= Cuanta en Twilio para envio de SMS y Whatsapp. 
 * TWILIO_ACCOUNT_ID= ID de Twilio. 
@@ -25,7 +25,7 @@ Requisitos en varibales de entorno para la aplicacion, en un archivo .env a nive
 * SEND_TO_TWILIO_WHATSAPP= Codigo para sincroniazr el whatsapp de twilio. 
 
 
-Al principio sera redirigido a Login. En caso de no tener cuanta, seleccionar Signup. Aqui introducir sus datos, tiene que ser maypr de edad (y menor de 100 años) para usar la app y tener un email genuino. Adicional, el numero de telefono se ingresa sin espacios ni simbolos, pero con todos los prefijos para telefonos internacionalmente (por ej: 54 911 1234 5678).
+Al principio sera redirigido a Login. En caso de no tener cuenta, seleccionar Signup. Aqui introducir sus datos, tiene que ser maypr de edad (y menor de 100 años) para usar la app y tener un email genuino. Adicional, el numero de telefono se ingresa sin espacios ni simbolos, pero con todos los prefijos para telefonos internacionales (por ej: 54 911 1234 5678).
 
 Si los datos de signup son validos, se redirigira a Login para ingresar con la cuenta recientemente creada. 
 
